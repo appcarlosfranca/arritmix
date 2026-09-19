@@ -1,0 +1,8 @@
+CF ArritmiX v1.6.2
+
+Alteração solicitada:
+- Mantido o conceito visual do logotipo fornecido pelo usuário.
+- Nome atualizado para CF ArritmiX.
+- Logotipo inserido no cabeçalho do aplicativo.
+- Favicon atualizado com a nova identidade.
+- Nenhuma função clínica, banco de fármacos, ECG, gasometria ou fluxo ACLS/PALS foi alterado nesta revisão.
