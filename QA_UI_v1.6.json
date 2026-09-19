@@ -1,0 +1,25 @@
+{
+  "build": "CF ArritmiX v1.6",
+  "inline_scripts_checked": 22,
+  "javascript_syntax_errors": [],
+  "duplicate_ids": [],
+  "module_tabs": 6,
+  "settings_button": true,
+  "source_panels_marked": 3,
+  "source_default_hidden_css": true,
+  "settings_options": [
+    "sources",
+    "technical",
+    "compact",
+    "tips",
+    "focus",
+    "reduceMotion",
+    "openLive"
+  ],
+  "drug_records": 181,
+  "alphabetical_nested_grid_bug_fixed": true,
+  "notes": [
+    "Fontes/rastreabilidade ocultas por padrão e reativáveis em Configurações.",
+    "Sem MutationObserver novo; preferências aplicadas por classes CSS e eventos simples."
+  ]
+}

@@ -1,0 +1,9 @@
+CF ArritmiX v1.6 — Interface limpa
+
+- Fontes/rastreabilidade ocultas por padrão em todos os módulos.
+- Nova opção Configurações (engrenagem) para mostrar/ocultar fontes.
+- Preferências adicionais: interface compacta, dicas de uso, modo foco, reduzir animações, detalhes técnicos e abertura no Live.
+- Correção do índice alfabético da biblioteca de fármacos (grid aninhado causava coluna única).
+- Textos de cabeçalho simplificados e versões técnicas ocultas por padrão.
+- Painéis de rastreabilidade em Fármacos, Gasometria e ECG ficam disponíveis apenas quando a preferência de fontes está ativa.
+- Preferências persistem localmente no navegador.

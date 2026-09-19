@@ -1,0 +1,7 @@
+CF ArritmiX v1.5 — leitor automático por foto
+
+1. ECG: fotografe/anexe o traçado. Por padrão, a análise inicia automaticamente. O sistema tenta OCR das medidas impressas e análise visual do traçado, preenche os campos e gera o laudo estruturado.
+2. Gasometria: fotografe/anexe o laudo. O OCR tenta extrair pH, PaCO2, HCO3, PaO2, SatO2, Na, Cl, K, albumina e FiO2; se os 3 valores essenciais forem lidos, o diagnóstico ácido-base é gerado sem digitação.
+3. OCR: a ordem é servidor local (/api/ocr) -> OCR nativo do navegador -> Tesseract.js online carregado somente quando necessário.
+4. AESP: nunca é definida apenas pela imagem do ECG; exige ausência clínica de pulso.
+5. Qualidade: para melhor resultado, fotografe de frente, sem reflexos, com o documento ocupando a maior parte da imagem.
