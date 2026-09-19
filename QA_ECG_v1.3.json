@@ -1,0 +1,27 @@
+{
+  "version": "1.3",
+  "ecg_patterns": 35,
+  "unique_ids": 35,
+  "categories": 6,
+  "module_tabs_expected": 6,
+  "module_ecg_present": true,
+  "ecg_reader_present": true,
+  "live_ecg_bridge_present": true,
+  "scripts_syntax": "passed: 19/19",
+  "standalone_identical_to_index": true,
+  "notes": [
+    "ECG strips are locally generated educational SVG schematics; no external image loading.",
+    "Reader is rule-based from user-entered findings; uploaded image is preview-only, not autonomously interpreted.",
+    "ECG atlas is lazy-rendered when ECG module is opened; Live renders one compact strip only."
+  ],
+  "actual_module_tabs": 6,
+  "actual_module_panels": 6,
+  "nav_labels": [
+    "Live ACLS/PALS",
+    "ECG / Ritmos",
+    "Fármacos",
+    "Guia Clínico",
+    "Gasometria",
+    "Treinador"
+  ]
+}

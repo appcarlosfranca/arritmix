@@ -1,0 +1,22 @@
+{
+  "version": "1.4",
+  "html_bytes": 1263524,
+  "duplicate_ids": [],
+  "camera_targets": [
+    "ecg",
+    "gas"
+  ],
+  "ecg_capture_input": true,
+  "gas_capture_input": true,
+  "camera_dialog": true,
+  "fullscreen_viewer": true,
+  "live_stream_lazy": true,
+  "no_image_localstorage": true,
+  "max_capture_width_px": 1800,
+  "jpeg_quality": 0.88,
+  "notes": [
+    "Câmera ao vivo via getUserMedia requer contexto seguro (HTTPS/localhost) na maioria dos navegadores.",
+    "Em celular, input capture=environment oferece captura pela câmera quando suportado.",
+    "Laudos permanecem baseados em achados/valores confirmados; não há interpretação autônoma de pixels offline."
+  ]
+}

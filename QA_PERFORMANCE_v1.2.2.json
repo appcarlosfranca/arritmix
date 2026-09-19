@@ -1,0 +1,25 @@
+{
+  "html_bytes": 1198759,
+  "modules": [
+    "live",
+    "drugs",
+    "guide",
+    "gas",
+    "trainer"
+  ],
+  "tabs": [
+    "live",
+    "drugs",
+    "guide",
+    "gas",
+    "trainer"
+  ],
+  "five_modules_present": true,
+  "drug_json_records": 181,
+  "mutation_observers_active": 0,
+  "duplicate_nav_hotfix": false,
+  "lazy_drug_loader": true,
+  "event_render_cap": true,
+  "event_storage_cap": true,
+  "guide_debounce": true
+}

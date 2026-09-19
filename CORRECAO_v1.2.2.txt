@@ -1,0 +1,11 @@
+ArritmiaX v1.2.2 — Performance
+
+- Removidos MutationObservers contínuos que podiam gerar trabalho repetitivo.
+- Biblioteca de 181 fármacos passa a ser decodificada somente ao abrir Fármacos.
+- Guia Clínico passa a renderizar sob demanda; busca com debounce.
+- Linha do tempo do Live limitada visualmente a 80 eventos e persistência a 200.
+- Sessões antigas (>24h) não mantêm cronômetro acumulado.
+- Timers de interface pausam atualizações quando a página/módulo não está visível.
+- Removido listener duplicado de navegação; um único controlador de módulos.
+- Onboarding não abre modal automaticamente no carregamento.
+- Todos os módulos e funções anteriores foram mantidos.

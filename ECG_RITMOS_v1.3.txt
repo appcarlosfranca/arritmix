@@ -1,0 +1,11 @@
+ArritmiaX v1.3 — ECG / Ritmos
+
+- Nova aba ECG / Ritmos.
+- Atlas por categoria, galeria completa e busca.
+- Traçados vetoriais educacionais gerados localmente (sem imagens externas).
+- 35 padrões/ritmos e alterações esquemáticas.
+- Leitor estruturado com upload apenas para visualização + campos de achados + laudo educacional.
+- AESP tratada corretamente como diagnóstico clínico (atividade elétrica + ausência de pulso).
+- Integração com Live ACLS: ECG surpresa contextual em PCR, bradicardia e taquicardia.
+- Lazy loading do atlas para preservar responsividade.
+- Base operacional ACLS alinhada aos algoritmos AHA 2025; demais padrões são materiais educacionais de reconhecimento e devem ser confirmados em ECG de 12 derivações e contexto clínico.

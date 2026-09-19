@@ -1,0 +1,8 @@
+ArritmiaX v1.2.1 — hotfix de desempenho e navegação
+
+Correções:
+- Biblioteca de 181 fármacos deixou de renderizar centenas de cards no boot.
+- Cards são carregados sob demanda por classe, letra ou pesquisa.
+- Busca exige 2 caracteres e usa debounce.
+- Navegação entre módulos ganhou hotfix independente e abre no Live ACLS/PALS ao iniciar.
+- Conteúdo e banco dos 181 cards foram preservados.

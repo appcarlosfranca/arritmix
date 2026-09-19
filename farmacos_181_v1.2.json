@@ -1,0 +1,3217 @@
+[
+  {
+    "id": 1,
+    "name": "Adenosina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "6 mg em bolus EV rápido (1–3 s); se não houver resposta em 1–2 min, 12 mg; pode repetir 12 mg uma vez. Após cada dose, 20 mL de salina normal.",
+    "route": "EV rápida, preferencialmente acesso proximal.",
+    "prep": "Administrar rapidamente seguida de flush de 20 mL de solução salina.",
+    "monitor": "ECG contínuo.",
+    "alerts": "Usar com precaução em doença reativa de vias aéreas; o manual anexado recomenda reduzir dose pela metade em alguns contextos (dipiridamol, carbamazepina, transplante cardíaco, acesso central).",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "zeluiz,+v31n3a02",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 2,
+    "name": "Adrenalina / epinefrina",
+    "aliases": [
+      "adrenalina",
+      "epinefrina"
+    ],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "PCR: 1 mg EV/IO a cada 3–5 min no material ACLS. Manual FMC também traz infusão 0,01–0,2 mcg/kg/min em contexto vasoativo.",
+    "route": "EV/IO em bolus na PCR; EV contínua em usos vasoativos.",
+    "prep": "Manual FMC: adrenalina 60 mcg/mL — 6 ampolas + 94 mL SF 0,9%; tabela também cita solução 10 mcg/mL para bolus.",
+    "monitor": "ECG, PA, perfusão e resposta clínica.",
+    "alerts": "Diferenciar bolus de PCR de infusão vasoativa; são esquemas e contextos distintos.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 3,
+    "name": "Amiodarona",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "FV/TVSP: 300 mg IV/IO; pode seguir 150 mg. Outras taquiarritmias: 150 mg IV em 10 min; depois 1 mg/min por 6 h e 0,5 mg/min por 18 h; máximo 2,2 g/24 h no manual.",
+    "route": "EV/IO.",
+    "prep": "Consultar apresentação institucional; o manual descreve formulações diferentes.",
+    "monitor": "PA, ECG, PR/QRS/QT e bradicardia.",
+    "alerts": "Pode causar hipotensão, bradicardia e bloqueio AV; efeito aditivo com fármacos que prolongam QT.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "ACLS-2020-PORTUGUES",
+      "ACLS: O guia de bolso (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 4,
+    "name": "Atropina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Manual ACLS anexado (edição histórica): 0,5 mg IV a cada 3–5 min até 3 mg. O Live ACLS atual do ArritmiaX usa algoritmo mais recente e deve prevalecer para treino operacional.",
+    "route": "EV.",
+    "prep": "Bolus EV.",
+    "monitor": "ECG e resposta da frequência cardíaca.",
+    "alerts": "O corpus contém dose histórica; por isso o card sinaliza divergência temporal e não deve substituir o algoritmo operacional atualizado do Live.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "VSPEA — diagnóstico de intoxicações (anexo)",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 5,
+    "name": "Dobutamina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "2,5–20 mcg/kg/min.",
+    "route": "EV em BIC.",
+    "prep": "1 mg/mL: 20 mL + 230 mL de SG 5% conforme manual FMC.",
+    "monitor": "PA, FC, ritmo, perfusão e sinais de isquemia.",
+    "alerts": "Titular pela resposta; pode aumentar frequência/consumo miocárdico de O2.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 6,
+    "name": "Dopamina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Manual ACLS anexado: 2–20 mcg/kg/min em infusão contínua, titulada. O algoritmo atual do app pode usar faixa própria conforme versão do protocolo.",
+    "route": "EV contínua em bomba.",
+    "prep": "A apresentação/diluição deve ser confirmada localmente; o módulo de BIC mantém cálculo separado.",
+    "monitor": "PA, ECG e velocidade de infusão.",
+    "alerts": "Corrigir hipovolemia antes quando usada para hipotensão; extravasamento pode causar necrose.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "zeluiz,+v31n2a08",
+      "zeluiz,+v31n3a02",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 7,
+    "name": "Fenilefrina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "50–200 mcg EV a cada 2–5 min conforme tabela do manual; concentrações/infusões também são descritas no manual.",
+    "route": "EV; uso local também aparece no manual em concentrações maiores.",
+    "prep": "100 mcg/mL: 1 mL + 99 mL de SF conforme tabela do manual FMC.",
+    "monitor": "PA, frequência cardíaca e perfusão.",
+    "alerts": "Agonista alfa-1; risco de vasoconstrição excessiva e bradicardia reflexa.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "ACLS-2020-PORTUGUES",
+      "Sepse atualidades e perspectivas"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 8,
+    "name": "Isoproterenol",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "2–10 mcg/min EV contínuo no manual ACLS anexado.",
+    "route": "EV contínua em bomba.",
+    "prep": "Titular conforme frequência e ritmo.",
+    "monitor": "PA, ECG e frequência cardíaca.",
+    "alerts": "Medida temporária em bradicardia refratária enquanto se aguarda pacing, no contexto do manual anexado.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 9,
+    "name": "Lidocaína",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Dose inicial 1–1,5 mg/kg IV/IO; repetir 0,5–0,75 mg/kg a cada 5–10 min; máximo 3 mg/kg; manutenção 1–4 mg/min.",
+    "route": "IV/IO.",
+    "prep": "Dose traqueal 2–3 mg/kg é citada no manual histórico.",
+    "monitor": "ECG, PA e estado neurológico.",
+    "alerts": "Evitar em bradicardia com ritmo de escape ventricular; alternativa à amiodarona em FV/TVSP refratária.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "ACLS-2020-PORTUGUES",
+      "ACLS: O guia de bolso (anexo)",
+      "Manejo+inicial+da+Síndrome+Coronariana+Aguda+no+depar-tamento+de+emergência"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 10,
+    "name": "Milrinona",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 11,
+    "name": "Nesiritida",
+    "aliases": [
+      "nesiritide"
+    ],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 12,
+    "name": "Nitroglicerina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "Infusão: 5–100 mcg/min no manual FMC. SCA: nitrato sublingual é citado como tratamento sintomático em protocolos anexos.",
+    "route": "EV contínua; via sublingual no contexto de SCA conforme protocolo.",
+    "prep": "200 mcg/mL: 10 mL + 240 mL SG 5% conforme manual FMC.",
+    "monitor": "PA, dor, sinais de congestão/ischemia.",
+    "alerts": "Evitar em hipotensão, suspeita de infarto de VD e uso recente de inibidores de PDE-5; uso visa alívio sintomático.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)",
+      "SCA-short"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 13,
+    "name": "Nitroprussiato de sódio",
+    "aliases": [
+      "nitroprussiato"
+    ],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "0,3–10 mcg/kg/min.",
+    "route": "EV contínua.",
+    "prep": "200 mcg/mL: 2 mL + 248 mL SG 5% conforme manual FMC.",
+    "monitor": "PA contínua quando possível; função renal/hepática em uso prolongado.",
+    "alerts": "Proteger da luz; risco de toxicidade por cianeto/tiocianato e hipotensão.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)",
+      "edital s s"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 14,
+    "name": "Noradrenalina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "0,01–2 mcg/kg/min (faixa do manual FMC); titular à resposta.",
+    "route": "EV em infusão contínua, preferencialmente por via central.",
+    "prep": "Manual FMC: 200 mcg/mL (20 mL + 80 mL SG 5%); 64 mcg/mL (16 mL + 234 mL SG 5%); 32 mcg/mL (8 mL + 242 mL SG 5%).",
+    "monitor": "PA, perfusão, ritmo, sítio de infusão; vigiar extravasamento.",
+    "alerts": "Extravasamento pode causar isquemia/necrose; uso periférico, se necessário, deve ser curto e em veia calibrosa/proximal.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 15,
+    "name": "Procainamida",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "20 mg/min IV ou 100 mg a cada 5 min até conversão, hipotensão, QRS >50% do basal ou total 17 mg/kg; em urgência até 50 mg/min; manutenção 1–4 mg/min.",
+    "route": "EV.",
+    "prep": "Infusão titulada.",
+    "monitor": "ECG e PA; acompanhar PR, QT e QRS.",
+    "alerts": "Evitar em QT prolongado ou insuficiência cardíaca; reduzir manutenção em função renal reduzida.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 16,
+    "name": "Sotalol",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "1,5 mg/kg IV durante 5 min no manual ACLS anexado (com nota de bula citada no próprio manual).",
+    "route": "EV.",
+    "prep": "Infusão lenta.",
+    "monitor": "ECG, QT, PA e broncoespasmo.",
+    "alerts": "Evitar QT prolongado, fármacos que prolongam QT, IC descompensada e hipocalemia.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 17,
+    "name": "Sulfato de magnésio",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "1–2 g EV em bolus; manutenção 0,5–2 g/h no guia ACLS anexado para torsades de pointes.",
+    "route": "EV.",
+    "prep": "Conforme apresentação institucional.",
+    "monitor": "ECG, PA e magnésio sérico conforme contexto.",
+    "alerts": "Indicação específica; não é antiarrítmico universal para todas as taquicardias.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "ACLS-2020-PORTUGUES",
+      "ACLS: O guia de bolso (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 18,
+    "name": "Vasopressina",
+    "aliases": [],
+    "class": "ACLS, antiarrítmicos e hemodinâmica",
+    "context": "PCR, bradi/taquiarritmias, suporte hemodinâmico e cenários cardiovasculares citados nos anexos.",
+    "dose": "0,01–0,04 U/min no manual FMC.",
+    "route": "EV contínua.",
+    "prep": "1 U/mL: 1 mL + 19 mL SG 5%; ou 0,2 U/mL: 1 mL + 99 mL SG 5%.",
+    "monitor": "PA, perfusão, débito urinário, sódio e sinais de isquemia.",
+    "alerts": "Dose expressa em U/min; não confundir com mcg/kg/min.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 19,
+    "name": "Alfentanil",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "0,5–1,5 mcg/kg/min.",
+    "route": "EV contínua.",
+    "prep": "250 mcg/mL: 50 mL + 50 mL SF 0,9%; ou 500 mcg/mL puro.",
+    "monitor": "Ventilação, PA, FC e sedação.",
+    "alerts": "Opioide de início rápido; depressão respiratória, rigidez, náusea/vômitos, hipotensão e bradicardia.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 20,
+    "name": "Atracúrio",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "IOT: 0,5 mg/kg EV; manutenção: 5–10 mcg/kg/min.",
+    "route": "EV.",
+    "prep": "2,5 mg/mL: 25 mL + 75 mL SF 0,9%; o manual também cita uso puro para manutenção.",
+    "monitor": "Ventilação, PA e bloqueio neuromuscular.",
+    "alerts": "Pode liberar histamina; cautela em asmáticos; não administrar IM.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 21,
+    "name": "Cetamina",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Infusão analgésico-sedativa no manual: 0,1–1 mg/kg/h.",
+    "route": "EV em infusão contínua conforme tabela do manual.",
+    "prep": "1 mg/mL: 10 mL + 490 mL SG 5% ou SF 0,9%; 2 mg/mL: 10 mL + 240 mL.",
+    "monitor": "PA, FC, nível de sedação e ventilação.",
+    "alerts": "O manual anexado não explicita, na tabela recuperada, dose de indução de SRI; não automatizar esse valor a partir desta fonte.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 22,
+    "name": "Cisatracúrio",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "IOT: 0,1–0,2 mg/kg EV; manutenção: 1–4 mcg/kg/min.",
+    "route": "EV.",
+    "prep": "1 mg/mL: 25 mL + 25 mL SF 0,9%; manual também cita uso puro para manutenção.",
+    "monitor": "Ventilação e bloqueio neuromuscular.",
+    "alerts": "Contraindicado em alergia ao cisatracúrio/atracúrio/ácido benzenossulfônico.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 23,
+    "name": "Dexmedetomidina",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "0,2–0,7 mcg/kg/h.",
+    "route": "EV contínua.",
+    "prep": "2 mcg/mL: 2 mL + 98 mL SF 0,9%.",
+    "monitor": "FC, PA, sedação e função hepática.",
+    "alerts": "Bólus não recomendado no manual; cautela em bradicardia, hipotensão, hipovolemia e insuficiência cardíaca.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 24,
+    "name": "Diazepam",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Sedação leve: 0,1–0,2 mg/kg (2–10 mg EV); tabela cita dose máxima EV 3 mg/kg/dia.",
+    "route": "IM, EV, VO ou retal conforme indicação descrita.",
+    "prep": "5 mg/mL injetável; não diluir na tabela do manual.",
+    "monitor": "Consciência, respiração, PA e sedação.",
+    "alerts": "Cautela em idosos/hepatopatas e com outros depressores do SNC; metabólitos ativos incluem nordiazepam, temazepam e oxazepam.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 25,
+    "name": "Etomidato",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "IOT: 0,3 mg/kg EV.",
+    "route": "EV lenta.",
+    "prep": "2 mg/mL; ampola 10 mL; sem diluição na tabela.",
+    "monitor": "Hemodinâmica, ventilação e necessidade de sedoanalgesia pós-IOT.",
+    "alerts": "Evitar infusão contínua/doses repetidas pelo risco de supressão adrenocortical; cautela em sépticos/críticos.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 26,
+    "name": "Fentanil",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Infusão: 50–200 mcg/h no manual.",
+    "route": "EV contínua.",
+    "prep": "5 mcg/mL: 50 mL + 450 mL SF 0,9%; ou 50 mcg/mL puro.",
+    "monitor": "Ventilação, PA, FC e sedação.",
+    "alerts": "Risco de depressão respiratória, rigidez torácica, bradicardia e hipotensão.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "SCA-short"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 27,
+    "name": "Meperidina",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 28,
+    "name": "Midazolam",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Manutenção em BIC: 0,1–0,3 mg/kg/h.",
+    "route": "EV contínua; também citado em indução/sedação de procedimentos.",
+    "prep": "1 mg/mL: 100 mg + 80 mL SF 0,9% ou 150 mg + 120 mL SF 0,9%.",
+    "monitor": "Ventilação, PA, nível de sedação e delirium.",
+    "alerts": "Pode causar depressão respiratória, hipotensão e reações paradoxais; cautela em insuficiência respiratória/hepática grave.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 29,
+    "name": "Morfina",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Infusão no manual FMC: 0,07–0,5 mg/kg/h. Em SCA, o manual SOCERJ recomenda evitar uso rotineiro; pode ser usada para analgesia selecionada.",
+    "route": "EV.",
+    "prep": "0,2 mg/mL: 2 mL + 98 mL SF 0,9% no manual FMC.",
+    "monitor": "Consciência, ventilação, PA e frequência respiratória.",
+    "alerts": "Opioide com risco de depressão respiratória e hipotensão; em SCA há preocupação com interação/atraso de antiplaquetários.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 30,
+    "name": "Pancurônio",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "IOT: 0,08–0,12 mg/kg EV; manutenção: 1–2 mcg/kg/min.",
+    "route": "EV.",
+    "prep": "0,4 mg/mL: 20 mL + 80 mL SF 0,9%.",
+    "monitor": "Ventilação, FC e função renal.",
+    "alerts": "Ação prolongada; pode causar taquicardia; maior cautela em lesão renal.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "zeluiz,+v31n3a02"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 31,
+    "name": "Propofol",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "IOT: 0,5–2 mg/kg EV (manual cita 2 mg/kg em hígidos e 1 mg/kg em idosos). Manutenção: 1,5–10 mg/kg/h.",
+    "route": "EV.",
+    "prep": "10 mg/mL sem diluição na tabela do manual.",
+    "monitor": "PA, FC, ventilação e sedação.",
+    "alerts": "Hipotensão, apneia e bradicardia são destacados; cautela em instabilidade hemodinâmica.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 32,
+    "name": "Remifentanil",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "0,05–0,3 mcg/kg/min.",
+    "route": "EV contínua.",
+    "prep": "50 mcg/mL: 4 mg (2 frascos) + 80 mL SF 0,9%.",
+    "monitor": "Ventilação, PA e FC.",
+    "alerts": "Idosos podem requerer doses menores; risco de hipotensão, bradicardia e depressão respiratória.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 33,
+    "name": "Rocurônio",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Manutenção: 0,24–0,96 mg/kg/h na tabela do manual.",
+    "route": "EV.",
+    "prep": "2 mg/mL: 20 mL + 80 mL SF 0,9%; também pode ser usado puro a 10 mg/mL conforme tabela.",
+    "monitor": "Ventilação obrigatória, bloqueio neuromuscular e sinais vitais.",
+    "alerts": "Hipersensibilidade/brometo; duração pode prolongar em disfunção renal/hepática; sugamadex é citado para reversão.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 34,
+    "name": "Succinilcolina",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Infusão contínua descrita: 2–15 mg/min. O manual recuperado não explicita dose de IOT nesta tabela.",
+    "route": "EV.",
+    "prep": "10 mg/mL: 500 mg + 50 mL SF 0,9%.",
+    "monitor": "Temperatura, CO2 expirado, ritmo e ventilação.",
+    "alerts": "Contraindicada em risco de hipertermia maligna, miopatias/doenças neuromusculares, paraplegia/tetraplegia, queimaduras graves >48 h e toxicidade digitálica; pode causar hipercalemia.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 35,
+    "name": "Sufentanil",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "0,2–0,5 mcg/kg/h.",
+    "route": "EV contínua.",
+    "prep": "1 mcg/mL: 2 mL (50 mcg/mL) + 98 mL SF 0,9%, ou 10 mL (5 mcg/mL) + 40 mL SF 0,9%.",
+    "monitor": "Ventilação, PA e FC.",
+    "alerts": "Depressão respiratória, rigidez, náusea/vômitos; bradicardia e hipotensão podem ser persistentes.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 36,
+    "name": "Sugamadex sódico",
+    "aliases": [
+      "sugamadex"
+    ],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Reversão de rotina: 2–4 mg/kg EV; reversão imediata de bloqueio por rocurônio: 16 mg/kg EV.",
+    "route": "EV.",
+    "prep": "100 mg/mL; frasco-ampola 2 mL.",
+    "monitor": "Recuperação ventilatória e via aérea.",
+    "alerts": "Suporte ventilatório até recuperação adequada; manual não recomenda se ClCr <30 mL/min.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 37,
+    "name": "Vecurônio",
+    "aliases": [],
+    "class": "Analgesia, sedação e bloqueio neuromuscular",
+    "context": "Analgesia, sedação, indução/intubação, manutenção em terapia intensiva ou bloqueio neuromuscular, conforme o manual anexado.",
+    "dose": "Manutenção: 0,8–1,2 mcg/kg/min.",
+    "route": "EV.",
+    "prep": "0,4 mg/mL: 40 mg + 100 mL SF 0,9%.",
+    "monitor": "Ventilação e bloqueio neuromuscular.",
+    "alerts": "Pode causar hipotensão, taquiarritmia, anafilaxia e fraqueza prolongada; contraindicado em hipersensibilidade e em menores de 7 semanas no manual.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "zeluiz,+v31n3a02"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 38,
+    "name": "Abciximabe",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 39,
+    "name": "Ácido acetilsalicílico (AAS)",
+    "aliases": [
+      "ácido acetilsalicílico",
+      "acido acetilsalicilico",
+      "aspirina",
+      "aas"
+    ],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "SCA com supra: 160–325 mg VO, não tamponado, mastigado o quanto antes; PCDT/cartazes também trazem 200–300 mg em alguns esquemas.",
+    "route": "VO mastigável.",
+    "prep": "Comprimido não tamponado no contexto do manual SOCERJ.",
+    "monitor": "Sangramento, alergia e tolerância GI.",
+    "alerts": "Contraindicado em alergia e sangramento ativo; considerar divergências de faixa entre protocolos anexados.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 40,
+    "name": "Cangrelor",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 41,
+    "name": "Clopidogrel",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "SOCERJ 2021: ICP 600 mg ataque + 75 mg/dia; fibrinólise 300 mg ataque + 75 mg/dia; ≥75 anos com fibrinólise: 75 mg sem carga; sem reperfusão: 75 mg.",
+    "route": "VO.",
+    "prep": "Comprimidos; sem diluição.",
+    "monitor": "Sangramento e estratégia de reperfusão.",
+    "alerts": "Suspensão pré-cirúrgica é discutida no manual; em fibrinólise é o P2Y12 de referência no documento.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Passo a passo do atendimento agudo do AVC (2021)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 42,
+    "name": "Eptifibatida",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 43,
+    "name": "Prasugrel",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "60 mg ataque; 10 mg/dia manutenção no manual SOCERJ.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Sangramento.",
+    "alerts": "Contraindicado em AVC prévio; cautela em >75 anos, peso <60 kg e insuficiência renal conforme manual.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 44,
+    "name": "Ticagrelor",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "180 mg ataque; 90 mg 2x/dia manutenção no manual SOCERJ.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Sangramento, dispneia, função renal e ácido úrico.",
+    "alerts": "O manual associa dispneia e alterações renais/ácido úrico.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "SCA-short",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 45,
+    "name": "Ticlopidina",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 46,
+    "name": "Tirofibana",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 47,
+    "name": "Vorapaxar",
+    "aliases": [],
+    "class": "Antiagregantes plaquetários",
+    "context": "Síndrome coronariana aguda e terapia antiplaquetária; o contexto exato depende de estratégia de reperfusão/ICP e risco hemorrágico.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 48,
+    "name": "Apixabana",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 49,
+    "name": "Argatrobana",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 50,
+    "name": "Bivalirudina",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 51,
+    "name": "Dabigatrana",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 52,
+    "name": "Dalteparina",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 53,
+    "name": "Desirudina",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 54,
+    "name": "Edoxabana",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 55,
+    "name": "Enoxaparina",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "SCASSST: 1 mg/kg SC 12/12 h; ≥75 anos: 0,75 mg/kg 12/12 h; ClCr 15–30: 1 mg/kg 24/24 h. Fibrinólise <75 anos: 30 mg IV + 1 mg/kg SC 12/12 h; ≥75 anos sem bolus e 0,75 mg/kg 12/12 h.",
+    "route": "SC; bolus EV em esquema de fibrinólise específico.",
+    "prep": "Seringa/apresentação conforme produto.",
+    "monitor": "Sangramento, plaquetas e função renal.",
+    "alerts": "Ajustar por idade e função renal; evitar troca rotineira HNF↔enoxaparina durante a internação segundo material SOCESP/SOCERJ.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Atendimento à SCA — cartaz UFMG (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 56,
+    "name": "Fondaparinux",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "2,5 mg SC a cada 24 h em SCASSST; IAMCSST sem ICP primária: 2,5 mg IV inicial, depois 2,5 mg SC 24/24 h no PCDT anexado.",
+    "route": "SC; dose inicial IV em cenário específico do PCDT.",
+    "prep": "Solução injetável conforme apresentação.",
+    "monitor": "Sangramento e função renal.",
+    "alerts": "Não usar como único antitrombínico na sala de hemodinâmica; pode exigir HNF associada na ICP.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "Atendimento à SCA — cartaz UFMG (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 57,
+    "name": "Heparina não fracionada",
+    "aliases": [
+      "hnf"
+    ],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "SCA: bolus 60 U/kg (máx. 4.000 U) + 12 U/kg/h (máx. 1.000 U/h), titulada por TTPa. ICP: 70–100 U/kg ou 50–60 U/kg com GP IIb/IIIa em material SOCESP.",
+    "route": "EV.",
+    "prep": "Bolus + infusão contínua conforme protocolo.",
+    "monitor": "TTPa/TCA conforme cenário, sangramento e plaquetas.",
+    "alerts": "Dose varia com estratégia de reperfusão/ICP e uso de inibidores GP IIb/IIIa.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 58,
+    "name": "Rivaroxabana",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 59,
+    "name": "Varfarina",
+    "aliases": [],
+    "class": "Anticoagulantes",
+    "context": "Anticoagulação em SCA, tromboembolismo e/ou situações de reperfusão conforme os documentos em que o fármaco é citado.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021",
+      "Passo a passo do atendimento agudo do AVC (2021)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 60,
+    "name": "Alteplase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "IAMCSST no cartaz anexado: ≥65 kg: 15 mg bolus + 50 mg/30 min + 35 mg/60 min; <65 kg: 15 mg bolus + 0,75 mg/kg/30 min + 0,5 mg/kg/60 min. O guia ACLS também cita 50 mg EV em TEP em contexto específico.",
+    "route": "EV.",
+    "prep": "Regime depende da indicação.",
+    "monitor": "Sangramento, reperfusão e contraindicações formais.",
+    "alerts": "Esquema depende de IAM, AVC ou TEP; nunca transportar uma dose de uma indicação para outra.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 61,
+    "name": "Estreptoquinase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021",
+      "Atendimento à SCA — cartaz UFMG (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 62,
+    "name": "Tenecteplase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Atualização SCA — SOCESP 2016",
+      "PCDT/Conitec — AVC isquêmico agudo 2021",
+      "SCA-short"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 63,
+    "name": "Uroquinase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Atualização SCA — SOCESP 2016",
+      "zeluiz,+v31n2a08"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 64,
+    "name": "Duteplase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em revisão/estratégia bibliográfica do material de AVC; não é apresentada como recomendação operacional no protocolo.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 65,
+    "name": "Reteplase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em revisão/estratégia bibliográfica; não há posologia operacional consolidada no corpus usado aqui.",
+    "sources": [
+      "Atualização SCA — SOCESP 2016"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 66,
+    "name": "Saruplase",
+    "aliases": [],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em revisão/estratégia bibliográfica; não há posologia operacional consolidada no corpus usado aqui.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 67,
+    "name": "Lumbroquinase",
+    "aliases": [
+      "lumbrokinase"
+    ],
+    "class": "Fibrinolíticos / trombolíticos",
+    "context": "Reperfusão/trombólise em SCA, AVC ou TEP quando o documento o aborda; alguns itens aparecem apenas em revisão/estratégia bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em revisão/estratégia bibliográfica; não é apresentada como terapia operacional padrão no protocolo anexado.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 68,
+    "name": "Atenolol",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 69,
+    "name": "Bisoprolol",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 70,
+    "name": "Carvedilol",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 71,
+    "name": "Digoxina",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Aparece no ACLS e em toxicologia; a biblioteca não atribui uma dose única porque o corpus a aborda em contextos diferentes.",
+    "route": "VO/EV conforme indicação; não padronizado aqui.",
+    "prep": "—",
+    "monitor": "ECG, K+, função renal e nível sérico quando indicado.",
+    "alerts": "Toxicidade por digoxina possui antídoto específico citado no CIATox.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "zeluiz,+v36n2-4a16",
+      "210"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 72,
+    "name": "Diltiazem",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "15–20 mg (0,25 mg/kg) IV em 2 min; se necessário após 15 min, 20–25 mg (0,35 mg/kg) IV em 2 min.",
+    "route": "EV.",
+    "prep": "Bolus lento.",
+    "monitor": "PA, ECG e resposta ventricular.",
+    "alerts": "Bloqueador de canal de cálcio não di-hidropiridínico; evitar em contextos inadequados de taquicardia de QRS largo/pré-excitação.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 73,
+    "name": "Dinitrato de isossorbida",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Citado em SCA/angina; posologia depende do protocolo e não foi consolidada de forma única nos trechos desta biblioteca.",
+    "route": "Sublingual/VO conforme formulação.",
+    "prep": "—",
+    "monitor": "PA e sintomas.",
+    "alerts": "Aplicam-se precauções de nitratos: hipotensão, infarto de VD e uso recente de PDE-5.",
+    "sources": [
+      "PCDT Síndromes Coronarianas Agudas (anexo)"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 74,
+    "name": "Metoprolol",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 75,
+    "name": "Propranolol",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "dorlivete,+e8811931676-min"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 76,
+    "name": "Verapamil",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "2,5–5 mg IV lentamente em 2 min; o manual recomenda 3–4 min em idosos/PA limítrofe.",
+    "route": "EV lenta.",
+    "prep": "Infusão lenta.",
+    "monitor": "PA e ECG.",
+    "alerts": "Usar apenas no contexto adequado de taquiarritmia supraventricular; risco de hipotensão/bloqueio AV.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 77,
+    "name": "Sildenafil",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Citado principalmente como interação/contraindicação com nitratos; não há posologia terapêutica para disfunção erétil no corpus.",
+    "route": "VO.",
+    "prep": "—",
+    "monitor": "—",
+    "alerts": "Uso recente contraindica nitratos por risco de hipotensão grave no contexto dos anexos.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "SCA-short",
+      "Manejo+inicial+da+Síndrome+Coronariana+Aguda+no+depar-tamento+de+emergência"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 78,
+    "name": "Tadalafil",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Citado principalmente como interação/contraindicação com nitratos; não há posologia terapêutica no corpus.",
+    "route": "VO.",
+    "prep": "—",
+    "monitor": "—",
+    "alerts": "Uso recente contraindica nitratos; duração da interação pode ser mais prolongada.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Manejo+inicial+da+Síndrome+Coronariana+Aguda+no+depar-tamento+de+emergência"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 79,
+    "name": "Vardenafil",
+    "aliases": [],
+    "class": "Cardiovasculares — betabloqueio, cálcio e outros",
+    "context": "Controle de frequência/pressão, angina, insuficiência cardíaca ou interações relevantes, conforme o contexto documental.",
+    "dose": "Citado principalmente como interação/contraindicação com nitratos; não há posologia terapêutica no corpus.",
+    "route": "VO.",
+    "prep": "—",
+    "monitor": "—",
+    "alerts": "Uso recente contraindica nitratos por risco de hipotensão grave.",
+    "sources": [
+      "PCDT Síndromes Coronarianas Agudas (anexo)"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 80,
+    "name": "Captopril",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 81,
+    "name": "Enalapril",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 82,
+    "name": "Eplerenona",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 83,
+    "name": "Espironolactona",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "O corpus a cita como antagonista de aldosterona/poupador de K+ e em IC; não há posologia única operacional consolidada nos trechos usados para esta biblioteca.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "K+ e função renal.",
+    "alerts": "Risco de hipercalemia; o próprio material DHE a lista entre fármacos associados a hiperpotassemia.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Insuficiência Cardíaca Aguda — UERJ (anexo)",
+      "Insuficiência Cardíaca Aguda — Emergências Médicas (anexo)"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 84,
+    "name": "Lisinopril",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 85,
+    "name": "Ramipril",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 86,
+    "name": "Valsartana",
+    "aliases": [],
+    "class": "Sistema renina-angiotensina-aldosterona",
+    "context": "Pós-IAM, insuficiência cardíaca, hipertensão e/ou redução de remodelamento conforme os anexos cardiovasculares.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 87,
+    "name": "Acetazolamida",
+    "aliases": [],
+    "class": "Diuréticos",
+    "context": "Congestão/insuficiência cardíaca e distúrbios hidroeletrolíticos; alguns são citados também como causa de alterações do potássio/sódio.",
+    "dose": "O corpus a cita em distúrbios ácido-base e como causa de acidose metabólica por perda renal de bicarbonato; não há dose operacional consolidada nesta biblioteca.",
+    "route": "Não especificada de forma operacional no corpus utilizado aqui.",
+    "prep": "—",
+    "monitor": "Eletrólitos e equilíbrio ácido-base quando usada clinicamente.",
+    "alerts": "Pode causar/agravar acidose metabólica hiperclorêmica.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "zeluiz,+v36n2-4a16",
+      "(PDF) Abordagem clínica dos distúrbios do equilíbrio ácido-base"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 88,
+    "name": "Amilorida",
+    "aliases": [],
+    "class": "Diuréticos",
+    "context": "Congestão/insuficiência cardíaca e distúrbios hidroeletrolíticos; alguns são citados também como causa de alterações do potássio/sódio.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 89,
+    "name": "Furosemida",
+    "aliases": [],
+    "class": "Diuréticos",
+    "context": "Congestão/insuficiência cardíaca e distúrbios hidroeletrolíticos; alguns são citados também como causa de alterações do potássio/sódio.",
+    "dose": "PCDT anexado cita 40–80 mg IV em edema agudo de pulmão; em DHE há reposicionamento de diuréticos conforme K+/volemia.",
+    "route": "EV ou outras vias conforme contexto; dose citada é EV.",
+    "prep": "Sem diluição específica padronizada no resumo do corpus.",
+    "monitor": "Diurese, PA, Na+, K+, função renal e volume.",
+    "alerts": "Individualizar por congestão, função renal e uso prévio de diurético.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "PCDT Síndromes Coronarianas Agudas (anexo)",
+      "Distúrbios hidroeletrolíticos (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 90,
+    "name": "Hidroclorotiazida",
+    "aliases": [],
+    "class": "Diuréticos",
+    "context": "Congestão/insuficiência cardíaca e distúrbios hidroeletrolíticos; alguns são citados também como causa de alterações do potássio/sódio.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 91,
+    "name": "Triamtereno",
+    "aliases": [
+      "triamterene"
+    ],
+    "class": "Diuréticos",
+    "context": "Congestão/insuficiência cardíaca e distúrbios hidroeletrolíticos; alguns são citados também como causa de alterações do potássio/sódio.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 92,
+    "name": "Atorvastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Passo a passo do atendimento agudo do AVC (2021)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 93,
+    "name": "Clofibrato",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 94,
+    "name": "Ezetimiba",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 95,
+    "name": "Fluvastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 96,
+    "name": "Lovastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 97,
+    "name": "Pitavastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 98,
+    "name": "Pravastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 99,
+    "name": "Rosuvastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Passo a passo do atendimento agudo do AVC (2021)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 100,
+    "name": "Sinvastatina",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Passo a passo do atendimento agudo do AVC (2021)"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 101,
+    "name": "Ácido nicotínico",
+    "aliases": [],
+    "class": "Hipolipemiantes",
+    "context": "Prevenção secundária e controle lipídico no contexto de doença coronariana/SCA.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 102,
+    "name": "Dapagliflozina",
+    "aliases": [
+      "dapaglifozina"
+    ],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Citada em prevenção/insuficiência cardíaca no manual SOCERJ; o texto menciona benefício do DAPA-HF, mas não fornece posologia operacional no trecho consolidado.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Função renal, volume e cetose em contextos apropriados.",
+    "alerts": "Não extrapolar a dose a partir do estudo citado sem protocolo específico.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 103,
+    "name": "Insulina degludeca",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Diretriz CAD afirma que não é recomendada para iniciar a transição imediata após CAD por sua meia-vida/duração muito longas e demora para estado de equilíbrio.",
+    "route": "SC.",
+    "prep": "Caneta conforme produto.",
+    "monitor": "Glicemia.",
+    "alerts": "No cenário de recuperação da CAD, o documento prefere outras basais para transição imediata.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 104,
+    "name": "Insulina detemir",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Diretriz CAD cita detemir como insulina basal de ação prolongada para transição; dose individualizada.",
+    "route": "SC.",
+    "prep": "Conforme apresentação.",
+    "monitor": "Glicemia.",
+    "alerts": "Integrar ao esquema basal-bolus conforme necessidade.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 105,
+    "name": "Insulina glargina",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Diretriz CAD cita glargina como insulina basal de ação prolongada para transição/recuperação; dose deve ser individualizada.",
+    "route": "SC.",
+    "prep": "Caneta/frasco conforme produto.",
+    "monitor": "Glicemia.",
+    "alerts": "Evitar interrupção abrupta de insulina basal na transição da infusão IV.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 106,
+    "name": "Insulina NPH",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Diretriz CAD cita NPH como insulina humana de ação intermediária usada na transição; dose individualizada.",
+    "route": "SC.",
+    "prep": "Suspensão; homogeneizar conforme técnica do produto.",
+    "monitor": "Glicemia.",
+    "alerts": "Risco de hipoglicemia; sincronizar com alimentação/estratégia basal.",
+    "sources": [
+      "MODELO+DE+ARTIGO+BJIHS+(11)+(1)cd"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 107,
+    "name": "Insulina regular",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Hipercalemia: 10 UI IV + 25 g de glicose no guia anexado. CAD: infusão IV e ajustes conforme protocolo da SBD; determinação do K+ deve preceder insulina.",
+    "route": "EV em hipercalemia/CAD; SC em outros contextos.",
+    "prep": "Em CAD, seguir protocolo específico e cuidados com adsorção no equipo descritos na diretriz.",
+    "monitor": "Glicemia e K+ de forma seriada.",
+    "alerts": "Risco de hipoglicemia e hipocalemia; não iniciar na CAD com K+ criticamente baixo até correção conforme protocolo.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Protocolo de cetoacidose diabética (anexo)",
+      "MODELO+DE+ARTIGO+BJIHS+(11)+(1)cd",
+      "edital s s",
+      "BJD+052"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 108,
+    "name": "Ácido clorídrico",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "2-abordagem-acc81cido-base-sbem-corrig-23"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 109,
+    "name": "Bicarbonato de sódio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Guia ACLS anexado: 1–1,5 mEq/kg EV em indicações específicas (ex.: tricíclicos/acidose grave). CAD: diretriz reserva bicarbonato para acidose grave; o esquema depende do pH/protocolo.",
+    "route": "EV.",
+    "prep": "Apresentações variam (ex.: 8,4% no guia).",
+    "monitor": "Gasometria, Na+, K+, pH e volume.",
+    "alerts": "Não é droga de rotina universal na PCR; usar somente em indicação definida.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "adrian,+VITTALLE3316",
+      "cristina,+Gerente+da+revista,+Revisão (1)",
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 110,
+    "name": "Cloreto de amônio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 111,
+    "name": "Cloreto de cálcio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Citado como alternativa de cálcio em contextos de emergência; a posologia operacional não está consolidada de forma única nos anexos desta biblioteca.",
+    "route": "EV, com atenção ao acesso.",
+    "prep": "Confirmar concentração e protocolo.",
+    "monitor": "ECG e cálcio sérico conforme indicação.",
+    "alerts": "Maior potencial de lesão tecidual em extravasamento; preferir acesso adequado.",
+    "sources": [
+      "ACLS-2020-PORTUGUES",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 112,
+    "name": "Cloreto de potássio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Guia ACLS anexado: KCl 19,1% em hipocalemia grave — dose inicial 2 mEq/min por 10 min; manutenção 0,5–1 mEq por 10 min. Diretriz CAD: 10–30 mEq/L por hora quando indicado.",
+    "route": "EV em reposição monitorizada; VO também aparece em DHE leve.",
+    "prep": "Concentração e diluição devem ser rigorosamente verificadas; material pediátrico cita KCl 6% VO 3–5 mEq/kg/dia em hipocalemia leve.",
+    "monitor": "ECG, K+ sérico, função renal e débito urinário.",
+    "alerts": "Fármaco de alto risco; não administrar em bolus IV não diluído.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "edital s s",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 113,
+    "name": "Fosfato de potássio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 114,
+    "name": "Glicerofosfato",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 115,
+    "name": "Gluconato de cálcio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Há divergência no corpus: revisão DHE usa 10 mL de solução 10% IV lentamente; guia ACLS cita 20–30 mL 10% a cada 2–5 min em hipercalemia.",
+    "route": "EV.",
+    "prep": "Solução a 10%.",
+    "monitor": "ECG e resposta das alterações elétricas.",
+    "alerts": "Estabiliza membrana; não reduz K+ sérico. A biblioteca exibe a divergência em vez de escolher silenciosamente uma dose.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "ACLS: O guia de bolso (anexo)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 116,
+    "name": "Lactato de sódio",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 117,
+    "name": "Manitol",
+    "aliases": [],
+    "class": "Eletrólitos, ácido-base e correção metabólica",
+    "context": "Correção de distúrbios de K+, Ca2+, Na+ e ácido-base, conforme indicação específica.",
+    "dose": "Citado em distúrbios/hipernatremia como soluto osmótico; posologia terapêutica não consolidada nos trechos da biblioteca.",
+    "route": "EV quando usado clinicamente.",
+    "prep": "—",
+    "monitor": "Osmolaridade, Na+, função renal e volume.",
+    "alerts": "Pode causar diurese osmótica e alterações hidroeletrolíticas.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Distúrbios hidroeletrolíticos (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Passo a passo do atendimento agudo do AVC (2021)",
+      "Protocolo de cetoacidose diabética (anexo)"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 118,
+    "name": "Ácido valproico",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 119,
+    "name": "Azul de metileno",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citado como antídoto em materiais toxicológicos; posologia não consolidada de forma operacional nesta biblioteca.",
+    "route": "Conforme protocolo específico.",
+    "prep": "—",
+    "monitor": "Oximetria/hemólise e resposta, conforme indicação.",
+    "alerts": "Indicação depende da toxsíndrome/agente; não tratar como antídoto universal.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 120,
+    "name": "Carbamazepina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "zeluiz,+v36n2-4a16",
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 121,
+    "name": "Carvão ativado",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "O CIATox cita carvão ativado e múltiplas doses em intoxicações selecionadas; a dose operacional não está consolidada de forma única nesta biblioteca.",
+    "route": "Enteral/oral quando indicado e via aérea protegida.",
+    "prep": "Suspensão conforme protocolo toxicológico.",
+    "monitor": "Via aérea, risco de aspiração e evolução toxicológica.",
+    "alerts": "Não usar indiscriminadamente; indicação depende da substância, tempo e risco de aspiração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "VSPEA — diagnóstico de intoxicações (anexo)",
+      "210"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 122,
+    "name": "Cloroquina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 123,
+    "name": "Dapsona",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 124,
+    "name": "Deferoxamina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citada como quelante na intoxicação por ferro; dose não detalhada no trecho consolidado.",
+    "route": "Conforme protocolo toxicológico.",
+    "prep": "—",
+    "monitor": "Quadro clínico, ferro sérico e resposta.",
+    "alerts": "Aplicação requer confirmação de indicação e protocolo de toxicologia.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 125,
+    "name": "EDTA / edetato",
+    "aliases": [
+      "edta",
+      "edetato"
+    ],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citado como quelante para chumbo no CIATox; dose não detalhada no trecho consolidado.",
+    "route": "Conforme protocolo de quelação.",
+    "prep": "—",
+    "monitor": "Plumbemia, função renal e parâmetros de quelação.",
+    "alerts": "Não extrapolar sem protocolo específico.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 126,
+    "name": "Etanol",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citado como antídoto alternativo em etilenoglicol no CIATox; posologia não detalhada no trecho consolidado.",
+    "route": "Conforme protocolo toxicológico.",
+    "prep": "—",
+    "monitor": "Etanol sérico e parâmetros toxicológicos quando utilizado.",
+    "alerts": "Não usar sem protocolo específico; fomepizol também é citado.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "2-abordagem-acc81cido-base-sbem-corrig-23"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 127,
+    "name": "Fenitoína",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 128,
+    "name": "Fenobarbital",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 129,
+    "name": "Fomepizol",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citado no CIATox como opção em intoxicação por etilenoglicol; posologia não detalhada no trecho consolidado.",
+    "route": "Não especificada no trecho consolidado.",
+    "prep": "—",
+    "monitor": "Estado ácido-base, osmolar gap e função renal conforme intoxicação.",
+    "alerts": "O material também cita etanol e hemodiálise; seguir protocolo toxicológico específico.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 130,
+    "name": "Haloperidol",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 131,
+    "name": "Isoniazida",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 132,
+    "name": "Lítio",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 133,
+    "name": "N-acetilcisteína",
+    "aliases": [
+      "acetilcisteína",
+      "acetilcisteina"
+    ],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citada como antídoto do paracetamol nos materiais toxicológicos; os anexos recuperados para esta biblioteca não fornecem um esquema posológico único completo.",
+    "route": "EV ou VO conforme protocolo específico.",
+    "prep": "Seguir protocolo toxicológico da instituição.",
+    "monitor": "Transaminases, INR, paracetamol sérico e reações à infusão conforme contexto.",
+    "alerts": "A posologia depende do protocolo de 2/3 bolsas ou esquema oral; não inferida aqui por falta de esquema completo no corpus recuperado.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 134,
+    "name": "Nalorfina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 135,
+    "name": "Naloxona",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citada como antagonista opioide nos materiais; a dose operacional completa não foi padronizada nos trechos utilizados para a biblioteca.",
+    "route": "EV/IM/IN conforme protocolo local; vias específicas não são detalhadas de forma uniforme no corpus.",
+    "prep": "—",
+    "monitor": "Ventilação, consciência e recorrência de depressão respiratória.",
+    "alerts": "Titular ao objetivo de restaurar ventilação; pode precipitar abstinência em dependência opioide.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "poligrafo_4_-_disturbios_ac_base_-",
+      "ACLS-2020-PORTUGUES"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 136,
+    "name": "Paracetamol / acetaminofeno",
+    "aliases": [
+      "paracetamol",
+      "acetaminofeno"
+    ],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 137,
+    "name": "Sulfato ferroso",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 138,
+    "name": "Teofilina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "210"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 139,
+    "name": "Tioridazina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 140,
+    "name": "Tiamina",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citada em toxicologia; posologia não consolidada de forma operacional nos trechos usados.",
+    "route": "Conforme protocolo.",
+    "prep": "—",
+    "monitor": "Resposta neurológica/metabólica conforme contexto.",
+    "alerts": "Aplicação depende da indicação específica.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 141,
+    "name": "Anticorpo específico antidigoxina",
+    "aliases": [
+      "anticorpos específicos antidigoxina",
+      "anticorpos especificos antidigoxina",
+      "antidigoxina"
+    ],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "Citado como antídoto da digoxina no CIATox; o cálculo por quantidade ingerida/nível sérico não está explicitado no trecho consolidado.",
+    "route": "EV.",
+    "prep": "Produto biológico específico.",
+    "monitor": "ECG, K+, digoxina e resposta clínica.",
+    "alerts": "Dose depende da carga corporal de digoxina e do cenário; confirmar protocolo/bula.",
+    "sources": [
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 142,
+    "name": "Ciclofosfamida",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 143,
+    "name": "Clorpropamida",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 144,
+    "name": "Clozapina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 145,
+    "name": "Fluoxetina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 146,
+    "name": "Olanzapina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 147,
+    "name": "Quetiapina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 148,
+    "name": "Risperidona",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 149,
+    "name": "Sertralina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 150,
+    "name": "Metformina",
+    "aliases": [],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Manual SOCERJ cita metformina como primeira escolha entre antidiabéticos na ausência de contraindicações; o trecho não fornece posologia operacional.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Função renal, glicemia e tolerância conforme protocolo.",
+    "alerts": "O card preserva a indicação contextual do documento sem inventar dose ausente.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Atualização SCA — SOCESP 2016",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "cristina,+Gerente+da+revista,+Revisão (1)"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 151,
+    "name": "Vincristina",
+    "aliases": [],
+    "class": "Psicofármacos e fármacos citados como precipitantes",
+    "context": "Citações como precipitantes, causas, interações ou exemplos; não necessariamente indicação terapêutica no material.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 152,
+    "name": "Anfotericina B",
+    "aliases": [],
+    "class": "Antimicrobianos citados",
+    "context": "Menções específicas em capítulos de distúrbios/metabolismo; não constituem esquema antimicrobiano universal no corpus.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 153,
+    "name": "Carbenicilina",
+    "aliases": [],
+    "class": "Antimicrobianos citados",
+    "context": "Menções específicas em capítulos de distúrbios/metabolismo; não constituem esquema antimicrobiano universal no corpus.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 154,
+    "name": "Penicilina",
+    "aliases": [],
+    "class": "Antimicrobianos citados",
+    "context": "Menções específicas em capítulos de distúrbios/metabolismo; não constituem esquema antimicrobiano universal no corpus.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "adrian,+VITTALLE3316",
+      "Sepse atualidades e perspectivas"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 155,
+    "name": "Acetilcolina",
+    "aliases": [],
+    "class": "Outros agentes farmacológicos",
+    "context": "Agentes usados em testes, broncodilatação ou outros contextos específicos nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "VSPEA — diagnóstico de intoxicações (anexo)",
+      "SCA-short"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 156,
+    "name": "Aminofilina",
+    "aliases": [],
+    "class": "Outros agentes farmacológicos",
+    "context": "Agentes usados em testes, broncodilatação ou outros contextos específicos nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 157,
+    "name": "Cafeína",
+    "aliases": [],
+    "class": "Outros agentes farmacológicos",
+    "context": "Agentes usados em testes, broncodilatação ou outros contextos específicos nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "poligrafo_4_-_disturbios_ac_base_-"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 158,
+    "name": "Ergonovina",
+    "aliases": [],
+    "class": "Outros agentes farmacológicos",
+    "context": "Agentes usados em testes, broncodilatação ou outros contextos específicos nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "O item aparece como menção, causa, exemplo ou referência; os anexos não sustentam uma prescrição operacional independente.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "SCA-short"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 159,
+    "name": "Terbutalina",
+    "aliases": [],
+    "class": "Outros agentes farmacológicos",
+    "context": "Agentes usados em testes, broncodilatação ou outros contextos específicos nos anexos.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "A presença do fármaco no corpus não significa indicação universal. Verifique contexto, contraindicações e atualização do protocolo antes da administração.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD"
+    ],
+    "status": "Menção no corpus — sem dose operacional consolidada"
+  },
+  {
+    "id": 160,
+    "name": "Bupropiona",
+    "aliases": [],
+    "class": "Tratamento do tabagismo",
+    "context": "Cessação do tabagismo e prevenção cardiovascular secundária.",
+    "dose": "Citada no tratamento farmacológico do tabagismo no manual de SCA; posologia completa não consolidada nos trechos desta biblioteca.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Efeitos adversos e contraindicações.",
+    "alerts": "Verificar histórico de convulsões e outras contraindicações em protocolo específico antes de prescrever.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 161,
+    "name": "Nicotina",
+    "aliases": [],
+    "class": "Tratamento do tabagismo",
+    "context": "Cessação do tabagismo e prevenção cardiovascular secundária.",
+    "dose": "Terapia de reposição de nicotina é citada em formas transdérmica, goma/pastilha no manual de SCA; esquema depende do grau de dependência.",
+    "route": "Transdérmica/oromucosa conforme formulação.",
+    "prep": "Adesivo, goma ou pastilha.",
+    "monitor": "Sintomas de abstinência e efeitos adversos.",
+    "alerts": "A dose deve ser individualizada pelo consumo/dependência; não inferida nesta biblioteca.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 162,
+    "name": "Vareniclina",
+    "aliases": [],
+    "class": "Tratamento do tabagismo",
+    "context": "Cessação do tabagismo e prevenção cardiovascular secundária.",
+    "dose": "Citada no tratamento do tabagismo; posologia não consolidada nos trechos desta biblioteca.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Tolerância e efeitos adversos.",
+    "alerts": "Confirmar esquema de titulação e contraindicações em fonte específica antes de prescrever.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 163,
+    "name": "Albumina",
+    "aliases": [],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Citada em protocolos de sepse/choque e avaliação clínica; não há dose universal no corpus.",
+    "route": "EV.",
+    "prep": "Solução de albumina conforme concentração disponível.",
+    "monitor": "Hemodinâmica, balanço hídrico e contexto clínico.",
+    "alerts": "Uso depende de indicação e estratégia volêmica; não substituir cristaloide de rotina sem indicação específica.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Insuficiência Cardíaca Aguda — Emergências Médicas (anexo)",
+      "adrian,+VITTALLE3316"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 164,
+    "name": "Glicose / dextrose",
+    "aliases": [
+      "glicose",
+      "dextrose"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Hipercalemia: 25 g de glicose com 10 UI de insulina regular no guia ACLS anexado. Outros protocolos usam soluções de glicose para manutenção/ajuste da insulinoterapia.",
+    "route": "EV.",
+    "prep": "Concentração depende da apresentação e do cenário; os anexos também citam SG 5% e 10% como soluções.",
+    "monitor": "Glicemia.",
+    "alerts": "Ajustar para evitar hiperglicemia/hipoglicemia; não confundir quantidade em gramas com volume da solução.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Abordagem inicial ao intoxicado — CIATox-ES 2021",
+      "Distúrbios hidroeletrolíticos (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 165,
+    "name": "Glicose 5%",
+    "aliases": [
+      "glicose a 5%",
+      "sg 5%"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Usada como solução/veículo em múltiplas diluições do manual FMC e em manutenção metabólica; volume depende do cenário.",
+    "route": "EV.",
+    "prep": "SG 5% pronta; também usada como diluente de DVA/sedativos em tabelas específicas.",
+    "monitor": "Glicemia, Na+ e volume.",
+    "alerts": "Não confundir função de diluente com dose terapêutica de glicose.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Protocolo de cetoacidose diabética (anexo)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 166,
+    "name": "Glicose 10%",
+    "aliases": [
+      "glicose a 10%",
+      "sg 10%"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Solução glicosada citada em protocolos metabólicos; volume/dose dependem da necessidade de glicose e do cenário.",
+    "route": "EV.",
+    "prep": "SG 10% pronta.",
+    "monitor": "Glicemia e balanço hídrico.",
+    "alerts": "Titular à glicemia e à insulinoterapia.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Protocolo de cetoacidose diabética (anexo)",
+      "Sepse atualidades e perspectivas"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 167,
+    "name": "Empagliflozina",
+    "aliases": [
+      "empaglifozina"
+    ],
+    "class": "Diabetes e insulinoterapia",
+    "context": "CAD/EHH, transição de insulina e/ou cardiometabolismo, conforme os anexos.",
+    "dose": "Manual SOCERJ cita empagliflozina no contexto do estudo EMPA-REG e benefício cardiovascular; o trecho não fornece posologia operacional.",
+    "route": "VO.",
+    "prep": "Comprimidos.",
+    "monitor": "Função renal, volume e sinais de cetose conforme contexto.",
+    "alerts": "A citação de benefício no estudo não equivale a posologia; confirmar protocolo específico.",
+    "sources": [
+      "Manual de Síndrome Coronariana Aguda — SOCERJ 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 168,
+    "name": "NaCl 0,45%",
+    "aliases": [
+      "nacl 0.45%",
+      "cloreto de sódio (nacl) 0,45%",
+      "salina hipotônica"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "CAD com hipernatremia corrigida ≥150 mEq/L: 250–500 mL/h deve ser considerado na diretriz SBD anexada.",
+    "route": "EV.",
+    "prep": "Solução hipotônica 0,45%.",
+    "monitor": "Na+ corrigido, osmolaridade, hemodinâmica e diurese.",
+    "alerts": "Evitar correções osmóticas rápidas; contexto e velocidade dependem do quadro clínico.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "edital s s"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 169,
+    "name": "NaCl 0,9%",
+    "aliases": [
+      "nacl 0.9%",
+      "sf 0,9%",
+      "soro fisiológico"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "CAD: 15–20 mL/kg na primeira hora, na ausência de comprometimento cardíaco/renal, segundo diretriz SBD anexada.",
+    "route": "EV.",
+    "prep": "Solução isotônica 0,9% pronta.",
+    "monitor": "Hemodinâmica, diurese, Na+, Cl− e estado volêmico.",
+    "alerts": "A escolha subsequente de fluidos depende de eletrólitos, diurese e risco de acidose hiperclorêmica.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)",
+      "Manual ACLS — 5ª edição (anexo)",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Distúrbios hidroeletrolíticos (anexo)",
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 170,
+    "name": "NaCl 3%",
+    "aliases": [
+      "cloreto de sódio a 3%",
+      "salina hipertônica"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Material DHE anexado descreve salina 3% em hiponatremia grave, com preparo e limites de velocidade históricos; usar protocolo atual/institucional para aplicação clínica.",
+    "route": "EV.",
+    "prep": "Texto anexado descreve preparo a partir de SF + NaCl concentrado; concentração final 3%.",
+    "monitor": "Na+ seriado e exame neurológico.",
+    "alerts": "Risco de desmielinização osmótica se correção rápida; o material é histórico e deve ser confrontado com protocolo atual.",
+    "sources": [
+      "Distúrbios hidroeletrolíticos — Jornal de Pediatria (anexo)",
+      "Passo a passo do atendimento agudo do AVC (2021)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 171,
+    "name": "Idarucizumab",
+    "aliases": [],
+    "class": "Toxicologia e antídotos",
+    "context": "Intoxicações, antídotos, descontaminação ou substâncias-alvo citadas nos materiais de toxicologia.",
+    "dose": "PCDT/Conitec de AVC cita idarucizumab como agente reversor do dabigatran antes de trombólise em pacientes selecionados; a dose não é detalhada no trecho consolidado desta biblioteca.",
+    "route": "EV.",
+    "prep": "Agente reversor específico.",
+    "monitor": "Coagulação, sangramento e contexto de trombólise.",
+    "alerts": "Usar somente quando houver indicação formal de reversão do dabigatran e protocolo adequado.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Contexto explícito no corpus — dose não consolidada"
+  },
+  {
+    "id": 172,
+    "name": "Ringer lactato",
+    "aliases": [
+      "ringer com lactato"
+    ],
+    "class": "Soluções e produtos terapêuticos",
+    "context": "Reposição volêmica, manutenção, correção eletrolítica ou veículo/diluente, conforme os protocolos anexados.",
+    "dose": "Diretriz CAD anexada considera soluções balanceadas e relata associação com resolução mais rápida da CAD em comparação à salina isotônica.",
+    "route": "EV.",
+    "prep": "Solução balanceada pronta.",
+    "monitor": "Hemodinâmica, eletrólitos e estado volêmico.",
+    "alerts": "Escolha de fluido deve considerar eletrólitos, função renal/cardiovascular e protocolo.",
+    "sources": [
+      "Manual ACLS — 5ª edição (anexo)",
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "Sepse — ILAS/CFM (anexo)",
+      "zeluiz,+v36n2-4a16"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 173,
+    "name": "Flumazenil",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Manual FMC: 0,3 mg IV, sem diluição, como antídoto de benzodiazepínicos no trecho de midazolam.",
+    "route": "EV.",
+    "prep": "Apresentação citada: 0,5 mg/5 mL; sem diluição.",
+    "monitor": "Consciência, ventilação e convulsões.",
+    "alerts": "Uso de antagonista benzodiazepínico exige seleção cuidadosa em intoxicações; o manual traz a dose, mas não um algoritmo toxicológico completo.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 174,
+    "name": "Glucagon",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Material anexado cita glucagon em hipoglicemia grave; a dose varia com idade/peso no protocolo de origem.",
+    "route": "IM/SC/EV conforme protocolo, dependendo da apresentação.",
+    "prep": "Confirmar apresentação do produto.",
+    "monitor": "Glicemia e resposta neurológica.",
+    "alerts": "Depois da recuperação, fornecer carboidrato e investigar causa da hipoglicemia.",
+    "sources": [
+      "Diretriz SBD — Diagnóstico e tratamento da CAD",
+      "cristina,+Gerente+da+revista,+Revisão (1)",
+      "Protocolo de cetoacidose diabética (anexo)",
+      "MODELO+DE+ARTIGO+BJIHS+(11)+(1)cd",
+      "zeluiz,+v31n3a02"
+    ],
+    "status": "Dados operacionais explícitos no corpus"
+  },
+  {
+    "id": 175,
+    "name": "Nordiazepam",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Metabólito ativo do diazepam citado no manual; não apresentado como prescrição independente.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 176,
+    "name": "Temazepam",
+    "aliases": [
+      "temazepan"
+    ],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Metabólito ativo do diazepam citado no manual; não apresentado como prescrição independente.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 177,
+    "name": "Oxazepam",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Metabólito ativo do diazepam citado no manual; não apresentado como prescrição independente.",
+    "sources": [
+      "Manual de Emergências — DVA, Analgesia, Sedação e BNM (FMC, 2022)"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 178,
+    "name": "Desmoteplase",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em estratégia de busca/revisão do relatório de AVC; não é recomendação operacional do documento.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 179,
+    "name": "Prouroquinase",
+    "aliases": [
+      "pro-uroquinase",
+      "pro-urokinase",
+      "rescupase"
+    ],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Aparece em estratégia bibliográfica (incluindo pro-urokinase/Rescupase); não é prescrição operacional do protocolo anexado.",
+    "sources": [
+      "PCDT/Conitec — AVC isquêmico agudo 2021"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 180,
+    "name": "Cloreto de arginina",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Citado em distúrbios ácido-base como agente capaz de produzir acidose hiperclorêmica; não apresentado como prescrição de rotina.",
+    "sources": [
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  },
+  {
+    "id": 181,
+    "name": "Arginina",
+    "aliases": [],
+    "class": "Acréscimos da segunda varredura",
+    "context": "Itens localizados em revisão adicional do corpus; alguns são metabólitos ou aparecem apenas como referência bibliográfica.",
+    "dose": "Não há posologia operacional explícita e inequívoca consolidada nos anexos consultados para este item.",
+    "route": "Não especificada de forma operacional nos anexos consolidados.",
+    "prep": "Não especificada de forma operacional nos anexos consolidados.",
+    "monitor": "Não especificada de forma operacional nos anexos consolidados; consultar o protocolo clínico correspondente antes da aplicação.",
+    "alerts": "Citada em contexto metabólico/eletrolítico; não há posologia operacional consolidada nos trechos desta biblioteca.",
+    "sources": [
+      "adrian,+VITTALLE3316",
+      "Abordagem_clinica_dos_disturbios_do_equilibrio_aci",
+      "zeluiz,+v31n3a02",
+      "zeluiz,+v36n2-4a16",
+      "(PDF) Abordagem clínica dos distúrbios do equilíbrio ácido-base"
+    ],
+    "status": "Menção / referência — não usar como prescrição a partir deste card"
+  }
+]

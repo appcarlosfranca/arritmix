@@ -1,0 +1,23 @@
+ArritmiaX v1.4 — Foto/Câmera clínica
+
+ECG / Ritmos:
+- Escolher/tirar foto pelo seletor de imagem.
+- Abrir câmera ao vivo quando o navegador permitir.
+- Girar, ampliar e remover a imagem.
+- A foto permanece somente na sessão.
+- O laudo ECG continua sendo calculado pelos achados confirmados pelo usuário; a versão offline não finge diagnóstico autônomo por pixels.
+
+Gasometria:
+- Novo painel de foto/câmera antes dos campos.
+- A foto do impresso pode permanecer visível enquanto os valores são transcritos.
+- O laudo ácido-base é calculado a partir dos valores confirmados.
+
+Câmera em computador:
+- Navegadores geralmente bloqueiam getUserMedia em file://.
+- Para câmera ao vivo, execute Abrir_ArritmiaX_com_camera.bat (requer Python) ou sirva a pasta em http://localhost/HTTPS.
+- Em celular, o botão Escolher/tirar foto usa capture=environment quando suportado.
+
+Privacidade/desempenho:
+- Imagens não são salvas em localStorage.
+- Stream da câmera é iniciado somente ao clicar e encerrado ao fechar/ocultar a página.
+- Captura é reduzida a até 1800 px de largura e JPEG 0,88 para manter responsividade.
