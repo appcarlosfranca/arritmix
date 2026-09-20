@@ -1,0 +1,20 @@
+CF ArritmiX v1.8 — Release Candidate
+
+ALTERAÇÃO PRINCIPAL
+- Nova tela de abertura anterior ao app, com logo CF ArritmiX, brilho neon dinâmico, ECG animado, “Criado por Carlos França” e botão Acessar.
+- Abertura responsiva para desktop, tablet e celular.
+- A animação é baseada em CSS (transform/opacity/stroke), sem loop de JavaScript.
+
+PREFERÊNCIAS
+- Nova opção “Tela inicial neon” nas Configurações, ativada por padrão.
+
+PRESERVADO
+- 7 módulos: Live ACLS/PALS, Algoritmos, ECG/Ritmos, Fármacos, Guia Clínico, Gasometria e Treinador.
+- Biblioteca de 181 fármacos.
+- Biblioteca visual de algoritmos.
+- Leitores de ECG e gasometria, foto/câmera, configurações e demais funções da v1.7.
+
+QA
+- 25 blocos JavaScript verificados em index.html e standalone: zero erros de sintaxe.
+- Zero IDs duplicados.
+- Smoke test em Chromium: splash, botão Acessar, 7 módulos, Configurações e os 3 ramos hemodinâmicos do Live responderam sem console/page errors.

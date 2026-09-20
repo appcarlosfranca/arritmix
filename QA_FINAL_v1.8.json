@@ -1,0 +1,58 @@
+{
+  "version": "CF ArritmiX v1.8",
+  "status": "PASS",
+  "checks": {
+    "javascript_syntax": true,
+    "duplicate_ids": true,
+    "modules_present": true,
+    "tabs_present": true,
+    "splash_present": true,
+    "settings_splash_present": true,
+    "browser_console_errors": true,
+    "browser_page_errors": true,
+    "splash_interaction": true,
+    "all_modules_clickable": true,
+    "settings_open": true,
+    "live_triage_branches": true
+  },
+  "browser_smoke": {
+    "domcontentloaded_ms": 2029,
+    "splash_visible": true,
+    "access_visible": true,
+    "splash_removed_after_click": true,
+    "module_visibility": {
+      "live": true,
+      "algorithms": true,
+      "ecg": true,
+      "drugs": true,
+      "guide": true,
+      "gas": true,
+      "trainer": true
+    },
+    "settings_open": true,
+    "splash_setting_present": true,
+    "live_states": {
+      "arrest": {
+        "active": true,
+        "coach_visible": true,
+        "coach_excerpt": "← Voltar\nCICLO RCP\n02:00\nRecomeçar\nPCR • Reconhecimento\nComece a RCP antes de classificar o ritmo.\nFaça agora\nRCP 30:2 se sem via aérea avançada.\nConecte monitor/desfibrilador.\nObtenha acesso IV/IO e minimize interrupções.\nPASSO 2\nO ritmo é"
+      },
+      "unstable": {
+        "active": true,
+        "coach_visible": true,
+        "coach_excerpt": "← Voltar\nCICLO RCP\n02:00\nRecomeçar\nCom pulso • instável\nDefina se a alteração predominante é bradicardia ou taquicardia.\nATALHO HEMODINÂMICO\nO paciente tem pulso e está instável. Qual é a frequência predominante?\n\nA instabilidade já foi inf"
+      },
+      "stable": {
+        "active": true,
+        "coach_visible": true,
+        "coach_excerpt": "← Voltar\nCICLO RCP\n02:00\nRecomeçar\nCom pulso • estável\nDefina a faixa de frequência para abrir o ramo adequado.\nATALHO HEMODINÂMICO\nO paciente tem pulso e está estável. O que você observa?\n\nA estabilidade isoladamente não define o algoritmo"
+      }
+    },
+    "console_errors": [],
+    "page_errors": []
+  },
+  "notes": [
+    "Teste dinâmico executado em Chromium headless por injeção direta do standalone devido a bloqueio administrativo de navegação local no ambiente de teste.",
+    "A animação da abertura utiliza CSS compositor-friendly; não adiciona timers contínuos em JavaScript."
+  ]
+}

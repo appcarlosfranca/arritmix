@@ -1,0 +1,10 @@
+{
+  "index.html": {
+    "checked": 25,
+    "bad": []
+  },
+  "index_standalone.html": {
+    "checked": 25,
+    "bad": []
+  }
+}

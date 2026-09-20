@@ -1,0 +1,103 @@
+{
+  "version": "CF ArritmiX v1.8.1",
+  "checks": {
+    "javascript_syntax": {
+      "index.html": {
+        "checked": 25,
+        "errors": 0
+      },
+      "index_standalone.html": {
+        "checked": 25,
+        "errors": 0
+      }
+    },
+    "browser_smoke": [
+      {
+        "file": "index.html",
+        "splash_visible": true,
+        "body_has_literal_backslash_n": false,
+        "button_anim": "cfSplashButtonPulse",
+        "halo_anim": "cfSplashFloat",
+        "ecg_x_delta": -98.65,
+        "splash_after_access_visible": false,
+        "nav": [
+          [
+            "Live ACLS/PALS",
+            true
+          ],
+          [
+            "Algoritmos",
+            true
+          ],
+          [
+            "ECG / Ritmos",
+            true
+          ],
+          [
+            "Fármacos",
+            true
+          ],
+          [
+            "Guia Clínico",
+            true
+          ],
+          [
+            "Gasometria",
+            true
+          ],
+          [
+            "Treinador",
+            true
+          ]
+        ],
+        "errors": []
+      },
+      {
+        "file": "index_standalone.html",
+        "splash_visible": true,
+        "body_has_literal_backslash_n": false,
+        "button_anim": "cfSplashButtonPulse",
+        "halo_anim": "cfSplashFloat",
+        "ecg_x_delta": -92.06,
+        "splash_after_access_visible": false,
+        "nav": [
+          [
+            "Live ACLS/PALS",
+            true
+          ],
+          [
+            "Algoritmos",
+            true
+          ],
+          [
+            "ECG / Ritmos",
+            true
+          ],
+          [
+            "Fármacos",
+            true
+          ],
+          [
+            "Guia Clínico",
+            true
+          ],
+          [
+            "Gasometria",
+            true
+          ],
+          [
+            "Treinador",
+            true
+          ]
+        ],
+        "errors": []
+      }
+    ],
+    "literal_escaped_newline_visible": false,
+    "continuous_ecg_motion": true,
+    "continuous_button_shine": true,
+    "continuous_logo_orbit": true,
+    "module_count": 7,
+    "duplicate_ids": 0
+  }
+}

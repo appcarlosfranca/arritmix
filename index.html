@@ -141,7 +141,7 @@ button,input,textarea{font:inherit}.app-shell{max-width:1600px;margin:0 auto;pad
 </style>
 
 <style id="cfCleanSettingsStyles">
-/* ===== CF ArritmiX v1.6.2 — identidade visual ===== */
+/* ===== CF ArritmiX v1.7 — identidade visual ===== */
 body:not(.cf-show-sources) .cf-source-only,
 body:not(.cf-show-sources) .source-strip,
 body:not(.cf-show-sources) .bolus-source,
@@ -154,7 +154,7 @@ body:not(.cf-show-sources) .druglib-sources,
 body:not(.cf-show-sources) .source-badge{display:none!important}
 body.cf-hide-tips .ux11-module-help,body.cf-hide-tips .druglib-help{display:none!important}
 body.cf-hide-technical .version-chip,body.cf-hide-technical .cf-technical-only{display:none!important}
-body.cf-reduce-motion *,body.cf-reduce-motion *::before,body.cf-reduce-motion *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+body.cf-reduce-motion #app *,body.cf-reduce-motion #app *::before,body.cf-reduce-motion #app *::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 body.cf-compact .module-hero{padding:14px 17px;margin:10px 0 9px;border-radius:16px}
 body.cf-compact .module-hero h1{font-size:1.45rem;margin:2px 0 4px}
 body.cf-compact .module-hero p{font-size:.86rem;line-height:1.38}
@@ -177,8 +177,77 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
 .cf-settings-build{margin-left:auto;color:#607f91;font-size:.68rem;align-self:center}
 @media(max-width:560px){.cf-settings-head{padding:15px}.cf-settings-body{padding:6px 15px 15px}.cf-setting-row{gap:10px}.cf-settings-build{width:100%;margin-left:0}}
 </style>
+
+<style id="cfAlgorithmsStyles">
+/* ===== CF ArritmiX v1.8 — Algoritmos & cartões ===== */
+.alg-shell{padding:2px 0 18px}.alg-toolbar{display:grid;grid-template-columns:minmax(240px,1fr) auto;gap:12px;align-items:end;margin:14px 0}.alg-search label{display:block;font-size:.74rem;color:#8fa8b8;font-weight:800;letter-spacing:.35px}.alg-search input{margin-top:6px;width:100%;border:1px solid #24485f;background:#071722;color:#eefaff;border-radius:12px;padding:11px 12px;font:inherit}.alg-filters{display:flex;gap:8px;flex-wrap:wrap}.alg-filter{border:1px solid #284d68;background:#0a1926;color:#b9ceda;border-radius:999px;padding:9px 13px;font-weight:850;cursor:pointer}.alg-filter.active{border-color:#27d2df;background:#0d3747;color:#fff}.alg-summary{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:4px 0 12px;color:#8fa8b8;font-size:.78rem}.alg-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}.alg-card{min-width:0;border:1px solid #1f4056;background:#081824;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}.alg-card button{display:block;width:100%;border:0;background:transparent;color:inherit;text-align:left;padding:0;cursor:pointer}.alg-thumb{aspect-ratio:2/3;background:#06111b;display:grid;place-items:center;overflow:hidden}.alg-thumb img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}.alg-card-meta{padding:11px 12px 12px}.alg-card-meta small{display:block;color:#60dce6;font-size:.68rem;font-weight:900;text-transform:uppercase;letter-spacing:.65px;margin-bottom:4px}.alg-card-meta strong{display:block;color:#eef9ff;line-height:1.28;font-size:.92rem}.alg-card button:focus-visible{outline:2px solid #34e4ed;outline-offset:-2px}.alg-empty{grid-column:1/-1;border:1px dashed #28485c;border-radius:14px;padding:24px;text-align:center;color:#8fa8b8}.alg-viewer{width:min(1100px,calc(100vw - 20px));max-height:calc(100vh - 20px);border:0;padding:0;background:transparent;color:#fff}.alg-viewer::backdrop{background:rgba(0,0,0,.86);backdrop-filter:blur(4px)}.alg-viewer-panel{display:flex;flex-direction:column;max-height:calc(100vh - 20px);border:1px solid #2a536c;background:#06121d;border-radius:18px;overflow:hidden}.alg-viewer-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border-bottom:1px solid #18374b}.alg-viewer-head div{min-width:0}.alg-viewer-head small{display:block;color:#64dfe7;font-size:.67rem;font-weight:900;text-transform:uppercase;letter-spacing:.7px}.alg-viewer-head h2{margin:2px 0 0;font-size:1.02rem;line-height:1.25}.alg-viewer-actions{display:flex;gap:7px;flex-wrap:wrap;justify-content:flex-end}.alg-viewer-actions button{border:1px solid #294e66;background:#0a1a27;color:#e9f7fb;border-radius:10px;padding:8px 10px;font-weight:850;cursor:pointer}.alg-viewer-stage{min-height:0;overflow:auto;padding:10px;text-align:center;background:#030a10}.alg-viewer-stage img{display:block;margin:0 auto;max-width:100%;height:auto;border-radius:8px}.alg-viewer-stage.zoomed img{max-width:none;width:auto;min-width:1000px}.alg-viewer-foot{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 14px;border-top:1px solid #18374b;color:#8fa8b8;font-size:.74rem}.alg-viewer-foot button{border:1px solid #284c64;background:#091824;color:#dceef5;border-radius:10px;padding:8px 11px;font-weight:850;cursor:pointer}.alg-viewer-foot button:disabled{opacity:.35;cursor:default}.cf-compact .alg-toolbar{margin:8px 0}.cf-compact .alg-grid{gap:9px}.cf-compact .alg-card-meta{padding:9px 10px}.cf-focus #module-algorithms .module-hero{display:none}.cf-reduce-motion .alg-card *{transition:none!important}@media(max-width:720px){.alg-toolbar{grid-template-columns:1fr}.alg-filters{overflow:auto;flex-wrap:nowrap;padding-bottom:2px}.alg-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.alg-card-meta strong{font-size:.8rem}.alg-viewer-head{align-items:flex-start}.alg-viewer-actions{flex-wrap:nowrap}.alg-viewer-actions button{padding:7px 8px;font-size:.75rem}.alg-viewer-foot{align-items:flex-start;flex-wrap:wrap}}@media(max-width:430px){.alg-grid{grid-template-columns:1fr}.alg-thumb{aspect-ratio:1.25/1;}.alg-thumb img{object-fit:cover;object-position:top}}
+</style>
+
+<style id="cfSplashStyles">
+/* ===== CF ArritmiX v1.8.1 — abertura neon dinâmica (GPU-friendly) ===== */
+body.cf-splash-open{overflow:hidden!important}
+.cf-splash{position:fixed;inset:0;z-index:2147483000;display:grid;place-items:center;overflow:hidden;isolation:isolate;background:#02070e;color:#f4fbff;opacity:1;visibility:visible;transition:opacity .28s ease,visibility .28s ease}
+.cf-splash.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.cf-splash::before{content:"";position:absolute;inset:-18%;z-index:-4;background:radial-gradient(circle at 50% 42%,rgba(0,196,255,.17),transparent 25%),radial-gradient(circle at 50% 50%,rgba(0,92,220,.14),transparent 48%),linear-gradient(180deg,#020810 0%,#00101f 58%,#01050a 100%)}
+.cf-splash::after{content:"";position:absolute;inset:-35%;z-index:-3;background:conic-gradient(from 0deg at 50% 46%,transparent 0 21%,rgba(0,210,255,.12) 26%,transparent 31% 54%,rgba(0,117,255,.13) 60%,transparent 67% 100%);filter:blur(38px);animation:cfSplashOrbit 12s linear infinite;will-change:transform}
+.cf-splash-grid{position:absolute;inset:0;z-index:-2;opacity:.16;background-image:linear-gradient(rgba(24,177,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(24,177,255,.04) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,transparent,black 18%,black 76%,transparent)}
+.cf-splash-ecg{position:absolute;left:-2%;top:25%;width:104%;height:40%;z-index:-1;opacity:.37;filter:drop-shadow(0 0 8px rgba(0,215,255,.75));pointer-events:none}
+.cf-splash-ecg path{fill:none;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.cf-splash-ecg .cf-ecg-base{stroke:#17d9ff;stroke-width:4;opacity:.74}
+.cf-splash-ecg .cf-ecg-tracer{stroke:#a8fbff;stroke-width:6;opacity:.98;stroke-dasharray:190 1410;animation:cfSplashTracer 2.35s linear infinite;filter:drop-shadow(0 0 5px rgba(115,246,255,.95));will-change:stroke-dashoffset}
+.cf-splash-content{position:relative;width:min(880px,92vw);padding:26px 18px 34px;display:flex;flex-direction:column;align-items:center;text-align:center;transform:translateZ(0)}
+.cf-splash-logo-wrap{position:relative;width:clamp(220px,33vw,390px);aspect-ratio:1;display:grid;place-items:center;margin-bottom:8px;animation:cfSplashFloat 4.4s ease-in-out infinite;will-change:transform}
+.cf-splash-logo-wrap::before{content:"";position:absolute;inset:-5%;border-radius:50%;background:conic-gradient(from 0deg,rgba(0,211,255,0),#33e9ff 12%,#1678ff 27%,rgba(0,95,255,0) 40%,rgba(0,211,255,0) 58%,#40efff 72%,#136eff 86%,rgba(0,211,255,0));filter:blur(7px);opacity:.86;animation:cfSplashOrbit 5.7s linear infinite;will-change:transform}
+.cf-splash-logo-wrap::after{content:"";position:absolute;inset:3%;border-radius:50%;border:2px solid rgba(73,228,255,.58);box-shadow:0 0 14px rgba(0,224,255,.78),0 0 44px rgba(0,125,255,.5),inset 0 0 24px rgba(0,207,255,.23);animation:cfSplashPulse 2.1s ease-in-out infinite;will-change:opacity,transform}
+.cf-splash-logo{position:relative;z-index:2;width:100%;height:100%;object-fit:contain;border-radius:50%;filter:drop-shadow(0 0 10px rgba(0,226,255,.72)) drop-shadow(0 0 30px rgba(0,101,255,.4));animation:cfSplashLogoGlow 2.35s ease-in-out infinite;will-change:filter}
+.cf-splash-title{margin:4px 0 1px;font-size:clamp(2.1rem,5.7vw,4.75rem);line-height:1;font-weight:950;letter-spacing:-.045em;text-shadow:0 0 17px rgba(48,219,255,.38);position:relative}
+.cf-splash-title .cf-mark{color:#1f98ff;text-shadow:0 0 12px rgba(0,148,255,.8),0 0 30px rgba(0,99,255,.46)}
+.cf-splash-title .cf-x{color:#37e7ee;text-shadow:0 0 12px rgba(0,235,255,.75)}
+.cf-splash-title::after{content:"";position:absolute;left:-8%;right:-8%;bottom:-10px;height:2px;background:linear-gradient(90deg,transparent,#2c9dff,#67f6ff,#2c9dff,transparent);filter:blur(.3px);transform:scaleX(.45);opacity:.5;animation:cfSplashUnderline 2.2s ease-in-out infinite;will-change:transform,opacity}
+.cf-splash-credit{margin-top:22px;font-size:clamp(.82rem,1.5vw,1.15rem);letter-spacing:.34em;color:#d9e9f2;text-transform:none;text-shadow:0 0 11px rgba(58,184,255,.35)}
+.cf-splash-access{position:relative;overflow:hidden;margin-top:28px;min-width:min(330px,76vw);min-height:58px;padding:13px 58px 13px 40px;border:1px solid #36e9ff;border-radius:999px;background:linear-gradient(180deg,rgba(4,29,50,.84),rgba(2,13,28,.9));color:#fff;font:800 clamp(1rem,2vw,1.22rem)/1.1 inherit;letter-spacing:.02em;cursor:pointer;box-shadow:0 0 0 1px rgba(29,151,255,.22),0 0 18px rgba(0,217,255,.35),0 10px 38px rgba(0,91,215,.24),inset 0 0 18px rgba(0,154,255,.08);transition:transform .16s ease,box-shadow .16s ease;animation:cfSplashButtonPulse 2.4s ease-in-out infinite;will-change:transform,box-shadow}
+.cf-splash-access::before{content:"";position:absolute;top:-70%;left:-35%;width:18%;height:240%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.85),transparent);transform:rotate(19deg);filter:blur(1px);animation:cfSplashShine 2.2s linear infinite;will-change:left}
+.cf-splash-access span{position:absolute;right:28px;top:50%;transform:translateY(-52%);font-size:1.75em;color:#27dfff;text-shadow:0 0 12px rgba(0,217,255,.75)}
+.cf-splash-access:hover{transform:translateY(-1px) scale(1.012);box-shadow:0 0 0 1px rgba(80,237,255,.35),0 0 28px rgba(0,220,255,.5),0 12px 42px rgba(0,91,215,.3),inset 0 0 20px rgba(0,190,255,.13)}
+.cf-splash-access:active{transform:translateY(1px) scale(.995)}
+.cf-splash-access:focus-visible{outline:3px solid #fff;outline-offset:4px}
+.cf-splash-floor{position:absolute;left:16%;right:16%;bottom:6%;height:7%;border-radius:50%;background:radial-gradient(ellipse at center,rgba(0,218,255,.28),rgba(0,105,255,.12) 40%,transparent 72%);filter:blur(14px);animation:cfSplashPulse 2.5s ease-in-out infinite;pointer-events:none}
+@keyframes cfSplashOrbit{to{transform:rotate(360deg)}}
+@keyframes cfSplashTracer{to{stroke-dashoffset:-1600}}
+@keyframes cfSplashFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-6px,0)}}
+@keyframes cfSplashPulse{0%,100%{opacity:.55;transform:scale(.985)}50%{opacity:1;transform:scale(1.025)}}
+@keyframes cfSplashLogoGlow{0%,100%{filter:drop-shadow(0 0 9px rgba(0,226,255,.62)) drop-shadow(0 0 24px rgba(0,101,255,.35))}50%{filter:drop-shadow(0 0 15px rgba(0,239,255,.95)) drop-shadow(0 0 42px rgba(0,119,255,.56))}}
+@keyframes cfSplashUnderline{0%,100%{transform:scaleX(.42);opacity:.35}50%{transform:scaleX(1);opacity:1}}
+@keyframes cfSplashButtonPulse{0%,100%{box-shadow:0 0 0 1px rgba(29,151,255,.22),0 0 14px rgba(0,217,255,.28),0 10px 34px rgba(0,91,215,.2),inset 0 0 14px rgba(0,154,255,.06)}50%{box-shadow:0 0 0 1px rgba(75,233,255,.35),0 0 28px rgba(0,217,255,.52),0 12px 44px rgba(0,91,215,.3),inset 0 0 22px rgba(0,194,255,.13)}}
+@keyframes cfSplashShine{0%{left:-35%;opacity:0}8%{opacity:.92}90%{opacity:.42}100%{left:120%;opacity:0}}
+@media(max-width:640px){.cf-splash-content{padding:20px 12px 28px}.cf-splash-logo-wrap{width:min(68vw,300px)}.cf-splash-title{font-size:clamp(2rem,11vw,3.2rem)}.cf-splash-credit{letter-spacing:.2em;margin-top:18px}.cf-splash-access{min-height:54px;margin-top:24px}.cf-splash-ecg{top:24%;height:34%;opacity:.28}}
+@media(max-height:680px){.cf-splash-logo-wrap{width:min(39vh,260px)}.cf-splash-content{padding:10px}.cf-splash-credit{margin-top:15px}.cf-splash-access{margin-top:18px;min-height:50px}.cf-splash-title{font-size:clamp(1.8rem,7vh,3.3rem)}}
+@media(prefers-reduced-motion:reduce){.cf-splash::after{animation-duration:24s}.cf-splash-logo-wrap{animation-duration:8s}.cf-splash-logo-wrap::before{animation-duration:12s}.cf-splash-logo-wrap::after,.cf-splash-logo,.cf-splash-access,.cf-splash-floor,.cf-splash-title::after{animation-duration:5s}.cf-splash-ecg .cf-ecg-tracer{animation-duration:4.8s}.cf-splash-access::before{animation-duration:5.4s}}
+</style>
 </head>
 <body>
+<div id="cfSplash" class="cf-splash" role="dialog" aria-modal="true" aria-labelledby="cfSplashTitle" aria-describedby="cfSplashCredit">
+  <div class="cf-splash-grid" aria-hidden="true"></div>
+  <svg class="cf-splash-ecg" viewBox="0 0 1600 420" preserveAspectRatio="none" aria-hidden="true">
+    <g class="cf-ecg-track">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-1600 0" dur="7.2s" repeatCount="indefinite"/>
+      <path class="cf-ecg-base" d="M0 235 H120 L156 225 L180 175 L207 292 L236 86 L268 326 L300 235 H475 L505 225 L529 182 L555 278 L584 98 L615 318 L650 235 H950 L985 225 L1010 178 L1036 286 L1065 92 L1098 322 L1130 235 H1320 L1350 225 L1377 178 L1405 290 L1436 91 L1468 318 L1502 235 H1600"/>
+      <path class="cf-ecg-base" transform="translate(1600 0)" d="M0 235 H120 L156 225 L180 175 L207 292 L236 86 L268 326 L300 235 H475 L505 225 L529 182 L555 278 L584 98 L615 318 L650 235 H950 L985 225 L1010 178 L1036 286 L1065 92 L1098 322 L1130 235 H1320 L1350 225 L1377 178 L1405 290 L1436 91 L1468 318 L1502 235 H1600"/>
+      <path class="cf-ecg-tracer" d="M0 235 H120 L156 225 L180 175 L207 292 L236 86 L268 326 L300 235 H475 L505 225 L529 182 L555 278 L584 98 L615 318 L650 235 H950 L985 225 L1010 178 L1036 286 L1065 92 L1098 322 L1130 235 H1320 L1350 225 L1377 178 L1405 290 L1436 91 L1468 318 L1502 235 H1600"/>
+      <path class="cf-ecg-tracer" transform="translate(1600 0)" d="M0 235 H120 L156 225 L180 175 L207 292 L236 86 L268 326 L300 235 H475 L505 225 L529 182 L555 278 L584 98 L615 318 L650 235 H950 L985 225 L1010 178 L1036 286 L1065 92 L1098 322 L1130 235 H1320 L1350 225 L1377 178 L1405 290 L1436 91 L1468 318 L1502 235 H1600"/>
+    </g>
+  </svg>
+  <div class="cf-splash-content">
+    <div class="cf-splash-logo-wrap">
+      <img class="cf-splash-logo" id="cfSplashLogo" src="logo_CF_ArritmiX.png" alt="Logo CF ArritmiX">
+    </div>
+    <h1 class="cf-splash-title" id="cfSplashTitle"><span class="cf-mark">CF</span> Arritmi<span class="cf-x">X</span></h1>
+    <div class="cf-splash-credit" id="cfSplashCredit">Criado por Carlos França</div>
+    <button class="cf-splash-access" id="cfSplashAccess" type="button" aria-label="Acessar CF ArritmiX">Acessar <span aria-hidden="true">›</span></button>
+  </div>
+  <div class="cf-splash-floor" aria-hidden="true"></div>
+</div>
+
   <div id="app" class="app-shell">
     <header class="topbar">
       <div class="brand">
@@ -197,6 +266,7 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
 
     <nav class="module-nav" aria-label="Módulos do CF ArritmiX">
       <button class="module-tab active" data-module-target="live">Live ACLS/PALS</button>
+      <button class="module-tab" data-module-target="algorithms">Algoritmos</button>
       <button class="module-tab" data-module-target="ecg">ECG / Ritmos</button>
       <button class="module-tab" data-module-target="drugs">Fármacos</button>
       <button class="module-tab" data-module-target="guide">Guia Clínico</button>
@@ -301,6 +371,35 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
           </div>
         </aside>
       </main>
+    </section>
+
+
+    <section id="module-algorithms" class="module-panel" data-module="algorithms" hidden>
+      <div class="module-hero">
+        <div><span class="eyebrow">Consulta visual</span><h1>Algoritmos & Cartões</h1><p>Biblioteca visual para ACLS, PCR e revisão farmacológica. Abra qualquer cartão para visualizar em alta resolução.</p></div>
+        <div class="version-chip cf-technical-only">19 imagens únicas</div>
+      </div>
+      <div class="alg-shell">
+        <div class="card" style="padding:14px 16px">
+          <div class="alg-toolbar">
+            <div class="alg-search"><label>Buscar algoritmo ou tema<input id="algSearch" type="search" placeholder="Ex.: PCR, ROSC, bradicardia, antiarrítmicos..." autocomplete="off"></label></div>
+            <div class="alg-filters" aria-label="Filtrar algoritmos">
+              <button class="alg-filter active" type="button" data-alg-filter="all">Todos</button>
+              <button class="alg-filter" type="button" data-alg-filter="ACLS">ACLS / PCR</button>
+              <button class="alg-filter" type="button" data-alg-filter="Fármacos">Fármacos</button>
+            </div>
+          </div>
+          <div class="alg-summary"><span id="algCount">Biblioteca pronta.</span><span class="cf-technical-only">20 arquivos recebidos • 1 duplicado idêntico consolidado</span></div>
+        </div>
+        <div id="algGrid" class="alg-grid" style="margin-top:12px"><div class="alg-empty">Abra este módulo para carregar os cartões.</div></div>
+      </div>
+      <dialog id="algViewer" class="alg-viewer">
+        <div class="alg-viewer-panel">
+          <div class="alg-viewer-head"><div><small id="algViewerKind">Algoritmo</small><h2 id="algViewerTitle">Cartão</h2></div><div class="alg-viewer-actions"><button type="button" id="algToggleZoom">Tamanho real</button><button type="button" id="algClose">Fechar</button></div></div>
+          <div id="algViewerStage" class="alg-viewer-stage"><img id="algViewerImg" alt="Algoritmo CF ArritmiX"></div>
+          <div class="alg-viewer-foot"><button type="button" id="algPrev">← Anterior</button><span id="algViewerPos"></span><button type="button" id="algNext">Próximo →</button></div>
+        </div>
+      </dialog>
     </section>
 
     <section id="module-ecg" class="module-panel" data-module="ecg" hidden>
@@ -3456,7 +3555,44 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
 })();
 
 </script>
-  <script>
+  
+<script>
+/* CF ArritmiX v1.7 — Algorithms gallery */
+(() => {
+  'use strict';
+  const ITEMS=[{"id":"a01","title":"ACLS — PCR no Adulto","kind":"ACLS","file":"assets/algoritmos/alg_01.webp","thumb":"assets/algoritmos/alg_01_thumb.webp"},{"id":"a02","title":"Depois do ROSC","kind":"ACLS","file":"assets/algoritmos/alg_02.webp","thumb":"assets/algoritmos/alg_02_thumb.webp"},{"id":"a03","title":"ACLS — 5 Ts","kind":"ACLS","file":"assets/algoritmos/alg_03.webp","thumb":"assets/algoritmos/alg_03_thumb.webp"},{"id":"a04","title":"ACLS — 5 Hs","kind":"ACLS","file":"assets/algoritmos/alg_04.webp","thumb":"assets/algoritmos/alg_04_thumb.webp"},{"id":"a06","title":"ACLS — 4 ritmos da PCR","kind":"ACLS","file":"assets/algoritmos/alg_06.webp","thumb":"assets/algoritmos/alg_06_thumb.webp"},{"id":"a07","title":"ACLS — Drogas essenciais na PCR","kind":"ACLS","file":"assets/algoritmos/alg_07.webp","thumb":"assets/algoritmos/alg_07_thumb.webp"},{"id":"a08","title":"ACLS — Desfibrilação + cardioversão","kind":"ACLS","file":"assets/algoritmos/alg_08.webp","thumb":"assets/algoritmos/alg_08_thumb.webp"},{"id":"a09","title":"ACLS — RCP de alta qualidade + ETCO₂","kind":"ACLS","file":"assets/algoritmos/alg_09.webp","thumb":"assets/algoritmos/alg_09_thumb.webp"},{"id":"a10","title":"ACLS — Ciclo de 2 minutos + comandos do líder","kind":"ACLS","file":"assets/algoritmos/alg_10.webp","thumb":"assets/algoritmos/alg_10_thumb.webp"},{"id":"a11","title":"ACLS — Bradicardia com pulso","kind":"ACLS","file":"assets/algoritmos/alg_11.webp","thumb":"assets/algoritmos/alg_11_thumb.webp"},{"id":"a12","title":"ACLS — Taquicardia com pulso","kind":"ACLS","file":"assets/algoritmos/alg_12.webp","thumb":"assets/algoritmos/alg_12_thumb.webp"},{"id":"a13","title":"Classe 1 — ACLS, antiarrítmicos e hemodinâmica","kind":"Fármacos","file":"assets/algoritmos/alg_13.webp","thumb":"assets/algoritmos/alg_13_thumb.webp"},{"id":"a14","title":"Classe 2 — Analgesia, sedação e bloqueio neuromuscular","kind":"Fármacos","file":"assets/algoritmos/alg_14.webp","thumb":"assets/algoritmos/alg_14_thumb.webp"},{"id":"a15","title":"Classe 3 — Terapia antimicrobiana de emergência","kind":"Fármacos","file":"assets/algoritmos/alg_15.webp","thumb":"assets/algoritmos/alg_15_thumb.webp"},{"id":"a16","title":"Classe 4 — Cardiovasculares: controle de frequência, cálcio e alertas","kind":"Fármacos","file":"assets/algoritmos/alg_16.webp","thumb":"assets/algoritmos/alg_16_thumb.webp"},{"id":"a17","title":"Classe 5 — Diuréticos e congestão","kind":"Fármacos","file":"assets/algoritmos/alg_17.webp","thumb":"assets/algoritmos/alg_17_thumb.webp"},{"id":"a18","title":"Classe 6 — Distúrbios ácido-base e correção metabólica","kind":"Fármacos","file":"assets/algoritmos/alg_18.webp","thumb":"assets/algoritmos/alg_18_thumb.webp"},{"id":"a19","title":"Classe 7 — Fluidos, glicose e insulinoterapia","kind":"Fármacos","file":"assets/algoritmos/alg_19.webp","thumb":"assets/algoritmos/alg_19_thumb.webp"},{"id":"a20","title":"Classe 8 — Toxicologia e antídotos","kind":"Fármacos","file":"assets/algoritmos/alg_20.webp","thumb":"assets/algoritmos/alg_20_thumb.webp"}];
+  const root=document.getElementById('module-algorithms');
+  if(!root)return;
+  const $=id=>document.getElementById(id);
+  const state={inited:false,filter:'all',query:'',visible:[],current:null,zoom:false};
+  const norm=s=>(s||'').normalize('NFD').replace(/[\\u0300-\\u036f]/g,'').toLowerCase();
+  const esc=s=>String(s).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));
+  function filtered(){const q=norm(state.query);return ITEMS.filter(x=>(state.filter==='all'||x.kind===state.filter)&&(!q||norm(x.title+' '+x.kind).includes(q)));}
+  function render(){
+    state.visible=filtered();
+    $('algCount').textContent=`${state.visible.length} cartão${state.visible.length===1?'':'ões'} exibido${state.visible.length===1?'':'s'}`;
+    $('algGrid').innerHTML=state.visible.length?state.visible.map(x=>`<article class="alg-card"><button type="button" data-alg-open="${x.id}" aria-label="Abrir ${esc(x.title)}"><div class="alg-thumb"><img loading="lazy" decoding="async" src="${x.thumb}" alt="${esc(x.title)}"></div><div class="alg-card-meta"><small>${esc(x.kind)}</small><strong>${esc(x.title)}</strong></div></button></article>`).join(''):'<div class="alg-empty">Nenhum cartão encontrado com este filtro.</div>';
+  }
+  function currentIndex(){return state.visible.findIndex(x=>x.id===state.current)}
+  function open(id){
+    const item=ITEMS.find(x=>x.id===id);if(!item)return;
+    state.current=id;state.zoom=false;$('algViewerStage').classList.remove('zoomed');$('algToggleZoom').textContent='Tamanho real';
+    $('algViewerTitle').textContent=item.title;$('algViewerKind').textContent=item.kind;$('algViewerImg').src=item.file;$('algViewerImg').alt=item.title;
+    const idx=currentIndex(),total=state.visible.length;$('algViewerPos').textContent=idx>=0?`${idx+1} de ${total}`:'';$('algPrev').disabled=idx<=0;$('algNext').disabled=idx<0||idx>=total-1;
+    const d=$('algViewer');if(!d.open)d.showModal();$('algViewerStage').scrollTop=0;$('algViewerStage').scrollLeft=0;
+  }
+  function move(delta){const i=currentIndex(),n=i+delta;if(n>=0&&n<state.visible.length)open(state.visible[n].id)}
+  function init(){if(state.inited)return;state.inited=true;render();}
+  root.addEventListener('click',e=>{const b=e.target.closest('[data-alg-open]');if(b)open(b.dataset.algOpen);const f=e.target.closest('[data-alg-filter]');if(f){state.filter=f.dataset.algFilter;root.querySelectorAll('[data-alg-filter]').forEach(x=>x.classList.toggle('active',x===f));render();}});
+  let timer;$('algSearch')?.addEventListener('input',e=>{state.query=e.target.value;clearTimeout(timer);timer=setTimeout(render,90)});
+  $('algClose')?.addEventListener('click',()=>$('algViewer').close());$('algPrev')?.addEventListener('click',()=>move(-1));$('algNext')?.addEventListener('click',()=>move(1));
+  $('algToggleZoom')?.addEventListener('click',()=>{state.zoom=!state.zoom;$('algViewerStage').classList.toggle('zoomed',state.zoom);$('algToggleZoom').textContent=state.zoom?'Ajustar à tela':'Tamanho real';});
+  $('algViewer')?.addEventListener('click',e=>{if(e.target===$('algViewer'))$('algViewer').close()});
+  window.CFArritmiXAlgorithms={init,open,items:ITEMS.map(({id,title,kind})=>({id,title,kind}))};
+})();
+</script>
+
+<script>
 /* shell.js — v1.3 performance */
 (() => {
   'use strict';
@@ -3468,6 +3604,7 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
     window.scrollTo(0,0);
     if(name==='drugs') window.ArritmiaXLoadDrugLibrary?.();
     if(name==='ecg') window.ArritmiaXECG?.init?.();
+    if(name==='algorithms') window.CFArritmiXAlgorithms?.init?.();
   }
   tabs.forEach(t=>t.addEventListener('click',e=>{e.preventDefault();activate(t.dataset.moduleTarget)}));
   activate('live');
@@ -3483,9 +3620,10 @@ body.cf-focus .drugs-layout,body.cf-focus .gas-layout,body.cf-focus .ecg-layout,
     const checks = [];
     const add = (name, ok, detail='') => checks.push({name, ok: !!ok, detail});
 
-    const modules = ['live','ecg','drugs','guide','gas','trainer'];
+    const modules = ['live','algorithms','ecg','drugs','guide','gas','trainer'];
     modules.forEach(m => add(`module:${m}`, !!document.querySelector(`[data-module="${m}"]`), 'painel presente'));
-    add('tabs', document.querySelectorAll('[data-module-target]').length === 6, `${document.querySelectorAll('[data-module-target]').length}/6`);
+    add('tabs', document.querySelectorAll('[data-module-target]').length === 7, `${document.querySelectorAll('[data-module-target]').length}/7`);
+    add('algorithms', !!window.CFArritmiXAlgorithms, 'biblioteca visual de algoritmos');
     add('ecg-engine', !!window.ArritmiaXECG, 'Atlas/leitor ECG');
     add('pharm-engine', !!window.ArritmiaXPharm, 'API farmacológica');
     add('gas-engine', !!window.ArritmiaXGasEngine, 'API gasométrica');
@@ -3968,7 +4106,7 @@ setTimeout(recover,80);setTimeout(recover,350);
 (()=>{
 'use strict';
 const KEY='cfArritmiX.settings.v1';
-const defaults={sources:false,compact:true,tips:true,reduceMotion:true,technical:false,focus:false,openLive:true};
+const defaults={sources:false,compact:true,tips:true,reduceMotion:true,technical:false,focus:false,openLive:true,splash:true};
 let state={...defaults};
 try{state={...defaults,...JSON.parse(localStorage.getItem(KEY)||'{}')}}catch{}
 const $=(s,c=document)=>c.querySelector(s);
@@ -3987,7 +4125,7 @@ apply();
 document.querySelectorAll('.card').forEach(card=>{const t=(card.textContent||'').trim().slice(0,120).toLowerCase();if(t.includes('rastreabilidade')||t.startsWith('fontesbase operacional'))card.classList.add('cf-source-only')});
 const dlg=document.createElement('dialog');dlg.className='cf-settings-dialog';dlg.id='cfSettingsDialog';
 const row=(key,title,desc)=>`<div class="cf-setting-row"><div><strong>${title}</strong><small>${desc}</small></div><label class="cf-setting-switch"><input type="checkbox" data-cf-setting="${key}"><span></span></label></div>`;
-dlg.innerHTML=`<div class="cf-settings-panel"><div class="cf-settings-head"><div><span class="eyebrow">Preferências</span><h2>Configurações</h2><p>Deixe a interface tão limpa ou detalhada quanto você preferir.</p></div><button class="cf-settings-close" type="button" data-cf-close>Fechar</button></div><div class="cf-settings-body"><div class="cf-settings-group">${row('sources','Mostrar fontes e rastreabilidade','Desativado por padrão. Exibe citações, bases e origem das recomendações somente quando você quiser auditá-las.')}${row('technical','Mostrar detalhes técnicos','Exibe versões dos motores e avisos técnicos de implementação.')}</div><div class="cf-settings-group">${row('compact','Interface compacta','Reduz espaços e cabeçalhos sem ocultar conteúdo clínico.')}${row('tips','Mostrar dicas de uso','Exibe caixas explicativas e orientações adicionais de navegação.')}${row('focus','Modo foco','Oculta painéis laterais auxiliares para priorizar o conteúdo principal.')}${row('reduceMotion','Reduzir animações','Minimiza transições e efeitos para aumentar fluidez e reduzir distrações.')}</div><div class="cf-settings-group">${row('openLive','Abrir sempre no Live ACLS/PALS','Ao recarregar, inicia no Live em vez de restaurar outro módulo.')}</div><div class="cf-settings-actions"><button class="secondary" type="button" data-cf-reset>Restaurar padrão</button><button class="secondary" type="button" data-cf-clear-session>Limpar sessão do Live</button><span class="cf-settings-build">CF ArritmiX v1.6.2</span></div></div></div>`;
+dlg.innerHTML=`<div class="cf-settings-panel"><div class="cf-settings-head"><div><span class="eyebrow">Preferências</span><h2>Configurações</h2><p>Deixe a interface tão limpa ou detalhada quanto você preferir.</p></div><button class="cf-settings-close" type="button" data-cf-close>Fechar</button></div><div class="cf-settings-body"><div class="cf-settings-group">${row('sources','Mostrar fontes e rastreabilidade','Desativado por padrão. Exibe citações, bases e origem das recomendações somente quando você quiser auditá-las.')}${row('technical','Mostrar detalhes técnicos','Exibe versões dos motores e avisos técnicos de implementação.')}</div><div class="cf-settings-group">${row('compact','Interface compacta','Reduz espaços e cabeçalhos sem ocultar conteúdo clínico.')}${row('tips','Mostrar dicas de uso','Exibe caixas explicativas e orientações adicionais de navegação.')}${row('focus','Modo foco','Oculta painéis laterais auxiliares para priorizar o conteúdo principal.')}${row('reduceMotion','Reduzir animações','Minimiza transições e efeitos para aumentar fluidez e reduzir distrações.')}</div><div class="cf-settings-group">${row('openLive','Abrir sempre no Live ACLS/PALS','Ao recarregar, inicia no Live em vez de restaurar outro módulo.')}${row('splash','Tela inicial neon','Exibe a abertura dinâmica com o logo, assinatura e botão Acessar a cada nova inicialização.')}</div><div class="cf-settings-actions"><button class="secondary" type="button" data-cf-reset>Restaurar padrão</button><button class="secondary" type="button" data-cf-clear-session>Limpar sessão do Live</button><span class="cf-settings-build">CF ArritmiX v1.8.1</span></div></div></div>`;
 document.body.appendChild(dlg);
 function sync(){dlg.querySelectorAll('[data-cf-setting]').forEach(i=>{i.checked=!!state[i.dataset.cfSetting]})}
 sync();
@@ -3998,6 +4136,24 @@ $('#btnCfSettings')?.addEventListener('click',()=>{sync();dlg.showModal()});
 if(state.openLive){setTimeout(()=>{const b=document.querySelector('[data-module-target="live"]');if(b&&!b.classList.contains('active'))b.click()},60)}
 // Fix alpha index layout if an older render function inserts a nested grid.
 const az=$('#drugLibAzView');if(az){const flatten=()=>{const inner=az.children.length===1&&az.firstElementChild?.classList.contains('druglib-grid')?az.firstElementChild:null;if(inner){while(inner.firstChild)az.appendChild(inner.firstChild);inner.remove()}};az.addEventListener('click',()=>setTimeout(flatten,0));}
+})();
+</script>
+<script id="cfSplashScript">
+(()=>{
+'use strict';
+const root=document.getElementById('cfSplash');
+if(!root)return;
+const KEY='cfArritmiX.settings.v1';
+let enabled=true;
+try{const cfg=JSON.parse(localStorage.getItem(KEY)||'{}');if(cfg.splash===false)enabled=false}catch{}
+if(!enabled){root.remove();return}
+document.body.classList.add('cf-splash-open');
+const btn=document.getElementById('cfSplashAccess');
+let closed=false;
+const close=()=>{if(closed)return;closed=true;root.classList.add('is-leaving');document.body.classList.remove('cf-splash-open');setTimeout(()=>root.remove(),300)};
+btn?.addEventListener('click',close,{once:true});
+root.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target!==btn){e.preventDefault();close()}if(e.key==='Escape'){e.preventDefault();close()}});
+requestAnimationFrame(()=>{try{btn?.focus({preventScroll:true})}catch{btn?.focus()}});
 })();
 </script>
 </body>

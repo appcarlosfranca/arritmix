@@ -1,0 +1,58 @@
+{
+  "index.html": {
+    "size_bytes": 1296671,
+    "duplicate_ids": [],
+    "scripts_checked": 25,
+    "script_errors": [],
+    "modules": [
+      "live",
+      "algorithms",
+      "ecg",
+      "drugs",
+      "guide",
+      "gas",
+      "trainer"
+    ],
+    "tabs": [
+      "live",
+      "algorithms",
+      "ecg",
+      "drugs",
+      "guide",
+      "gas",
+      "trainer"
+    ],
+    "splash_present": true,
+    "access_button": true,
+    "settings_splash": true,
+    "pharm_181": true
+  },
+  "index_standalone.html": {
+    "size_bytes": 9753023,
+    "duplicate_ids": [],
+    "scripts_checked": 25,
+    "script_errors": [],
+    "modules": [
+      "live",
+      "algorithms",
+      "ecg",
+      "drugs",
+      "guide",
+      "gas",
+      "trainer"
+    ],
+    "tabs": [
+      "live",
+      "algorithms",
+      "ecg",
+      "drugs",
+      "guide",
+      "gas",
+      "trainer"
+    ],
+    "splash_present": true,
+    "access_button": true,
+    "settings_splash": true,
+    "pharm_181": true
+  }
+}

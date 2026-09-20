@@ -1,0 +1,9 @@
+CF ArritmiX v1.8.1
+
+Correções desta revisão:
+- removidos os textos literais \n que apareciam acima/abaixo da aplicação;
+- ECG da tela de abertura agora se desloca continuamente em loop sem emenda;
+- brilho percorre o traçado e o botão Acessar continuamente;
+- halo/anel neon continuam em rotação e pulsação;
+- a opção interna de reduzir animações permanece aplicada ao app, mas não congela a tela inicial neon;
+- nenhuma função clínica ou banco de dados foi removido.

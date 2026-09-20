@@ -1,0 +1,34 @@
+{
+  "index.html": {
+    "bytes": 1286760,
+    "module_tabs": 7,
+    "module_panels": 7,
+    "algorithm_panel_present": true,
+    "duplicate_ids": [],
+    "algorithm_metadata_count": 19
+  },
+  "index_standalone.html": {
+    "bytes": 9460426,
+    "module_tabs": 7,
+    "module_panels": 7,
+    "algorithm_panel_present": true,
+    "duplicate_ids": [],
+    "algorithm_metadata_count": 19
+  },
+  "assets": {
+    "webp_files": 38,
+    "full_images": 19,
+    "thumbnails": 19,
+    "total_bytes": 6130468,
+    "missing_or_empty": []
+  },
+  "source_package": {
+    "uploaded_files": 20,
+    "unique_images": 19,
+    "exact_duplicates_consolidated": 1
+  },
+  "validation": {
+    "inline_javascript_syntax": "passed with node --check on both index files",
+    "browser_runtime_test": "not run in sandbox because local/file navigation is administratively blocked"
+  }
+}

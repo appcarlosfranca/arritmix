@@ -1,0 +1,82 @@
+[
+  {
+    "file": "index.html",
+    "splash_visible": true,
+    "body_has_literal_backslash_n": false,
+    "button_anim": "cfSplashButtonPulse",
+    "halo_anim": "cfSplashFloat",
+    "ecg_x_delta": -98.65,
+    "splash_after_access_visible": false,
+    "nav": [
+      [
+        "Live ACLS/PALS",
+        true
+      ],
+      [
+        "Algoritmos",
+        true
+      ],
+      [
+        "ECG / Ritmos",
+        true
+      ],
+      [
+        "Fármacos",
+        true
+      ],
+      [
+        "Guia Clínico",
+        true
+      ],
+      [
+        "Gasometria",
+        true
+      ],
+      [
+        "Treinador",
+        true
+      ]
+    ],
+    "errors": []
+  },
+  {
+    "file": "index_standalone.html",
+    "splash_visible": true,
+    "body_has_literal_backslash_n": false,
+    "button_anim": "cfSplashButtonPulse",
+    "halo_anim": "cfSplashFloat",
+    "ecg_x_delta": -92.06,
+    "splash_after_access_visible": false,
+    "nav": [
+      [
+        "Live ACLS/PALS",
+        true
+      ],
+      [
+        "Algoritmos",
+        true
+      ],
+      [
+        "ECG / Ritmos",
+        true
+      ],
+      [
+        "Fármacos",
+        true
+      ],
+      [
+        "Guia Clínico",
+        true
+      ],
+      [
+        "Gasometria",
+        true
+      ],
+      [
+        "Treinador",
+        true
+      ]
+    ],
+    "errors": []
+  }
+]

@@ -1,0 +1,11 @@
+CF ArritmiX v1.8 — Tela inicial neon dinâmica
+
+- Abertura anterior ao aplicativo com o logo CF ArritmiX.
+- Texto: Criado por Carlos França.
+- Botão minimalista Acessar.
+- Brilho dinâmico contínuo: órbita, pulso, reflexo, ECG e varredura luminosa.
+- Animações implementadas apenas com transform/opacity/stroke-dashoffset para reduzir custo de renderização.
+- Nenhum timer contínuo em JavaScript: toda animação é CSS.
+- O aplicativo inicializa por trás da abertura; ao tocar Acessar, a navegação fica disponível imediatamente.
+- Configuração “Tela inicial neon” permite ativar/desativar a abertura em futuras inicializações.
+- Todos os 7 módulos anteriores foram preservados.

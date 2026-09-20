@@ -1,0 +1,11 @@
+CF ArritmiX v1.7 — Biblioteca de Algoritmos
+
+- Nova aba “Algoritmos”.
+- 20 imagens recebidas; 19 eram únicas. O arquivo duplicado idêntico de PCR no adulto foi consolidado para evitar repetição.
+- 11 cartões ACLS/PCR e 8 cartões farmacológicos por classe.
+- Busca por título/tema e filtros “Todos”, “ACLS / PCR” e “Fármacos”.
+- Visualizador em alta resolução com anterior/próximo, ajuste à tela e tamanho real.
+- Imagens em WebP otimizadas; miniaturas separadas para carregamento rápido.
+- Carregamento do módulo somente ao abrir a aba, preservando desempenho do Live, ECG, Fármacos, Guia, Gasometria e Treinador.
+- index.html usa assets externos otimizados para GitHub Pages.
+- index_standalone.html incorpora as imagens para funcionar sem arquivos auxiliares.
