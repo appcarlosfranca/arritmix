@@ -1,0 +1,33 @@
+{
+  "version": "CF ArritmiX v1.8.3",
+  "checks": {
+    "index.html": {
+      "inline_scripts_checked": 26,
+      "script_errors": [],
+      "pdf_export_buttons": [
+        "algorithms",
+        "ecg",
+        "drugs",
+        "guide"
+      ],
+      "pdf_export_button_count": 4,
+      "pdf_script_present": true,
+      "pdf_styles_present": true,
+      "drug_181_marker": true
+    },
+    "index_standalone.html": {
+      "inline_scripts_checked": 26,
+      "script_errors": [],
+      "pdf_export_buttons": [
+        "algorithms",
+        "ecg",
+        "drugs",
+        "guide"
+      ],
+      "pdf_export_button_count": 4,
+      "pdf_script_present": true,
+      "pdf_styles_present": true,
+      "drug_181_marker": true
+    }
+  }
+}

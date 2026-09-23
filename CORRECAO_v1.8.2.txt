@@ -1,0 +1,16 @@
+CF ArritmiX v1.8.2 — Correção da galeria de Algoritmos
+
+CAUSA DO BUG
+- O index.html da v1.8.1 apontava para assets/algoritmos/*.webp.
+- A pasta assets/algoritmos não estava incluída no pacote ZIP v1.8.1.
+- Resultado no GitHub Pages: cards e modal abriam, mas as imagens retornavam recurso ausente.
+
+CORREÇÃO
+- Restaurados 19 arquivos WebP em tamanho completo e 19 miniaturas (38 arquivos).
+- Mantido index_standalone.html com imagens embutidas.
+- Adicionado cache-busting ?v=182 nas referências do index.html.
+- Corrigido o título da Classe 3 para “Terapia antitrombótica de emergência”.
+
+DEPLOY
+- Enviar TODO o conteúdo desta pasta ao repositório, inclusive assets/algoritmos/.
+- Após o GitHub Pages concluir o deploy, fazer Ctrl+F5 no computador ou limpar/recarregar o site no celular/tablet.

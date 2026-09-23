@@ -1,0 +1,23 @@
+CF ArritmiX v1.8.3 — Exportação compacta em PDF
+
+ALTERAÇÃO PRINCIPAL
+- Adicionado botão/ícone PDF, separado, nos módulos Fármacos, ECG / Ritmos, Algoritmos e Guia Clínico.
+- Cada módulo monta seu próprio documento A4 paisagem para impressão/salvamento em PDF.
+- O conteúdo do aplicativo permanece visível e inalterado; a exportação é uma visualização específica e compacta.
+
+ORGANIZAÇÃO DO PDF
+- Algoritmos: 2 cartões visuais por página, preservando proporção e legibilidade.
+- ECG / Ritmos: 9 cartões por página, com traçado, reconhecimento, conduta e medidas principais.
+- Fármacos: 181 cards, distribuídos dinamicamente em 4 colunas, com medição real de altura para impedir corte de conteúdo.
+- Guia Clínico: conteúdo rápido, completo e aprofundado distribuído dinamicamente em 3 colunas, sem truncar os blocos.
+
+USO
+1. Abrir o módulo desejado.
+2. Tocar/clicar no botão PDF no cabeçalho do módulo.
+3. O CF ArritmiX prepara as páginas compactas e abre a janela de impressão do navegador.
+4. Selecionar "Salvar como PDF".
+
+NOTAS
+- Não há dependência de biblioteca externa para gerar o documento.
+- A4 em orientação paisagem, cores preservadas e margens reduzidas.
+- Se o navegador bloquear a janela, permitir pop-ups para o site e repetir.

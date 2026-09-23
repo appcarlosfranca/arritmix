@@ -1,0 +1,14 @@
+{
+  "version": "CF ArritmiX v1.8.3",
+  "pdf_exports": {
+    "algorithms": {"estimated_pages": 10, "layout": "2 cards/page", "overflow_detected": false},
+    "ecg": {"estimated_pages": 4, "layout": "3x3 cards/page", "overflow_detected": false},
+    "drugs": {"estimated_pages": 14, "layout": "4 dynamic columns/page", "cards": 181, "overflow_detected": false},
+    "guide": {"estimated_pages": 9, "layout": "3 dynamic columns/page", "overflow_detected": false}
+  },
+  "notes": [
+    "Page counts may change if the corpus is changed later.",
+    "Drug and guide blocks use browser measurement before pagination to avoid clipping.",
+    "Export uses the browser print dialog; choose Save as PDF."
+  ]
+}

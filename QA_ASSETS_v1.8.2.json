@@ -1,0 +1,11 @@
+{
+  "version": "CF ArritmiX v1.8.2",
+  "fix": "Galeria de algoritmos: recursos WebP restaurados no pacote padrão e cache-busting aplicado.",
+  "algorithm_assets_total": 38,
+  "full_images": 19,
+  "thumbnails": 19,
+  "html_asset_refs": 38,
+  "missing_refs": [],
+  "all_webp_decode_ok": true,
+  "metadata_fix": "Classe 3 corrigida para Terapia antitrombótica de emergência."
+}

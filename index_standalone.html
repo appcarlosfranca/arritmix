@@ -224,6 +224,17 @@ body.cf-splash-open{overflow:hidden!important}
 @media(max-height:680px){.cf-splash-logo-wrap{width:min(39vh,260px)}.cf-splash-content{padding:10px}.cf-splash-credit{margin-top:15px}.cf-splash-access{margin-top:18px;min-height:50px}.cf-splash-title{font-size:clamp(1.8rem,7vh,3.3rem)}}
 @media(prefers-reduced-motion:reduce){.cf-splash::after{animation-duration:24s}.cf-splash-logo-wrap{animation-duration:8s}.cf-splash-logo-wrap::before{animation-duration:12s}.cf-splash-logo-wrap::after,.cf-splash-logo,.cf-splash-access,.cf-splash-floor,.cf-splash-title::after{animation-duration:5s}.cf-splash-ecg .cf-ecg-tracer{animation-duration:4.8s}.cf-splash-access::before{animation-duration:5.4s}}
 </style>
+
+<style id="cfPdfExportStyles">
+/* ===== CF ArritmiX v1.8.3 — exportação PDF compacta por módulo ===== */
+.module-hero-actions{display:flex;align-items:center;justify-content:flex-end;gap:9px;flex-wrap:wrap}
+.pdf-export-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:38px;padding:8px 12px;border:1px solid #2bddea;border-radius:12px;background:linear-gradient(180deg,rgba(11,63,82,.96),rgba(6,31,46,.96));color:#f4fdff;font:850 .78rem/1 inherit;letter-spacing:.04em;cursor:pointer;box-shadow:0 0 0 1px rgba(43,221,234,.08),0 0 18px rgba(0,196,255,.1);transition:transform .16s ease,border-color .16s ease,box-shadow .16s ease}
+.pdf-export-btn svg{width:19px;height:19px;fill:none;stroke:#65edff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pdf-export-btn:hover{transform:translateY(-1px);border-color:#80f5ff;box-shadow:0 0 22px rgba(0,205,255,.22)}
+.pdf-export-btn:disabled{opacity:.55;cursor:wait;transform:none}
+.pdf-export-btn.is-ready{border-color:#52d99e}.pdf-export-btn.is-error{border-color:#ff6a78}
+@media(max-width:720px){.module-hero-actions{width:100%;justify-content:flex-start}.pdf-export-btn{min-height:36px;padding:7px 10px}.pdf-export-btn span{font-size:.72rem}}
+</style>
 </head>
 <body>
 <div id="cfSplash" class="cf-splash" role="dialog" aria-modal="true" aria-labelledby="cfSplashTitle" aria-describedby="cfSplashCredit">
@@ -377,7 +388,7 @@ body.cf-splash-open{overflow:hidden!important}
     <section id="module-algorithms" class="module-panel" data-module="algorithms" hidden>
       <div class="module-hero">
         <div><span class="eyebrow">Consulta visual</span><h1>Algoritmos & Cartões</h1><p>Biblioteca visual para ACLS, PCR e revisão farmacológica. Abra qualquer cartão para visualizar em alta resolução.</p></div>
-        <div class="version-chip cf-technical-only">19 imagens únicas</div>
+        <div class="module-hero-actions"><button class="pdf-export-btn" type="button" data-pdf-export="algorithms" aria-label="Gerar PDF de Algoritmos" title="Gerar PDF compacto de Algoritmos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M8.5 16.5h7M8.5 13.5h7M8.5 10.5h3"/></svg><span>PDF</span></button><div class="version-chip cf-technical-only">19 imagens únicas</div></div>
       </div>
       <div class="alg-shell">
         <div class="card" style="padding:14px 16px">
@@ -404,7 +415,7 @@ body.cf-splash-open{overflow:hidden!important}
 
     <section id="module-ecg" class="module-panel" data-module="ecg" hidden>
       <div class="module-hero ecg-hero">
-        <div><span class="eyebrow">Módulo ECG</span><h1>ECG / Ritmos — Atlas + Leitor Guiado</h1><p>Reconhecimento visual de ritmos do ACLS/PALS, alterações de emergência e laudo assistido diretamente da foto, com extração automática de medidas e análise do traçado.</p></div><div class="version-chip">ECG Vision • Foto/Câmera + Autoanálise</div>
+        <div><span class="eyebrow">Módulo ECG</span><h1>ECG / Ritmos — Atlas + Leitor Guiado</h1><p>Reconhecimento visual de ritmos do ACLS/PALS, alterações de emergência e laudo assistido diretamente da foto, com extração automática de medidas e análise do traçado.</p></div><div class="module-hero-actions"><button class="pdf-export-btn" type="button" data-pdf-export="ecg" aria-label="Gerar PDF de ECG / Ritmos" title="Gerar PDF compacto de ECG / Ritmos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M8.5 16.5h7M8.5 13.5h7M8.5 10.5h3"/></svg><span>PDF</span></button><div class="version-chip">ECG Vision • Foto/Câmera + Autoanálise</div></div>
       </div>
       <div class="safety-banner"><strong>Uso educacional e apoio à interpretação:</strong> AESP é um diagnóstico clínico (atividade elétrica organizada <em>sem pulso</em>) e não pode ser definida pelo traçado isolado. A foto agora é analisada automaticamente. O sistema extrai medidas/texto quando disponíveis, avalia características visuais do traçado e gera uma impressão provável com nível de confiança. AESP continua exigindo confirmação clínica de ausência de pulso.</div>
       <div class="ecg-toolbar" role="tablist"><button class="chip-btn active" type="button" data-ecg-view="atlas">Atlas por categoria</button><button class="chip-btn" type="button" data-ecg-view="gallery">Galeria completa</button><button class="chip-btn" type="button" data-ecg-view="reader">Leitor / Laudo</button></div>
@@ -423,7 +434,7 @@ body.cf-splash-open{overflow:hidden!important}
           <h1>Fármacos • Biblioteca 181 + Calculadoras</h1>
           <p>Biblioteca farmacológica com 181 cards do corpus, além de conversão de dose para bomba, diluições padronizadas, doses emergenciais e roteiros por síndrome.</p>
         </div>
-        <div class="version-chip">Drug Engine</div>
+        <div class="module-hero-actions"><button class="pdf-export-btn" type="button" data-pdf-export="drugs" aria-label="Gerar PDF de Fármacos" title="Gerar PDF compacto de Fármacos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M8.5 16.5h7M8.5 13.5h7M8.5 10.5h3"/></svg><span>PDF</span></button><div class="version-chip">Drug Engine</div></div>
       </div>
 
       <div class="safety-banner critical-banner">
@@ -551,7 +562,7 @@ body.cf-splash-open{overflow:hidden!important}
           <h1>Guia Clínico Completo</h1>
           <p>Consulta rápida à beira-leito e revisão aprofundada, organizada por síndrome, com foco em decisões práticas e pontos de prova.</p>
         </div>
-        <div class="version-chip">Clinical Knowledge Engine</div>
+        <div class="module-hero-actions"><button class="pdf-export-btn" type="button" data-pdf-export="guide" aria-label="Gerar PDF de Guia Clínico" title="Gerar PDF compacto de Guia Clínico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5"/><path d="M8.5 16.5h7M8.5 13.5h7M8.5 10.5h3"/></svg><span>PDF</span></button><div class="version-chip">Clinical Knowledge Engine</div></div>
       </div>
 
       <div class="safety-banner clinical-banner">
@@ -2134,7 +2145,7 @@ body.cf-splash-open{overflow:hidden!important}
   let guideReady=false, guideSearchTimer=null;
   function ensureGuide(){render();guideReady=true;}
   function wire(){const input=$('guideSearch');if(!input)return;input.value=state.search;input.addEventListener('input',e=>{state.search=e.target.value;save();clearTimeout(guideSearchTimer);guideSearchTimer=setTimeout(ensureGuide,140);});$('guideClearSearch').addEventListener('click',()=>{state.search='';input.value='';save();ensureGuide();input.focus();});document.querySelectorAll('[data-guide-mode]').forEach(b=>b.addEventListener('click',()=>{state.mode=b.dataset.guideMode;save();ensureGuide();}));document.addEventListener('click',e=>{if(e.target.closest('[data-module-target="guide"]'))requestAnimationFrame(ensureGuide);},{capture:true});}
-  window.ArritmiaXGuide={open(topicId,mode='quick'){if(topics.some(t=>t.id===topicId))state.topic=topicId;if(['quick','full'].includes(mode))state.mode=mode;state.search='';save();ensureGuide();document.querySelector('[data-module-target="guide"]')?.click();},topics:topics.map(t=>({id:t.id,title:t.title,tags:[...t.tags]}))};
+  window.ArritmiaXGuide={open(topicId,mode='quick'){if(topics.some(t=>t.id===topicId))state.topic=topicId;if(['quick','full'].includes(mode))state.mode=mode;state.search='';save();ensureGuide();document.querySelector('[data-module-target="guide"]')?.click();},topics, catalog:topics.map(t=>({id:t.id,title:t.title,tags:[...t.tags]}))};
   wire(); renderMode();
 })();
 
@@ -2246,6 +2257,7 @@ body.cf-splash-open{overflow:hidden!important}
     wrap.innerHTML=`<div class="deep-divider"><span>CAMADA APROFUNDADA v0.7</span><strong>${esc(d.label)}</strong></div>${d.sections.map(([t,items],i)=>`<article class="deep-study-card"><div class="deep-number">${String(i+1).padStart(2,'0')}</div><div><h3>${esc(t)}</h3><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></div></article>`).join('')}<div class="deep-sources"><strong>Base desta ampliação:</strong>${d.sources.map(s=>`<span>• ${esc(s)}</span>`).join('')}</div>`;
     const footer=content.querySelector('.clinical-sources'); if(footer)content.insertBefore(wrap,footer); else content.appendChild(wrap);
   }
+  window.ArritmiaXGuideDeep=deep;
   document.addEventListener('click',e=>{if(e.target.closest('[data-guide-mode], [data-guide-topic], [data-module-target="guide"]'))requestAnimationFrame(add);},{capture:true});
   requestAnimationFrame(add);
 })();
@@ -3549,7 +3561,7 @@ body.cf-splash-open{overflow:hidden!important}
     document.addEventListener('click',e=>{const coach=e.target.closest('#liveCoachV07 [data-go],#liveCoachV07 [data-ar],#liveCoachV07 [data-after],#liveCoachV07 [data-brady],#liveCoachV07 [data-tachy],#liveCoachV07 [data-qrs],#liveCoachV07 [data-regular],#liveCoachV07 [data-wide],#liveCoachV07 [data-coach-mode]');if(coach)setTimeout(()=>renderLiveChallenge(true),30);const n=e.target.closest('[data-live-new]');if(n){state.live=null;renderLiveChallenge(true);return}const at=e.target.closest('[data-live-atlas]');if(at){window.ArritmiaXActivateModule?.('ecg');return}const ans=e.target.closest('[data-live-answer]');if(ans){const item=byId(state.live),fb=document.getElementById('ecgLiveFeedback'),ok=ans.dataset.liveAnswer===item.name;fb.className='ecg-live-feedback '+(ok?'ok':'bad');let extra='';if(item.shockable===true)extra=' Ritmo chocável no contexto de PCR.';if(item.shockable===false)extra=' Ritmo não chocável no contexto de PCR.';fb.innerHTML=`<strong>${ok?'Correto.':'Ainda não.'}</strong> ${esc(item.name)}. ${esc(item.clue)}${esc(extra)}`;}});
   }
   function init(){if(state.inited)return;state.inited=true;renderCategories();renderAtlas();wire();setTimeout(()=>renderLiveChallenge(true),0);}
-  window.ArritmiaXECG={init,patterns:R.map(r=>({id:r.id,name:r.name,category:r.cat})),open(id){init();const item=byId(id);if(item)fillReader(item);window.ArritmiaXActivateModule?.('ecg');},svgFor};
+  window.ArritmiaXECG={init,items:R,categories:CATS,patterns:R.map(r=>({id:r.id,name:r.name,category:r.cat})),open(id){init();const item=byId(id);if(item)fillReader(item);window.ArritmiaXActivateModule?.('ecg');},svgFor};
   // lightweight Live integration is initialized without rendering the full atlas
   setTimeout(()=>{if(document.getElementById('liveCoachV07'))renderLiveChallenge(true);},0);
 })();
@@ -3588,7 +3600,7 @@ body.cf-splash-open{overflow:hidden!important}
   $('algClose')?.addEventListener('click',()=>$('algViewer').close());$('algPrev')?.addEventListener('click',()=>move(-1));$('algNext')?.addEventListener('click',()=>move(1));
   $('algToggleZoom')?.addEventListener('click',()=>{state.zoom=!state.zoom;$('algViewerStage').classList.toggle('zoomed',state.zoom);$('algToggleZoom').textContent=state.zoom?'Ajustar à tela':'Tamanho real';});
   $('algViewer')?.addEventListener('click',e=>{if(e.target===$('algViewer'))$('algViewer').close()});
-  window.CFArritmiXAlgorithms={init,open,items:ITEMS.map(({id,title,kind})=>({id,title,kind}))};
+  window.CFArritmiXAlgorithms={init,open,items:ITEMS};
 })();
 </script>
 
@@ -3815,6 +3827,7 @@ body.cf-splash-open{overflow:hidden!important}
   setLoading('Biblioteca será carregada somente quando você abrir Fármacos.');
   document.addEventListener('click',e=>{ if(e.target.closest('[data-module-target="drugs"]')) init(); },{capture:true});
   window.ArritmiaXLoadDrugLibrary=init;
+  window.ArritmiaXDrugLibrary={load:async()=>{await init();return DRUGS||[];},get items(){return DRUGS||[];}};
 })();
 </script>
 
@@ -4156,5 +4169,127 @@ root.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target!
 requestAnimationFrame(()=>{try{btn?.focus({preventScroll:true})}catch{btn?.focus()}});
 })();
 </script>
-</body>
+
+<script id="cfPdfExportScript">
+/* CF ArritmiX v1.8.3 — PDFs compactos por módulo. Usa impressão nativa do navegador para gerar PDF sem dependências externas. */
+(() => {
+  'use strict';
+  const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+  const nl=s=>esc(s).replace(/\n/g,'<br>');
+  const absSrc=src=>{if(!src)return'';if(/^data:|^blob:|^https?:/i.test(src))return src;try{return new URL(src,location.href).href}catch{return src}};
+  const chunk=(arr,n)=>Array.from({length:Math.ceil(arr.length/n)},(_,i)=>arr.slice(i*n,i*n+n));
+  const moduleMeta={
+    drugs:{title:'Fármacos',sub:'Biblioteca farmacológica compacta - 181 cards do corpus'},
+    ecg:{title:'ECG / Ritmos',sub:'Atlas visual para reconhecimento rápido e revisão'},
+    algorithms:{title:'Algoritmos',sub:'Cartões visuais ACLS/PCR e revisão farmacológica'},
+    guide:{title:'Guia Clínico',sub:'Consulta rápida + conteúdo completo + estudo aprofundado'}
+  };
+
+  function pageHeader(title,sub,extra=''){return `<div class="pdf-head"><div><b>CF ArritmiX</b><span>Urgência e Emergência</span></div><div class="pdf-head-center"><strong>${esc(title)}</strong><small>${esc(sub)}</small></div><div class="pdf-head-extra">${extra}</div></div>`}
+  function footer(){return `<div class="pdf-foot"><span>CF ArritmiX - apoio de estudo e consulta</span><span>Confirme protocolo institucional e atualização aplicável.</span></div>`}
+
+  function shellCss(kind){return `
+    @page{size:A4 landscape;margin:5mm}
+    *{box-sizing:border-box;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+    html,body{margin:0;padding:0;background:#fff;color:#0a2946;font-family:Arial,Helvetica,sans-serif}
+    body{font-size:8pt}
+    .pdf-page{width:287mm;min-height:200mm;max-height:200mm;overflow:hidden;page-break-after:always;break-after:page;display:flex;flex-direction:column;background:#fff}
+    .pdf-page:last-child{page-break-after:auto;break-after:auto}
+    .pdf-head{height:14mm;flex:0 0 14mm;background:#07385f;color:#fff;border-radius:3mm;padding:2.2mm 3.2mm;display:grid;grid-template-columns:47mm 1fr 44mm;align-items:center;gap:3mm}
+    .pdf-head>div:first-child b{display:block;font-size:13pt;letter-spacing:-.02em}.pdf-head>div:first-child span{display:block;color:#a9eaf2;font-size:6.2pt;margin-top:.5mm}
+    .pdf-head-center{text-align:center}.pdf-head-center strong{display:block;font-size:11pt}.pdf-head-center small{display:block;color:#d5f8ff;font-size:6.5pt;margin-top:.6mm}
+    .pdf-head-extra{text-align:right;color:#a9eaf2;font-size:6.4pt;font-weight:700}
+    .pdf-body{flex:1;min-height:0;padding:3mm 0 2mm;overflow:hidden}
+    .pdf-foot{height:5mm;flex:0 0 5mm;border-top:.25mm solid #b9d9e7;display:flex;align-items:flex-end;justify-content:space-between;color:#527187;font-size:5.5pt;padding-top:1mm}
+    h2,h3,h4,p{margin:0}.muted{color:#527187}.pill{display:inline-block;border:.25mm solid #18a7c0;border-radius:99mm;padding:.6mm 1.5mm;font-size:5.6pt;font-weight:800;color:#07627b}
+    ul{margin:1.2mm 0 0;padding-left:4mm}li{margin:.55mm 0;line-height:1.24}
+    ${kind==='algorithms'?`.algo-grid{height:100%;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4mm}.algo-card{margin:0;min-width:0;border:.3mm solid #b9d9e7;border-radius:2.5mm;padding:2mm;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;background:#f9fcfe}.algo-card h3{font-size:7.2pt;line-height:1.15;min-height:8mm;text-align:center;color:#07385f}.algo-card img{display:block;max-width:100%;width:auto;max-height:166mm;height:auto;object-fit:contain}.algo-kind{align-self:flex-start;margin-bottom:1mm;color:#087493;font-size:5.5pt;font-weight:900;text-transform:uppercase}`:''}
+    ${kind==='ecg'?`.ecg-grid{height:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:repeat(3,minmax(0,1fr));gap:2mm}.ecg-card{border:.3mm solid #b9d9e7;border-radius:2.3mm;padding:2mm;overflow:hidden;background:#fbfdff;display:flex;flex-direction:column}.ecg-card h3{font-size:7.1pt;color:#07385f;line-height:1.1;margin-bottom:1mm}.ecg-meta{display:flex;gap:1mm;flex-wrap:wrap;margin-bottom:1.2mm}.ecg-strip{height:18mm;border:.2mm solid #d0e2eb;border-radius:1.5mm;overflow:hidden;background:#06131d;margin-bottom:1.2mm}.ecg-strip svg{display:block;width:100%;height:100%}.ecg-card p{font-size:5.7pt;line-height:1.24;margin:.7mm 0}.ecg-card p strong{color:#0b5b80}.ecg-data{font-size:5.2pt;color:#45687e;display:flex;gap:2mm;flex-wrap:wrap;margin-top:auto;padding-top:1mm;border-top:.2mm solid #d9e8ef}`:''}
+    ${kind==='drugs'?`.pdf-columns{height:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2.5mm}.pdf-col{min-width:0;overflow:hidden;display:flex;flex-direction:column;gap:2mm}.drug-card{border:.25mm solid #bad8e6;border-radius:2mm;padding:1.7mm;background:#fbfdff;break-inside:avoid}.drug-card.op{border-left:1mm solid #0aa68b}.drug-card.ref{border-left:1mm solid #c89518}.drug-class{color:#06728d;font-size:5.1pt;font-weight:900;text-transform:uppercase;letter-spacing:.02em;margin-bottom:.7mm}.drug-name{font-size:7.5pt;color:#092e4e;line-height:1.1;margin-bottom:.7mm}.drug-status{font-size:5.1pt;font-weight:900;margin-bottom:1mm}.drug-status.op{color:#087d69}.drug-status.ref{color:#936b08}.drug-field{font-size:5.55pt;line-height:1.2;margin:.55mm 0}.drug-field b{color:#0c5a78}.drug-card.dense .drug-field{font-size:5.15pt;line-height:1.16}.drug-card.ultra .drug-field{font-size:4.8pt;line-height:1.13}.pdf-note{font-size:5.6pt;color:#506e81}`:''}
+    ${kind==='guide'?`.pdf-columns{height:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:3mm}.pdf-col{min-width:0;overflow:hidden;display:flex;flex-direction:column;gap:2mm}.g-block{border:.25mm solid #c0dce8;border-radius:2mm;padding:1.7mm;background:#fcfeff;break-inside:avoid}.g-topic{border-left:1mm solid #087eb0;background:#f0f9fd}.g-topic h2{font-size:8pt;color:#07385f;line-height:1.12}.g-topic p{font-size:5.9pt;line-height:1.2;margin-top:.8mm}.g-alert{color:#8a2a28!important;font-weight:700}.g-section h3{font-size:6.7pt;color:#0b5d7f;margin-bottom:.7mm}.g-section ul{font-size:5.7pt;margin-top:.6mm;padding-left:3.3mm}.g-section li{line-height:1.18;margin:.45mm 0}.g-section.quick{border-left:.8mm solid #0aaa7d}.g-section.full{border-left:.8mm solid #336fc7}.g-section.deep{border-left:.8mm solid #8b5cc5}.g-sources{font-size:4.9pt;line-height:1.18;color:#5b7282}.g-label{font-size:4.8pt;text-transform:uppercase;font-weight:900;color:#087493;letter-spacing:.04em;margin-bottom:.7mm}`:''}
+    @media screen{body{background:#e7edf1;padding:8mm}.pdf-page{margin:0 auto 8mm;box-shadow:0 8px 34px rgba(0,0,0,.18)}}
+  `}
+
+  function docHtml(kind,body){const meta=moduleMeta[kind];return `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CF ArritmiX - ${esc(meta.title)}</title><style>${shellCss(kind)}</style></head><body>${body}<script>window.addEventListener('afterprint',()=>setTimeout(()=>window.close(),120));<\/script></body></html>`}
+
+  function pack(blocks,cols,maxHeight){
+    const pages=[];let page=Array.from({length:cols},()=>[]),used=Array(cols).fill(0),col=0;
+    for(const b of blocks){const h=Math.max(5,Math.min(maxHeight,b.h||10));if(used[col]+h>maxHeight&&page[col].length){col++;if(col>=cols){pages.push(page);page=Array.from({length:cols},()=>[]);used=Array(cols).fill(0);col=0;}}page[col].push(b);used[col]+=h;}
+    if(page.some(c=>c.length))pages.push(page);return pages;
+  }
+  function lineEstimate(text,chars=44){return Math.max(1,Math.ceil(String(text||'').length/chars))}
+
+  async function measureBlocks(blocks,kind,widthMm){
+    const frame=document.createElement('iframe');
+    frame.setAttribute('aria-hidden','true');
+    frame.style.cssText=`position:fixed;left:-10000px;top:0;width:${widthMm+4}mm;height:2200px;visibility:hidden;border:0;pointer-events:none`;
+    document.body.appendChild(frame);
+    const d=frame.contentDocument;
+    d.open();d.write(`<!doctype html><html><head><meta charset="utf-8"><style>${shellCss(kind)}body{padding:0!important;margin:0!important;background:#fff!important}.measure{width:${widthMm}mm;padding:0!important;margin:0!important}.measure>*{margin-top:0!important;margin-bottom:0!important}</style></head><body><div class="measure"></div></body></html>`);d.close();
+    const host=d.querySelector('.measure');
+    for(const b of blocks){host.innerHTML=b.html;const el=host.firstElementChild;if(el){b.h=(el.getBoundingClientRect().height*25.4/96)+2.2;}host.innerHTML='';}
+    frame.remove();return blocks;
+  }
+
+  async function buildDrugs(){
+    const api=window.ArritmiaXDrugLibrary;if(!api)throw new Error('Biblioteca farmacológica indisponível.');
+    const drugs=await api.load();
+    const ordered=[...drugs].sort((a,b)=>a.class.localeCompare(b.class,'pt-BR')||a.name.localeCompare(b.name,'pt-BR'));
+    const blocks=[];let lastClass='';
+    for(const d of ordered){
+      const op=String(d.status||'').startsWith('Dados operacionais');
+      const classHead=d.class!==lastClass?`<div class="drug-class">${esc(d.class)}</div>`:'';lastClass=d.class;
+      const fields=[['Contexto',d.context],['Dose',d.dose],['Via',d.route],['Preparo',d.prep],['Monitorização',d.monitor],['Alertas',d.alerts]].filter(x=>x[1]);
+      const txt=fields.map(x=>x[0]+': '+x[1]).join(' ');const lines=lineEstimate(txt,op?43:46)+lineEstimate(d.name,28)+lineEstimate(d.class,34);
+      const h=7+lines*1.38+(classHead?2.5:0);const dense=h>48?' dense':'';const ultra=h>72?' ultra':'';
+      blocks.push({h:Math.min(h,172),html:`<article class="drug-card ${op?'op':'ref'}${dense}${ultra}">${classHead}<div class="drug-name"><b>${esc(d.name)}</b></div><div class="drug-status ${op?'op':'ref'}">${op?'DOSE/POSOLOGIA NO CORPUS':'MENÇÃO / LIMITE'}</div>${fields.map(([k,v])=>`<div class="drug-field"><b>${esc(k)}:</b> ${nl(v)}</div>`).join('')}</article>`});
+    }
+    await measureBlocks(blocks,'drugs',66.5);
+    const pages=pack(blocks,4,174);
+    return pages.map((cols,i)=>`<section class="pdf-page">${pageHeader('Fármacos','Biblioteca farmacológica compacta - 181 cards',`Página ${i+1}/${pages.length}`)}<div class="pdf-body"><div class="pdf-columns">${cols.map(c=>`<div class="pdf-col">${c.map(b=>b.html).join('')}</div>`).join('')}</div></div>${footer()}</section>`).join('');
+  }
+
+  function categoryLabel(cat){const cats=window.ArritmiaXECG?.categories||[];return cats.find(c=>c[0]===cat)?.[1]||cat}
+  async function buildEcg(){
+    window.ArritmiaXECG?.init?.();const items=window.ArritmiaXECG?.items||[];if(!items.length)throw new Error('Atlas ECG indisponível.');
+    const pages=chunk(items,9);
+    return pages.map((list,i)=>`<section class="pdf-page">${pageHeader('ECG / Ritmos','Atlas visual completo',`Página ${i+1}/${pages.length}`)}<div class="pdf-body"><div class="ecg-grid">${list.map(r=>`<article class="ecg-card"><h3>${esc(r.name)}</h3><div class="ecg-meta"><span class="pill">${esc(categoryLabel(r.cat))}</span>${r.shockable===true?'<span class="pill">CHOCÁVEL</span>':r.shockable===false?'<span class="pill">NÃO CHOCÁVEL</span>':''}</div><div class="ecg-strip">${window.ArritmiaXECG.svgFor(r,true)}</div><p><strong>Reconhecimento:</strong> ${esc(r.clue)}</p><p><strong>ACLS/conduta:</strong> ${esc(r.acls)}</p><div class="ecg-data"><span>FC: ${r.rate??'—'}${r.rate!=null?' bpm':''}</span><span>PR: ${r.pr??'—'}${r.pr!=null?' ms':''}</span><span>QRS: ${r.qrs??'—'}${r.qrs!=null?' ms':''}</span>${r.qtc?`<span>QTc: ${r.qtc} ms</span>`:''}</div></article>`).join('')}</div></div>${footer()}</section>`).join('');
+  }
+
+  async function buildAlgorithms(){
+    const items=window.CFArritmiXAlgorithms?.items||[];if(!items.length)throw new Error('Biblioteca de algoritmos indisponível.');
+    const pages=chunk(items,2);
+    return pages.map((list,i)=>`<section class="pdf-page">${pageHeader('Algoritmos','Cartões visuais - 2 por página',`Página ${i+1}/${pages.length}`)}<div class="pdf-body"><div class="algo-grid">${list.map(x=>`<figure class="algo-card"><div class="algo-kind">${esc(x.kind)}</div><h3>${esc(x.title)}</h3><img src="${esc(absSrc(x.file))}" alt="${esc(x.title)}"></figure>`).join('')}</div></div>${footer()}</section>`).join('');
+  }
+
+  async function buildGuide(){
+    const topics=window.ArritmiaXGuide?.topics||[];if(!topics.length)throw new Error('Guia clínico indisponível.');
+    const deep=window.ArritmiaXGuideDeep||{};const blocks=[];
+    for(const t of topics){
+      const topicTxt=(t.title||'')+(t.short||'')+(t.alert||'');
+      blocks.push({h:12+lineEstimate(topicTxt,44)*2.5,html:`<section class="g-block g-topic"><div class="g-label">Tema clínico</div><h2>${esc(t.title)}</h2><p>${esc(t.short)}</p><p class="g-alert"><b>Ponto crítico:</b> ${esc(t.alert)}</p></section>`});
+      for(const s of t.quick||[]){const text=(s.items||[]).join(' ');blocks.push({h:8+lineEstimate(text,47)*2.25,html:`<section class="g-block g-section quick"><div class="g-label">Consulta rápida</div><h3>${esc(s.title)}</h3><ul>${(s.items||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`});}
+      for(const s of t.full||[]){const text=(s.body||[]).join(' ');blocks.push({h:8+lineEstimate(text,47)*2.25,html:`<section class="g-block g-section full"><div class="g-label">Conteúdo completo</div><h3>${esc(s.title)}</h3><ul>${(s.body||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`});}
+      const d=deep[t.id];if(d){for(const s of d.sections||[]){const title=s[0],items=s[1]||[],text=items.join(' ');blocks.push({h:8+lineEstimate(text,47)*2.25,html:`<section class="g-block g-section deep"><div class="g-label">Estudo aprofundado</div><h3>${esc(title)}</h3><ul>${items.map(x=>`<li>${esc(x)}</li>`).join('')}</ul></section>`});}}
+      const allSources=[...(t.sources||[]),...((d&&d.sources)||[])];if(allSources.length){blocks.push({h:6+lineEstimate(allSources.join(' '),58)*1.8,html:`<section class="g-block g-sources"><b>Fontes/base do tema:</b> ${allSources.map(esc).join(' • ')}</section>`});}
+    }
+    await measureBlocks(blocks,'guide',91.5);
+    const pages=pack(blocks,3,174);
+    return pages.map((cols,i)=>`<section class="pdf-page">${pageHeader('Guia Clínico','Consulta rápida + conteúdo completo + aprofundamento',`Página ${i+1}/${pages.length}`)}<div class="pdf-body"><div class="pdf-columns">${cols.map(c=>`<div class="pdf-col">${c.map(b=>b.html).join('')}</div>`).join('')}</div></div>${footer()}</section>`).join('');
+  }
+
+  async function build(kind){if(kind==='drugs')return buildDrugs();if(kind==='ecg')return buildEcg();if(kind==='algorithms')return buildAlgorithms();if(kind==='guide')return buildGuide();throw new Error('Módulo inválido.')}
+  function loadingHtml(kind){const m=moduleMeta[kind];return `<!doctype html><html><head><meta charset="utf-8"><title>Preparando ${esc(m.title)}</title><style>body{margin:0;background:#06131e;color:#eafaff;font-family:Arial;display:grid;place-items:center;min-height:100vh}.box{border:1px solid #24516b;border-radius:18px;padding:30px 34px;text-align:center;background:#0a1d2c}.spin{width:32px;height:32px;border:3px solid #234f68;border-top-color:#35e5ee;border-radius:50%;margin:0 auto 16px;animation:s .8s linear infinite}@keyframes s{to{transform:rotate(360deg)}}small{display:block;color:#8cb2c5;margin-top:8px}</style></head><body><div class="box"><div class="spin"></div><b>Preparando PDF - ${esc(m.title)}</b><small>Organizando o conteúdo em páginas compactas...</small></div></body></html>`}
+  function waitImages(w){const imgs=[...w.document.images];if(!imgs.length)return Promise.resolve();return Promise.all(imgs.map(img=>img.complete?Promise.resolve():new Promise(res=>{img.onload=img.onerror=res})));}
+  function openPrintWindow(kind){const w=window.open('','_blank');if(!w)return null;w.document.open();w.document.write(loadingHtml(kind));w.document.close();return w}
+  async function exportPdf(kind,button){
+    const w=openPrintWindow(kind);if(!w){alert('O navegador bloqueou a janela do PDF. Permita pop-ups para o CF ArritmiX e tente novamente.');return}
+    const old=button?.innerHTML;if(button){button.disabled=true;button.classList.remove('is-ready','is-error');button.querySelector('span')&&(button.querySelector('span').textContent='...')}
+    try{const body=await build(kind);w.document.open();w.document.write(docHtml(kind,body));w.document.close();await waitImages(w);await new Promise(r=>setTimeout(r,260));w.focus();w.print();if(button){button.classList.add('is-ready');setTimeout(()=>button.classList.remove('is-ready'),1200)}}catch(err){console.error('Falha ao preparar PDF',err);if(w&&!w.closed){w.document.body.innerHTML=`<div style="font-family:Arial;padding:30px"><h2>Não foi possível preparar o PDF.</h2><p>${esc(err.message||err)}</p></div>`}if(button)button.classList.add('is-error')}finally{if(button){button.disabled=false;if(old)button.innerHTML=old}}
+  }
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-pdf-export]');if(!b)return;e.preventDefault();exportPdf(b.dataset.pdfExport,b)});
+  window.CFPrintPDF={build,export:exportPdf,docHtml};
+})();
+</script>
+\n</body>
 </html>
