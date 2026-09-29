@@ -1,20 +1,5 @@
-/* CF ArritmiX v1.8.4 — service-worker de migração/limpeza.
-   Remove caches legados (incluindo o antigo "financeflow") e não intercepta
-   requisições. O app permanece dependente apenas do cache HTTP normal do navegador. */
-const CF_SW_VERSION = 'cf-arritmix-v1.8.4';
-
-self.addEventListener('install', () => {
-  self.skipWaiting();
-});
-
-self.addEventListener('activate', event => {
-  event.waitUntil((async () => {
-    const keys = await caches.keys();
-    await Promise.all(keys.map(key => caches.delete(key)));
-    await self.clients.claim();
-  })());
-});
-
-self.addEventListener('message', event => {
-  if (event.data === 'SKIP_WAITING') self.skipWaiting();
-});
+const CACHE='cf-arritmix-v2529';
+const CORE=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./cf_asset_01.png','./cf_asset_02.png'];
+self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
+self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
+self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(resp=>{const copy=resp.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return resp}).catch(()=>caches.match('./index.html'))))});
