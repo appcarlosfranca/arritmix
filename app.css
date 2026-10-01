@@ -1,0 +1,130 @@
+:root {
+  --bg-dark: #0d0f1a;
+  --bg-light: #f5f6fa;
+  --gold: #d4af37;
+  --text-dark: #ffffff;
+  --text-light: #1e1e1e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+.top-bar {
+  padding: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.app-title {
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.summary {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+input, select {
+  background-color: #111;
+  border: 1px solid var(--gold);
+  color: #fff;
+  padding: 6px;
+}
+
+select option {
+  background-color: #111;
+  color: #fff;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+.month-card {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.month-card h3 {
+  color: var(--gold);
+}
+
+.hidden {
+  display: none;
+}
+
+.month-block {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.launch-item {
+  font-size: 13px;
+  border-bottom: 1px solid #333;
+  padding: 4px 0;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 380px;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+.modal-content input,
+.modal-content select {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.manage-item {
+  border-bottom: 1px solid #333;
+  padding: 6px 0;
+  font-size: 13px;
+}

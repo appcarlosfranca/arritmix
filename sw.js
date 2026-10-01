@@ -1,5 +1,20 @@
-const CACHE='cf-arritmix-v2532';
-const CORE=['./','./index.html','./manifest.webmanifest','./icon-192.png','./icon-512.png','./cf_asset_01.png','./cf_asset_02.png'];
-self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting()))});
-self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(resp=>{const copy=resp.clone();caches.open(CACHE).then(c=>c.put(e.request,copy));return resp}).catch(()=>caches.match('./index.html'))))});
+self.addEventListener("install", event => {
+  event.waitUntil(
+    caches.open("financeflow").then(cache => {
+      return cache.addAll([
+        "./",
+        "./index.html",
+        "./app.css",
+        "./styles.js"
+      ]);
+    })
+  );
+});
+
+self.addEventListener("fetch", event => {
+  event.respondWith(
+    caches.match(event.request).then(response => {
+      return response || fetch(event.request);
+    })
+  );
+});
