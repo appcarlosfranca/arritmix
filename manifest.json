@@ -1,20 +1,26 @@
 {
-  "name": "FinanceFlow",
-  "short_name": "FinanceFlow",
-  "start_url": ".",
+  "id": "./",
+  "name": "CF ArritmiX — Emergência & Decisão Assistida",
+  "short_name": "CF ArritmiX",
+  "description": "Ferramenta de apoio, estudo e treinamento em emergência, ACLS e ECG.",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#0d0f1a",
-  "theme_color": "#4fc3f7",
+  "orientation": "any",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "./icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "icon-512.png",
+      "src": "./icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }

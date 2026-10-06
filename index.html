@@ -665,6 +665,12 @@ html{box-sizing:border-box;-webkit-text-size-adjust:100%;text-size-adjust:100%}*
 .cf-study-ecg .trace{fill:none;stroke:#27e5ff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 3px rgba(39,229,255,.42))}
 .cf-study-ecg .label{fill:#9dd6e5;font:12px system-ui,sans-serif}.cf-study-ecg .mark{fill:#67efff;font:700 12px system-ui,sans-serif}
 </style>
+
+<style id="cf-protocol-v07-didactic-labels">
+.pharm-protocols-v07 .protocol-v07-labels{opacity:.72;font-size:.82em;text-transform:uppercase;letter-spacing:.03em}
+.pharm-protocols-v07 .protocol-v07-labels strong,.pharm-protocols-v07 .protocol-v07-labels b,.pharm-protocols-v07 .protocol-v07-labels span{font-weight:700}
+@media(max-width:760px){.pharm-protocols-v07 .protocol-v07-labels{display:none}}
+</style>
 </head>
 <body>
 <div id="cfSplash" class="cf-splash cf-splash-exact" role="dialog" aria-modal="true" aria-label="Bem-vindo ao CF ArritmiX">
@@ -2052,7 +2058,7 @@ function actionDefinitions(){
       cfSwReloading=true;
       location.reload();
     });
-    navigator.serviceWorker.register('./sw.js?v=2514',{updateViaCache:'none'})
+    navigator.serviceWorker.register('./sw.js?v=2700',{updateViaCache:'none'})
       .then(reg=>reg.update())
       .catch(()=>{});
   }
@@ -2599,55 +2605,64 @@ function bind(){
   old.insertAdjacentElement('afterend',card);
   const esc=s=>String(s??'').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
   const protocols={
-    stemi:{name:'IAM com supra de ST',guide:'sca',headline:'Reperfusão define o esquema: ICP primária versus fibrinólise.',groups:[
-      ['Primeiros minutos',[['AAS','160–325 mg VO mastigável','Dar o mais cedo possível se não houver alergia/sangramento ativo.'],['Nitroglicerina','0,4 mg SL a cada 5 min, até 3 doses','Somente se PA adequada; evitar em IAM de VD, hipotensão e PDE-5 recente.'],['Oxigênio','Se hipoxemia/desconforto','Não usar rotineiramente com saturação normal.'],['Morfina','2–4 mg IV, titulada','Somente dor grave persistente; não é rotina.']]],
-      ['Se estratégia = ICP',[['P2Y12','Ticagrelor 180 mg OU prasugrel 60 mg; clopidogrel 600 mg como alternativa','ACC/AHA 2025 prefere ticagrelor/prasugrel em pacientes apropriados submetidos a ICP.'],['Anticoagulação','Definir no protocolo de hemodinâmica','HNF/bivalirudina/enoxaparina dependem da estratégia e serviço.'],['Estatina','Alta intensidade','Iniciar precocemente salvo contraindicação.']]],
-      ['Se estratégia = fibrinólise',[['Clopidogrel','<75 anos: 300 mg ataque; ≥75 anos: 75 mg sem ataque','Referência do Manual SOCERJ anexado.'],['Enoxaparina','<75: 30 mg IV + 1 mg/kg SC 12/12 h; ≥75: 0,75 mg/kg 12/12 h sem bolus; ClCr <30: 1 mg/kg 24/24 h','Monitorar função renal e sangramento.'],['Alteplase','15 mg bolus + 0,75 mg/kg/30 min (máx. 50 mg) + 0,5 mg/kg/60 min (máx. 35 mg)','Somente após checar contraindicações.'],['Tenecteplase','Bolus único baseado em peso conforme tabela do fibrinolítico/protocolo','Dose deve ser confirmada pela apresentação e protocolo institucional; idosos exigem atenção especial.']]],
-      ['Após reperfusão',[['DAPT','AAS + P2Y12','Duração individualizada; 12 meses é padrão em baixo risco hemorrágico.'],['Estatina','Alta intensidade','Prevenção secundária.'],['IECA/ARA-II, betabloqueador','Conforme FEVE, PA, IC e contraindicações','Não automatizar sem contexto hemodinâmico.']]]
-    ],warnings:['Troponina não deve atrasar reperfusão no IAM com supra.','Fibrinólise não é indicada no NSTEMI/angina instável.','Prasugrel é contraindicado em AVC/AIT prévios.'],sources:['Manual SOCERJ SCA 2021 anexado','PCDT SCA anexado','ACC/AHA ACS 2025']},
-    nste:{name:'SCA sem supra / NSTEMI',guide:'sca',headline:'Antiagregação + anticoagulação + estratégia invasiva conforme risco.',groups:[
-      ['Base',[['AAS','162–325 mg VO mastigável','Depois manutenção diária.'],['Nitroglicerina','0,4 mg SL q5 min até 3 doses','Se dor/isquemia e sem contraindicação.'],['Oxigênio','Apenas se hipoxemia','Evitar uso rotineiro.'],['Estatina','Alta intensidade','Iniciar precocemente.']]],
-      ['P2Y12',[['Ticagrelor','180 mg ataque → 90 mg 12/12 h','Preferido ao clopidogrel em muitos pacientes com estratégia invasiva.'],['Prasugrel','60 mg ataque após anatomia conhecida/ICP planejada','Evitar em AVC/AIT prévios e avaliar risco hemorrágico.'],['Clopidogrel','300–600 mg ataque → 75 mg/dia','Alternativa quando ticagrelor/prasugrel não são adequados/disponíveis.']]],
-      ['Anticoagulação',[['Enoxaparina','1 mg/kg SC 12/12 h; ≥75 anos 0,75 mg/kg 12/12 h; ClCr 15–30: 1 mg/kg 24/24 h','Manual SOCERJ.'],['Fondaparinux','2,5 mg SC 24/24 h','Opção especialmente em risco hemorrágico; se ICP, requer HNF no procedimento.'],['HNF','Opção preferencial em hemodinâmica imediata ou disfunção renal grave','Titular conforme protocolo/TTPa.']]]
-    ],warnings:['Não usar fibrinolítico.','A decisão de pré-tratamento P2Y12 depende do tempo para angiografia e risco hemorrágico.'],sources:['Manual SOCERJ 2021','ACC/AHA 2025']},
-    hf:{name:'ICA / Edema agudo de pulmão',guide:'ica',headline:'O perfil hemodinâmico decide se o fármaco deve descongestionar, vasodilatar ou aumentar débito.',groups:[
-      ['Quente + úmido',[['Furosemida','Dose IV guiada por uso prévio, congestão e função renal','Monitorar diurese, Na, K, Mg, creatinina.'],['Nitroglicerina','Infusão titulada quando hipertensão/congestão e PA preservada','Útil em EAP hipertensivo; cuidado com hipotensão/PDE-5.'],['Nitroprussiato','Infusão titulada em hipertensão importante com pós-carga elevada','Exige monitorização contínua; atenção à toxicidade.']]],
-      ['Frio + úmido / choque',[['Noradrenalina','Titular à perfusão/PAM quando hipotensão crítica','Vasopressor para sustentar perfusão.'],['Dobutamina','Infusão quando baixo débito e hipoperfusão persistem','Pode reduzir PA e causar arritmia.'],['Diurético','Se congesto, após/ao mesmo tempo em que perfusão é estabilizada','Individualizar.']]],
-      ['Frio + seco',[['Cristaloide','Pequeno desafio volêmico se hipovolemia provável','Reavaliar rapidamente; evitar sobrecarga.'],['Inotrópico','Se hipoperfusão persistir apesar de volume apropriado','Depende de PA e contexto.']]]
-    ],warnings:['Não tratar todos os perfis de ICA com a mesma combinação.','Hipotensão + hipoperfusão exige prioridade de perfusão antes de vasodilatação.'],sources:['Materiais de ICA anexados','Manual FMC DVA 2022']},
-    sepsis:{name:'Sepse / choque séptico',guide:'sepse',headline:'Antimicrobiano + perfusão + vasopressor quando necessário.',groups:[
-      ['Primeira hora/primeiras horas',[['Antimicrobiano empírico','Escolher pelo foco e microbiologia local','Choque ou sepse provável/definida: imediatamente, idealmente em 1 h.'],['Cristaloide','Pelo menos 30 mL/kg nas primeiras 3 h em hipoperfusão/choque, com reavaliação','SSC 2026; não continuar volume automaticamente.']]],
-      ['Vasopressores',[['Noradrenalina','Primeira escolha; titular à PAM/perfusão','PAM inicial alvo 65 mmHg.'],['Vasopressina','Adicionar quando dose de noradrenalina está aumentando','Dose protocolar em U/min.'],['Epinefrina','Adicionar se PAM inadequada apesar de noradrenalina + vasopressina','Alternativa conforme cenário.'],['Dobutamina','Adicionar se disfunção cardíaca + hipoperfusão persistente com PAM adequada','Ou considerar epinefrina conforme guideline.']]]
-    ],warnings:['Culturas antes do antibiótico apenas se isso não atrasar tratamento.','Reavaliar responsividade a volume e risco de congestão.'],sources:['Surviving Sepsis Campaign 2026']},
-    tep:{name:'TEP',guide:'tep',headline:'Anticoagulação é base; reperfusão depende de risco/hemodinâmica.',groups:[
-      ['Paciente estável',[['Anticoagulante','HBPM/HNF/DOAC conforme função renal, câncer, gravidez e estratégia','Escolha é contextual; não há uma única droga universal.']]],
-      ['Choque/alto risco',[['HNF','Frequentemente preferida quando reperfusão/procedimento pode ser necessário','Facilita interrupção/reversão.'],['Trombólise sistêmica','Regime conforme protocolo e contraindicações','Indicada em TEP de alto risco em paciente apropriado.']]]
-    ],warnings:['POCUS/eco pode sustentar diagnóstico de alto risco, mas não substitui contexto.','Risco hemorrágico deve ser avaliado antes de trombólise.'],sources:['Materiais de TEP anexados']},
-    hyperk:{name:'Hipercalemia',guide:'dhe',headline:'Membrana → redistribuição → remoção.',groups:[
-      ['Estabilizar membrana',[['Gluconato de cálcio 10%','10 mL IV lentamente no material nefrológico anexado','Repetir conforme ECG/protocolo se necessário.']]],
-      ['Redistribuir K',[['Insulina regular','10 U IV','Associar glicose e monitorar hipoglicemia.'],['Glicose','25 g IV','Ajustar conforme glicemia.'],['Beta2-agonista','Nebulizado conforme protocolo','Adjuvante; não substitui cálcio quando ECG alterado.'],['Bicarbonato','Somente se acidose metabólica relevante','Não é rotina universal.']]],
-      ['Remover K',[['Diurético / quelante / diálise','Conforme função renal e gravidade','Diálise é definitiva em refratários/DRC grave.']]]
-    ],warnings:['Cálcio estabiliza membrana, mas não baixa potássio.'],sources:['Materiais DHE anexados']},
-    dka:{name:'CAD / EHH',guide:'cad',headline:'Fluido → potássio → insulina → dextrose quando necessário.',groups:[
-      ['Fluido',[['Cristaloide isotônico/balanceado','Reposição inicial conforme perfusão e comorbidades','Reduzir velocidade em IC/DRC/idoso.']]],
-      ['Potássio',[['K baixo','Repor antes da insulina quando muito baixo','Limiar clássico ~3,3 mEq/L em muitos protocolos.']]],
-      ['Insulina',[['Insulina regular IV','Infusão contínua conforme protocolo','Iniciar somente quando K permitir; monitorar glicose e K.']]],
-      ['Dextrose',[['Glicose IV','Adicionar quando glicemia cair ~200–250 mg/dL na CAD','Permite manter insulina até resolver cetose/acidose.']]],
-      ['Bicarbonato',[['Bicarbonato','Exceção; material SBD anexado cita pH <6,9','Não usar rotineiramente.']]]
-    ],warnings:['Não encerrar tratamento só porque a glicemia normalizou.'],sources:['Diretriz SBD anexada']},
-    brady:{name:'Bradicardia sintomática',guide:'acls',headline:'Atropina → pacing e/ou infusão adrenérgica.',groups:[
-      ['Primeira linha',[['Atropina','1 mg IV bolus; repetir q3–5 min; máximo 3 mg','AHA 2025.']]],
-      ['Se ineficaz',[['Pacing transcutâneo','Iniciar sem atrasar se instabilidade persistente','Sedação/analgesia se condição permitir.'],['Dopamina','5–20 mcg/kg/min','Titular à resposta.'],['Epinefrina','2–10 mcg/min','Titular à resposta.']]]
-    ],warnings:['Tratar causa reversível ao mesmo tempo.'],sources:['AHA 2025 Adult Bradycardia Algorithm']},
-    tachy:{name:'Taquicardia com pulso',guide:'acls',headline:'Instável = choque sincronizado; estável = classificar QRS/regularidade.',groups:[
-      ['Instável',[['Cardioversão','QRS estreito regular 100 J; FA 200 J; flutter 200 J; TV monomórfica 100 J','AHA 2025.'],['TV polimórfica','Choque não sincronizado de alta energia','Não tentar sincronizar ritmo polimórfico.']]],
-      ['Estável estreita regular',[['Adenosina','6 mg IV rápida + flush; depois 12 mg se necessário','Após manobras vagais.']]],
-      ['Estável larga regular monomórfica',[['Amiodarona','150 mg IV em 10 min; repetir se TV recidivar; depois 1 mg/min por 6 h','AHA 2025.'],['Procainamida','20–50 mg/min até supressão/hipotensão/QRS +50%/17 mg/kg; manutenção 1–4 mg/min','Evitar QT prolongado ou IC.']]]
-    ],warnings:['Adenosina somente se regular e monomórfica em QRS largo.'],sources:['AHA 2025 Adult Tachyarrhythmia/Electrical Cardioversion']}
+    stemi:{name:'Infarto com elevação do segmento ST',guide:'sca',headline:'Objetivo: reconhecer rapidamente, aliviar sintomas com segurança e escolher a reperfusão sem atraso.',groups:[
+      ['1. Ações imediatas',[['Ácido acetilsalicílico','160–325 mg por via oral, mastigável','Dar o mais cedo possível se não houver alergia importante ou sangramento ativo; reduz eventos trombóticos.'],['Oxigênio','Usar apenas se houver hipoxemia ou desconforto respiratório','Não é medicação de rotina quando a saturação está adequada.'],['Nitroglicerina','0,4 mg sublingual; repetir a cada 5 min, até 3 doses, se pressão permitir','Opção para dor/isquemia e hipertensão. Evitar em hipotensão, suspeita de infarto do ventrículo direito ou uso recente de inibidor da fosfodiesterase tipo 5.'],['Morfina','2–4 mg intravenosa, titulada, apenas se dor intensa persistir','Reservar para dor refratária; pode causar hipotensão e não substitui reperfusão.']]],
+      ['2. Escolher a estratégia de reperfusão',[['Intervenção coronária percutânea primária','Preferir quando puder ser realizada em tempo adequado','É a estratégia preferida quando disponível rapidamente; acionar hemodinâmica e associar antiagregação/anticoagulação conforme protocolo.'],['Fibrinólise','Considerar quando intervenção percutânea não será obtida em tempo adequado e não houver contraindicação','Útil em paciente elegível com início recente dos sintomas; exige checagem formal de contraindicações e transferência para centro com hemodinâmica.']]],
+      ['3. Se for para intervenção coronária percutânea',[['Segundo antiagregante plaquetário','Ticagrelor 180 mg OU prasugrel 60 mg; clopidogrel 600 mg é alternativa','Escolher conforme risco hemorrágico, contraindicações e estratégia. Prasugrel não deve ser usado em antecedente de acidente vascular cerebral ou ataque isquêmico transitório.'],['Anticoagulante','Heparina não fracionada, enoxaparina ou bivalirudina conforme estratégia e protocolo local','Não há uma única opção universal; função renal, sangramento e procedimento definem a escolha.'],['Estatina de alta intensidade','Iniciar precocemente se não houver contraindicação','Reduz risco cardiovascular recorrente e integra prevenção secundária.']]],
+      ['4. Se for para fibrinólise',[['Clopidogrel','Menos de 75 anos: 300 mg de ataque; 75 anos ou mais: 75 mg sem dose de ataque','É a opção de segundo antiagregante associada à fibrinólise em muitos protocolos.'],['Enoxaparina','Menos de 75 anos: 30 mg intravenosa + 1 mg/kg subcutânea a cada 12 h; 75 anos ou mais: 0,75 mg/kg a cada 12 h sem bolus; ajustar na insuficiência renal','Anticoagulação acompanha a estratégia fibrinolítica; vigiar sangramento e função renal.'],['Alteplase ou tenecteplase','Usar esquema específico do fibrinolítico e do peso, após checar contraindicações','A escolha depende da disponibilidade e protocolo; não administrar sem avaliação formal do risco hemorrágico.']]],
+      ['5. Depois da reperfusão',[['Dupla antiagregação plaquetária','Ácido acetilsalicílico + segundo antiagregante, com duração individualizada','Equilibrar risco de nova trombose contra risco de sangramento.'],['Tratamento de prevenção secundária','Estatina de alta intensidade; considerar bloqueador do sistema renina-angiotensina e betabloqueador conforme função ventricular, pressão e contraindicações','Essas medicações não devem ser automatizadas sem avaliar hemodinâmica, função ventricular e comorbidades.']]]
+    ],warnings:['Não esperar troponina para reperfundir um quadro com critérios eletrocardiográficos e clínicos de infarto com elevação do segmento ST.','Fibrinólise não é tratamento de síndrome coronariana sem elevação do segmento ST.'],sources:['ACC/AHA Acute Coronary Syndromes Guideline 2025','Protocolos institucionais anexados']},
+    nste:{name:'Síndrome coronariana sem elevação do segmento ST',guide:'sca',headline:'Objetivo: controlar isquemia, impedir progressão do trombo e definir quem precisa de estratégia invasiva precoce.',groups:[
+      ['1. Base inicial',[['Ácido acetilsalicílico','162–325 mg por via oral, mastigável, seguido de manutenção','Primeira antiagregação se não houver contraindicação.'],['Nitroglicerina','0,4 mg sublingual a cada 5 min, até 3 doses, se pressão permitir','Usar para dor/isquemia; evitar nas mesmas situações de risco de hipotensão descritas acima.'],['Oxigênio','Somente se houver hipoxemia','Não usar rotineiramente com saturação adequada.'],['Estatina de alta intensidade','Iniciar precocemente','Faz parte da prevenção de novos eventos.']]],
+      ['2. Escolher o segundo antiagregante',[['Ticagrelor','180 mg de ataque, depois 90 mg a cada 12 h','Opção frequente quando estratégia invasiva é planejada e risco hemorrágico é aceitável.'],['Prasugrel','60 mg de ataque quando anatomia coronária é conhecida e intervenção está planejada','Evitar em antecedente de acidente vascular cerebral ou ataque isquêmico transitório; ponderar idade, peso e sangramento.'],['Clopidogrel','300–600 mg de ataque, depois 75 mg/dia','Alternativa quando ticagrelor/prasugrel não são adequados, disponíveis ou tolerados.']]],
+      ['3. Escolher anticoagulação',[['Enoxaparina','1 mg/kg subcutânea a cada 12 h, com ajustes por idade/função renal conforme protocolo','Opção quando não há necessidade de hemodinâmica imediata e função renal permite.'],['Fondaparinux','2,5 mg subcutânea uma vez ao dia','Pode ser atraente quando se busca menor risco hemorrágico; se houver intervenção coronária, é necessária anticoagulação adicional no procedimento.'],['Heparina não fracionada','Infusão titulada conforme protocolo','Útil quando hemodinâmica é iminente ou há disfunção renal grave, pela meia-vida curta e facilidade de ajuste.']]],
+      ['4. Próxima decisão',[['Estratégia invasiva','Definir urgência conforme instabilidade, recorrência de isquemia e estratificação de risco','O risco clínico determina se a angiografia deve ser imediata, precoce ou seletiva.']]]
+    ],warnings:['Não usar fibrinolítico.','O momento do segundo antiagregante deve considerar tempo até angiografia e risco hemorrágico.'],sources:['ACC/AHA Acute Coronary Syndromes Guideline 2025']},
+    hf:{name:'Insuficiência cardíaca aguda / edema pulmonar',guide:'ica',headline:'Primeiro classifique: há congestão? há hipoperfusão? a pressão está alta, adequada ou baixa? A resposta define a ação.',groups:[
+      ['Congestão com pressão preservada ou elevada',[['Diurético de alça (ex.: furosemida)','Dose intravenosa guiada pelo uso prévio, intensidade da congestão e função renal','Escolha principal quando há sobrecarga de volume; acompanhar diurese, creatinina, sódio, potássio e magnésio.'],['Nitroglicerina intravenosa','Titular se hipertensão/congestão importante e pressão adequada','Reduz pré-carga e pode aliviar rapidamente edema pulmonar hipertensivo; evitar se hipotenso ou após inibidor da fosfodiesterase tipo 5.'],['Ventilação não invasiva','Considerar se edema pulmonar com esforço respiratório/hipoxemia','Não é fármaco, mas é ação precoce importante para reduzir trabalho respiratório em paciente apropriado.']]],
+      ['Hipotensão ou sinais de choque',[['Noradrenalina','Titular para restaurar pressão e perfusão quando hipotensão é crítica','Priorizar perfusão; vasodilatadores podem piorar o quadro.'],['Dobutamina','Considerar se baixo débito e hipoperfusão persistem, especialmente com pressão já sustentada','Aumenta débito, mas pode provocar taquiarritmia e hipotensão; exige monitorização.'],['Diurético','Usar se também houver congestão, enquanto a perfusão é estabilizada','Choque não significa abandonar a descongestão; significa individualizar a sequência.']]],
+      ['Possível hipovolemia, sem congestão',[['Cristaloide','Pequeno desafio volêmico somente se hipovolemia for provável, com reavaliação imediata','Evitar volume empírico em paciente congesto; parar se não houver benefício ou se surgirem sinais de sobrecarga.']]]
+    ],warnings:['Não existe uma combinação única para toda insuficiência cardíaca aguda.','Hipotensão com hipoperfusão muda a prioridade para suporte de perfusão.'],sources:['Diretrizes de insuficiência cardíaca e protocolos institucionais anexados']},
+    sepsis:{name:'Sepse / choque séptico',guide:'sepse',headline:'Objetivo: tratar a infecção, restaurar perfusão e reavaliar continuamente se o paciente precisa de mais fluido, vasopressor ou suporte cardíaco.',groups:[
+      ['1. Nas primeiras horas',[['Coletar culturas','Obter hemoculturas e culturas do foco o mais cedo possível, idealmente antes do antimicrobiano','Fazer somente se isso não atrasar o início do tratamento em paciente grave.'],['Antimicrobiano empírico','Escolher conforme foco provável, gravidade, microbiologia local, exposições e risco de resistência','Em choque séptico ou sepse provável/definida, iniciar imediatamente; depois ajustar/descalonar quando houver dados microbiológicos.'],['Cristaloide intravenoso','Em hipoperfusão ou choque, considerar pelo menos 30 mL/kg nas primeiras 3 h, com reavaliações frequentes','Não é ordem para infundir volume indefinidamente; idade, insuficiência cardíaca, doença renal e sinais de congestão modificam a estratégia.']]],
+      ['2. Se a pressão/perfusão continuar inadequada',[['Noradrenalina','Primeira escolha; titular à perfusão e pressão arterial média, geralmente com alvo inicial em torno de 65 mmHg','É o vasopressor de primeira linha no choque séptico.'],['Vasopressina','Adicionar quando a necessidade de noradrenalina está aumentando','Pode reduzir a necessidade de doses crescentes de noradrenalina; usar dose protocolar.'],['Epinefrina','Adicionar se pressão continuar inadequada apesar de noradrenalina e vasopressina','Opção de escalonamento quando o choque permanece refratário.']]],
+      ['3. Se a pressão estiver adequada, mas a hipoperfusão persistir com disfunção cardíaca',[['Dobutamina','Considerar associada ao vasopressor','É opção inotrópica quando há disfunção cardíaca e baixo fluxo apesar de volume e pressão adequados.'],['Epinefrina','Pode ser alternativa conforme perfil hemodinâmico','A escolha depende de frequência cardíaca, arritmias, resposta e protocolo.']]],
+      ['4. Reavaliar após cada intervenção',[['Perfusão','Examinar estado mental, diurese, enchimento capilar, pressão, lactato e sinais de congestão','A próxima ação depende da resposta: mais fluido, interromper fluido, iniciar/escalar vasopressor ou investigar outra causa de choque.']]]
+    ],warnings:['Sepse e choque séptico são emergências: ressuscitação e tratamento devem começar imediatamente.','Evite continuar volume automaticamente sem demonstrar benefício e sem procurar congestão.'],sources:['Surviving Sepsis Campaign Adult Guidelines']},
+    tep:{name:'Embolia pulmonar',guide:'tep',headline:'Primeiro determine estabilidade hemodinâmica e risco. Depois escolha anticoagulação isolada ou estratégia de reperfusão.',groups:[
+      ['1. Se o paciente está hemodinamicamente estável',[['Anticoagulação','Escolher entre heparina de baixo peso molecular, heparina não fracionada ou anticoagulante oral direto conforme cenário','Função renal, risco de sangramento, câncer, gravidez, peso, possibilidade de procedimento e via oral disponível orientam a escolha.'],['Heparina de baixo peso molecular','Opção frequente quando não se prevê reperfusão/procedimento imediato','Tem efeito previsível, mas exige ajuste/evitação em algumas situações de insuficiência renal.'],['Anticoagulante oral direto','Opção em muitos pacientes estáveis quando não houver contraindicação','Nem todos podem iniciar da mesma forma; alguns agentes exigem anticoagulação parenteral inicial e outros não.']]],
+      ['2. Se houver choque ou instabilidade atribuída à embolia pulmonar',[['Heparina não fracionada','Frequentemente preferida quando trombólise, cateter ou cirurgia podem ser necessários','Pode ser interrompida e ajustada rapidamente, facilitando procedimentos.'],['Trombólise sistêmica','Considerar em embolia pulmonar de alto risco quando benefício supera risco hemorrágico','Não é automática: confirmar indicação e contraindicações.'],['Terapia por cateter ou embolectomia cirúrgica','Considerar quando trombólise é contraindicada, falhou ou a equipe especializada julga mais apropriado','Acionar equipe especializada/centro de referência quando disponível.']]],
+      ['3. Se está estável, mas há sinais de sobrecarga do ventrículo direito',[['Monitorização e estratificação de risco','Associar dados clínicos, biomarcadores e imagem','Não trombolisar rotineiramente apenas por disfunção ventricular direita; vigiar deterioração e planejar resgate se necessário.']]]
+    ],warnings:['A ausência de choque não elimina risco; estratifique e reavalie.','Antes de reperfusão, pesar risco de morte pela embolia contra risco de sangramento maior/intracraniano.'],sources:['Diretrizes de embolia pulmonar e protocolos institucionais']},
+    hyperk:{name:'Potássio elevado (hipercalemia)',guide:'dhe',headline:'Pense em três objetivos separados: proteger o coração, deslocar potássio para dentro da célula e remover potássio do organismo.',groups:[
+      ['1. Se houver alteração eletrocardiográfica ou hipercalemia ameaçadora',[['Gluconato de cálcio a 10%','Administrar por via intravenosa conforme protocolo; reavaliar eletrocardiograma e repetir se necessário','Protege a membrana cardíaca rapidamente, mas não reduz o potássio sérico.']]],
+      ['2. Reduzir temporariamente o potássio no sangue',[['Insulina regular + glicose','Insulina regular intravenosa associada a glicose; usar dose protocolar e monitorar glicemia','Move potássio para dentro da célula; risco importante de hipoglicemia exige monitorização.'],['Beta-2 agonista inalatório','Usar como adjuvante conforme protocolo','Também desloca potássio para dentro da célula; não deve ser a única medida em quadro grave.'],['Bicarbonato de sódio','Considerar principalmente quando há acidose metabólica relevante','Benefício é variável fora da acidose; não usar como rotina universal.']]],
+      ['3. Remover potássio do organismo',[['Diurético de alça','Considerar se houver diurese e contexto de sobrecarga/necessidade de eliminação renal','Depende de função renal e estado volêmico.'],['Ligante intestinal de potássio','Considerar conforme disponibilidade e urgência','Ação não é suficientemente rápida para substituir medidas imediatas em instabilidade.'],['Hemodiálise','Acionar precocemente em hipercalemia grave/refratária, especialmente com insuficiência renal importante','É método definitivo de remoção quando as medidas temporárias não bastam.']]]
+    ],warnings:['Cálcio protege o coração, mas não remove potássio.','Repita potássio e eletrocardiograma; o efeito das medidas de redistribuição é temporário.'],sources:['Protocolos de distúrbios hidroeletrolíticos anexados']},
+    dka:{name:'Cetoacidose diabética / estado hiperglicêmico hiperosmolar',guide:'cad',headline:'Não pense apenas em “baixar a glicose”: restaurar volume, controlar potássio, administrar insulina e tratar o fator desencadeante são objetivos simultâneos.',groups:[
+      ['1. Restaurar circulação e hidratação',[['Cristaloide isotônico ou balanceado','Iniciar reposição conforme perfusão, déficit e comorbidades; reavaliar frequentemente','Fluido melhora perfusão e ajuda a reduzir glicose. Usar volumes menores/mais lentos em idosos e em doença cardíaca ou renal.']]],
+      ['2. Ver o potássio antes e durante a insulina',[['Potássio abaixo de 3,5 mmol/L','Iniciar reposição e adiar insulina até o potássio ficar acima de 3,5 mmol/L','A insulina desloca potássio para dentro da célula e pode precipitar arritmia/ fraqueza grave se já houver hipocalemia.'],['Potássio entre 3,5 e 5,0 mmol/L','Adicionar reposição de potássio aos fluidos para manter aproximadamente 4–5 mmol/L','O potássio costuma cair durante o tratamento, mesmo quando inicialmente normal.'],['Potássio acima de 5,0 mmol/L','Não repor inicialmente; monitorar de perto e iniciar reposição quando cair','O corpo pode estar depletado de potássio apesar do valor sérico inicialmente alto.']]],
+      ['3. Administrar insulina quando o potássio permitir',[['Cetoacidose diabética','Insulina regular intravenosa em infusão fixa de 0,1 unidade/kg/h','É o tratamento principal da cetose; manter até resolução da cetoacidose, não apenas até normalizar glicose.'],['Estado hiperglicêmico hiperosmolar sem acidose significativa','Insulina intravenosa em dose menor, frequentemente 0,05 unidade/kg/h, após reposição inicial de volume','A queda de glicose/osmolalidade deve ser controlada; se houver cetoacidose associada, tratar como quadro misto.']]],
+      ['4. Quando a glicose cair, não interromper a insulina cedo demais',[['Adicionar dextrose ao fluido','Na cetoacidose, quando glicose ficar abaixo de aproximadamente 250 mg/dL, adicionar solução com 5–10% de dextrose e reduzir a infusão de insulina conforme protocolo','Permite continuar insulina para resolver cetose e acidose sem causar hipoglicemia.']]],
+      ['5. Bicarbonato é exceção',[['Bicarbonato de sódio','Não usar rotineiramente; considerar apenas em acidose extremamente grave, em geral pH abaixo de 7,0, conforme protocolo','Estudos não mostram benefício rotineiro e há riscos como piora da hipocalemia.']]],
+      ['6. Procurar e tratar o desencadeante',[['Infecção, interrupção de insulina, infarto, acidente vascular cerebral e outros gatilhos','Investigar em paralelo e tratar a causa identificada','Sem corrigir o precipitante, a crise pode persistir ou recorrer.']]]
+    ],warnings:['Monitorar glicose a cada 1–2 h e eletrólitos/potássio repetidamente durante o tratamento.','A resolução da cetoacidose depende da correção da cetose/acidose; glicemia normal isoladamente não significa resolução.'],sources:['Hyperglycemic Crises in Adults With Diabetes: Consensus Report 2024']},
+    brady:{name:'Frequência cardíaca baixa com sintomas',guide:'acls',headline:'Primeiro confirme se a frequência baixa está causando comprometimento. Se estiver, trate a causa e aumente a frequência/perfusão sem demora.',groups:[
+      ['1. Avaliar gravidade',[['Procurar comprometimento','Hipotensão, alteração aguda do estado mental, sinais de choque, desconforto torácico isquêmico ou insuficiência cardíaca aguda','Se nenhum desses sinais estiver presente, monitorar e tratar a causa pode ser mais apropriado que medicação imediata.']]],
+      ['2. Se houver comprometimento relacionado à bradicardia',[['Atropina','1 mg intravenosa em bolus; repetir a cada 3–5 min; máximo total 3 mg','Primeira opção farmacológica na maioria dos casos sintomáticos.']]],
+      ['3. Se atropina não funcionar ou for improvável que funcione',[['Estimulação cardíaca transcutânea','Iniciar sem atrasar se a instabilidade persistir','Útil como ponte; considerar analgesia/sedação se a condição hemodinâmica permitir.'],['Dopamina','Infusão de 5–20 microgramas/kg/min, titulada à resposta','Alternativa/ponte quando estimulação não está disponível ou enquanto se prepara tratamento definitivo.'],['Epinefrina','Infusão de 2–10 microgramas/min, titulada à resposta','Alternativa à dopamina; escolha conforme contexto hemodinâmico e disponibilidade.']]],
+      ['4. Em paralelo',[['Tratar causa reversível','Revisar medicamentos, isquemia, hipóxia, distúrbios eletrolíticos e bloqueios de condução','A correção da causa pode ser o tratamento definitivo.']]]
+    ],warnings:['Não atrasar estimulação cardíaca em paciente criticamente instável enquanto se repetem tentativas farmacológicas.'],sources:['AHA Adult Bradycardia Algorithm 2025']},
+    tachy:{name:'Frequência cardíaca rápida com pulso',guide:'acls',headline:'A primeira pergunta é: a taquicardia está causando instabilidade? Se sim, cardioversão; se não, classifique o traçado antes de escolher o fármaco.',groups:[
+      ['1. Se houver instabilidade causada pela taquicardia',[['Cardioversão elétrica sincronizada','Realizar com energia apropriada ao ritmo; sedar se possível sem atrasar o choque','Indicada quando há hipotensão, choque, alteração mental, dor isquêmica ou insuficiência cardíaca aguda atribuível à taquicardia.'],['Taquicardia ventricular polimórfica','Usar choque não sincronizado de alta energia','Ritmo polimórfico não permite sincronização confiável.']]],
+      ['2. Se estiver estável e o complexo for estreito e regular',[['Manobras vagais','Tentar primeiro quando apropriado','Podem interromper taquicardia supraventricular dependente do nó atrioventricular sem fármaco.'],['Adenosina','6 mg intravenosa rápida + flush; se necessário, 12 mg','Usar em ritmo regular; além de tratar algumas taquicardias, pode ajudar no diagnóstico.']]],
+      ['3. Se estiver estável e o complexo for largo, regular e monomórfico',[['Amiodarona','150 mg intravenosa em 10 min; repetir se recorrência; depois infusão conforme protocolo','Uma opção antiarrítmica para taquicardia ventricular estável.'],['Procainamida','20–50 mg/min até supressão, hipotensão, aumento do complexo em mais de 50% ou dose máxima de 17 mg/kg; manutenção 1–4 mg/min','Alternativa; evitar em intervalo QT prolongado ou insuficiência cardíaca.'],['Adenosina','Pode ser considerada apenas se o ritmo largo for regular e monomórfico','Não usar de forma indiscriminada em taquicardia de complexo largo irregular/polimórfica.']]],
+      ['4. Se o ritmo for irregular ou houver dúvida diagnóstica',[['Evitar tratamento “às cegas”','Reavaliar eletrocardiograma, possibilidade de fibrilação atrial, pré-excitação, taquicardia ventricular ou distúrbio metabólico','O medicamento errado pode piorar alguns ritmos; buscar apoio especializado quando necessário.']]]
+    ],warnings:['Se o paciente se tornar instável, a prioridade muda para cardioversão elétrica.','Adenosina em complexo largo somente quando regular e monomórfico.'],sources:['AHA Adult Tachyarrhythmia With a Pulse Algorithm 2025']}
   };
   const sel=document.getElementById('protocolV07Select'),out=document.getElementById('protocolV07Content');
   sel.innerHTML=Object.entries(protocols).map(([k,p])=>`<option value="${k}">${esc(p.name)}</option>`).join('');
-  function render(){const p=protocols[sel.value];out.innerHTML=`<div class="protocol-v07-head"><strong>${esc(p.headline)}</strong></div><div class="protocol-v07-groups">${p.groups.map(([title,rows])=>`<section><h3>${esc(title)}</h3><div class="protocol-v07-table">${rows.map(r=>`<div class="protocol-drug-row"><strong>${esc(r[0])}</strong><b>${esc(r[1])}</b><span>${esc(r[2])}</span></div>`).join('')}</div></section>`).join('')}</div><div class="pathway-warnings">${p.warnings.map(w=>`<div><strong>⚠</strong><span>${esc(w)}</span></div>`).join('')}</div><div class="pathway-sources"><strong>Fontes:</strong> ${p.sources.map(esc).join(' • ')}</div>`}
+  function render(){const p=protocols[sel.value];out.innerHTML=`<div class="protocol-v07-head"><strong>${esc(p.headline)}</strong></div><div class="protocol-v07-groups">${p.groups.map(([title,rows])=>`<section><h3>${esc(title)}</h3><div class="protocol-v07-table"><div class="protocol-drug-row protocol-v07-labels"><strong>O que fazer / opção</strong><b>Como fazer</b><span>Quando escolher e por quê</span></div>${rows.map(r=>`<div class="protocol-drug-row"><strong>${esc(r[0])}</strong><b>${esc(r[1])}</b><span>${esc(r[2])}</span></div>`).join('')}</div></section>`).join('')}</div><div class="pathway-warnings">${p.warnings.map(w=>`<div><strong>⚠</strong><span>${esc(w)}</span></div>`).join('')}</div><div class="pathway-sources"><strong>Fontes:</strong> ${p.sources.map(esc).join(' • ')}</div>`}
   sel.onchange=render;document.getElementById('protocolV07Guide').onclick=()=>window.ArritmiaXGuide?.open(protocols[sel.value].guide,'full');render();
 })();
 
@@ -6536,12 +6551,12 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
 })();
 </script>
 <style id="cf-note-pro-v252">
-#noteBar.cfNotePro{top:8px!important;width:min(980px,96vw)!important;max-width:96vw!important;display:none!important;align-items:center!important;gap:5px!important;padding:7px!important;overflow-x:auto!important;overflow-y:hidden!important;white-space:nowrap!important;background:#041722f2!important;border:1px solid #28758b!important;box-shadow:0 8px 28px #0009!important}
+#noteBar.cfNotePro{top:8px!important;width:auto!important;max-width:calc(100vw - 12px)!important;display:none!important;align-items:center!important;gap:4px!important;padding:5px!important;overflow:visible!important;white-space:nowrap!important;background:#041722f2!important;border:1px solid #28758b!important;border-radius:12px!important;box-shadow:0 8px 28px #0009!important}
 #noteLayer.on #noteBar.cfNotePro{display:flex!important}
-#noteBar.cfNotePro button,#noteBar.cfNotePro select,#noteBar.cfNotePro input{flex:0 0 auto!important;height:38px!important;border:1px solid #28576b!important;border-radius:9px!important;background:#0a2231!important;color:#eaffff!important}
-#noteBar.cfNotePro button{min-width:38px!important;padding:4px 8px!important;font-size:17px!important}#noteBar.cfNotePro button.sel{border-color:#42e8f1!important;box-shadow:0 0 10px #22d3ee66!important;background:#0d3544!important}
-#noteBar.cfNotePro .cfNoteSep{width:1px;height:28px;background:#245063;flex:0 0 auto}#noteBar.cfNotePro input[type=color]{width:42px;padding:2px!important}#noteBar.cfNotePro input[type=range]{width:105px;padding:0 4px!important;accent-color:#3ee7ef}#noteBar.cfNotePro select{padding:0 6px!important;font-size:12px!important}.cfNoteWidth{min-width:34px;color:#8ffaff;font:700 11px system-ui;text-align:center}.cfNoteTextBox{position:fixed;z-index:2147483645;display:none;gap:5px;padding:7px;background:#061923f2;border:1px solid #3ddbe6;border-radius:10px}.cfNoteTextBox.on{display:flex}.cfNoteTextBox input{width:min(300px,65vw);height:38px;border:1px solid #28576b;border-radius:8px;background:#0a2231;color:#fff;padding:0 10px}.cfNoteTextBox button{height:38px;border:1px solid #2fcbd5;border-radius:8px;background:#0c3140;color:#fff;font-weight:800}
-@media(max-width:700px){#noteBar.cfNotePro{left:6px!important;right:6px!important;transform:none!important;width:auto!important;max-width:none!important}#noteBar.cfNotePro input[type=range]{width:80px}}
+#noteBar.cfNotePro button,#noteBar.cfNotePro select,#noteBar.cfNotePro input{flex:0 0 auto!important;height:32px!important;border:1px solid #28576b!important;border-radius:8px!important;background:#0a2231!important;color:#eaffff!important}
+#noteBar.cfNotePro button{min-width:32px!important;min-height:32px!important;padding:2px 6px!important;font-size:15px!important}#noteBar.cfNotePro button.sel{border-color:#42e8f1!important;box-shadow:0 0 8px #22d3ee55!important;background:#0d3544!important}
+#noteBar.cfNotePro .cfNoteSep{width:1px;height:22px;background:#245063;flex:0 0 auto}#noteBar.cfNotePro input[type=color]{width:34px!important;padding:2px!important}#noteBar.cfNotePro select{padding:0 7px!important;font-size:11px!important}.cfNoteSizeSelect{width:58px!important;font-weight:800!important}.cfNoteTextBox{position:fixed;z-index:2147483645;display:none;gap:5px;padding:7px;background:#061923f2;border:1px solid #3ddbe6;border-radius:10px}.cfNoteTextBox.on{display:flex}.cfNoteTextBox input{width:min(300px,65vw);height:38px;border:1px solid #28576b;border-radius:8px;background:#0a2231;color:#fff;padding:0 10px}.cfNoteTextBox button{height:38px;border:1px solid #2fcbd5;border-radius:8px;background:#0c3140;color:#fff;font-weight:800}
+@media(max-width:700px){#noteBar.cfNotePro{left:6px!important;right:auto!important;transform:none!important;max-width:calc(100vw - 12px)!important;gap:3px!important;padding:4px!important}#noteBar.cfNotePro button{min-width:30px!important;min-height:30px!important;height:30px!important}#noteBar.cfNotePro select,#noteBar.cfNotePro input{height:30px!important}}
 </style>
 <script id="cf-note-pro-v252-js">
 (()=>{'use strict';
@@ -6549,31 +6564,30 @@ function init(){
  const layer=document.getElementById('noteLayer'),cv=document.getElementById('noteCanvas'),bar=document.getElementById('noteBar');if(!layer||!cv||!bar)return;
  // Interface PRO: substitui somente a barra de ferramentas, mantendo a camada já estável.
  bar.classList.add('cfNotePro');bar.innerHTML=`
- <button data-protool="pen" class="sel" title="Caneta livre">✎</button><button data-protool="pencil" title="Lápis">✏</button><button data-protool="marker" title="Marcador">▰</button><button data-protool="eraser" title="Borracha">⌫</button><span class="cfNoteSep"></span>
- <input id="cfNoteColor" type="color" value="#56f0ff" title="Cor"><select id="cfNotePalette" title="Cores rápidas"><option value="#56f0ff">Ciano</option><option value="#ffffff">Branco</option><option value="#111111">Preto</option><option value="#ff3b5c">Vermelho</option><option value="#ff9f1c">Laranja</option><option value="#ffe14d">Amarelo</option><option value="#37e68a">Verde</option><option value="#3b82f6">Azul</option><option value="#a855f7">Roxo</option><option value="#ff5fbd">Rosa</option></select>
- <input id="cfNoteSize" type="range" min="1" max="30" step="1" value="4" title="Espessura"><span id="cfNoteWidth" class="cfNoteWidth">4 px</span><select id="cfNoteDash" title="Tipo de linha"><option value="solid">Contínua</option><option value="dash">Tracejada</option><option value="dot">Pontilhada</option></select><span class="cfNoteSep"></span>
- <button data-protool="line" title="Linha">╱</button><button data-protool="arrow" title="Seta">➜</button><button data-protool="rect" title="Retângulo">▭</button><button data-protool="ellipse" title="Círculo/elipse">◯</button><button data-protool="text" title="Texto">T</button><span class="cfNoteSep"></span>
+ <button data-protool="pen" class="sel" title="Caneta livre">✎</button><button data-protool="eraser" title="Borracha">⌫</button><span class="cfNoteSep"></span>
+ <input id="cfNoteColor" type="color" value="#56f0ff" title="Escolher cor">
+ <select id="cfNoteSize" class="cfNoteSizeSelect" title="Espessura" aria-label="Espessura do traço"><option value="1">1 px</option><option value="2">2 px</option><option value="3">3 px</option><option value="4" selected>4 px</option><option value="5">5 px</option><option value="6">6 px</option><option value="8">8 px</option><option value="10">10 px</option><option value="12">12 px</option><option value="16">16 px</option><option value="20">20 px</option><option value="24">24 px</option><option value="30">30 px</option></select><span class="cfNoteSep"></span>
+ <button data-protool="text" title="Texto">T</button><span class="cfNoteSep"></span>
  <button data-proact="undo" title="Desfazer">↶</button><button data-proact="redo" title="Refazer">↷</button><button data-proact="sheet" title="Folha branca">▤</button><button data-proact="clear" title="Limpar tudo">⌧</button><button data-proact="save" title="Salvar PNG">⇩</button><button data-proact="close" title="Fechar">×</button>`;
- const ctx=cv.getContext('2d'),color=bar.querySelector('#cfNoteColor'),palette=bar.querySelector('#cfNotePalette'),size=bar.querySelector('#cfNoteSize'),widthOut=bar.querySelector('#cfNoteWidth'),dash=bar.querySelector('#cfNoteDash'),sheet=document.getElementById('noteSheet');
+ const ctx=cv.getContext('2d'),color=bar.querySelector('#cfNoteColor'),size=bar.querySelector('#cfNoteSize'),sheet=document.getElementById('noteSheet');
  let tool='pen',drawing=false,start=null,last=null,before=null,history=[],future=[],pid=null;
  const state=()=>{try{return cv.toDataURL('image/png')}catch(_){return null}};
  const restore=src=>{const im=new Image();im.onload=()=>{ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);ctx.drawImage(im,0,0,cv.width,cv.height);ctx.restore()};im.src=src};
  const snap=()=>{const x=state();if(x){history.push(x);if(history.length>30)history.shift();future=[]}};
  const pt=e=>{const r=cv.getBoundingClientRect();if(!r.width||!r.height)return{x:0,y:0};const sx=cv.width/r.width,sy=cv.height/r.height;return{x:(e.clientX-r.left)*sx,y:(e.clientY-r.top)*sy}};
- function setup(c){c.setTransform(1,0,0,1,0,0);c.lineCap='round';c.lineJoin='round';c.globalCompositeOperation=tool==='eraser'?'destination-out':'source-over';c.globalAlpha=tool==='marker'?.30:1;c.strokeStyle=color.value;c.fillStyle=color.value;c.lineWidth=(tool==='eraser'?Math.max(18,+size.value*3):tool==='marker'?Math.max(10,+size.value*3):+size.value)*(cv.width/Math.max(1,cv.getBoundingClientRect().width));const d=c.lineWidth;c.setLineDash(dash.value==='dash'?[d*3,d*2]:dash.value==='dot'?[d*.2,d*2]:[])}
+ function setup(c){c.setTransform(1,0,0,1,0,0);c.lineCap='round';c.lineJoin='round';c.globalCompositeOperation=tool==='eraser'?'destination-out':'source-over';c.globalAlpha=1;c.strokeStyle=color.value;c.fillStyle=color.value;c.lineWidth=(tool==='eraser'?Math.max(18,+size.value*3):+size.value)*(cv.width/Math.max(1,cv.getBoundingClientRect().width));c.setLineDash([])}
  function drawShape(a,b){if(!before)return;ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.putImageData(before,0,0);ctx.restore();setup(ctx);ctx.beginPath();if(tool==='line'||tool==='arrow'){ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();if(tool==='arrow'){const ang=Math.atan2(b.y-a.y,b.x-a.x),L=Math.max(14,ctx.lineWidth*5);ctx.beginPath();ctx.moveTo(b.x,b.y);ctx.lineTo(b.x-L*Math.cos(ang-.55),b.y-L*Math.sin(ang-.55));ctx.moveTo(b.x,b.y);ctx.lineTo(b.x-L*Math.cos(ang+.55),b.y-L*Math.sin(ang+.55));ctx.stroke()}}else if(tool==='rect'){ctx.strokeRect(a.x,a.y,b.x-a.x,b.y-a.y)}else if(tool==='ellipse'){ctx.ellipse((a.x+b.x)/2,(a.y+b.y)/2,Math.abs(b.x-a.x)/2,Math.abs(b.y-a.y)/2,0,0,Math.PI*2);ctx.stroke()}ctx.restore?.()}
  function textAt(p){const txt=prompt('Texto da anotação:');if(!txt)return;snap();setup(ctx);const scale=cv.width/Math.max(1,cv.getBoundingClientRect().width);ctx.globalAlpha=1;ctx.font=`${Math.max(14,+size.value*5)*scale}px system-ui,sans-serif`;ctx.fillText(txt,p.x,p.y);ctx.setLineDash([])}
  // Captura em fase de captura para neutralizar os handlers antigos sem removê-los.
  ['pointerdown','pointermove','pointerup','pointercancel'].forEach(type=>cv.addEventListener(type,e=>{
    if(!layer.classList.contains('on'))return;e.preventDefault();e.stopImmediatePropagation();
    if(type==='pointerdown'){if(e.pointerType==='mouse'&&e.button!==0)return;pid=e.pointerId;start=last=pt(e);before=ctx.getImageData(0,0,cv.width,cv.height);if(tool==='text'){textAt(start);pid=null;return}snap();drawing=true;try{cv.setPointerCapture(e.pointerId)}catch(_){}}
-   else if(type==='pointermove'&&drawing&&e.pointerId===pid){const n=pt(e);if(['line','arrow','rect','ellipse'].includes(tool)){drawShape(start,n)}else{setup(ctx);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(n.x,n.y);ctx.stroke();ctx.setLineDash([]);ctx.globalAlpha=1;last=n}}
+   else if(type==='pointermove'&&drawing&&e.pointerId===pid){const n=pt(e);setup(ctx);ctx.beginPath();ctx.moveTo(last.x,last.y);ctx.lineTo(n.x,n.y);ctx.stroke();ctx.setLineDash([]);ctx.globalAlpha=1;last=n}
    else if((type==='pointerup'||type==='pointercancel')&&drawing&&e.pointerId===pid){drawing=false;pid=null;before=null;last=null}
  },{capture:true,passive:false}));
  function select(t){tool=t;bar.querySelectorAll('[data-protool]').forEach(b=>b.classList.toggle('sel',b.dataset.protool===t))}
  bar.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;e.preventDefault();e.stopImmediatePropagation();if(b.dataset.protool){select(b.dataset.protool);return}const a=b.dataset.proact;if(a==='undo'&&history.length){const now=state();if(now)future.push(now);restore(history.pop())}else if(a==='redo'&&future.length){const now=state();if(now)history.push(now);restore(future.pop())}else if(a==='clear'){snap();ctx.save();ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);ctx.restore()}else if(a==='sheet'){sheet?.classList.toggle('on')}else if(a==='save'){const l=document.createElement('a');l.download='CF-ArritmiX-anotacao-'+Date.now()+'.png';l.href=cv.toDataURL('image/png');document.body.appendChild(l);l.click();l.remove()}else if(a==='close'){window.CFArritmiXNotes?.close?.()}},true);
- palette.onchange=()=>{color.value=palette.value};color.oninput=()=>{palette.value=color.value};size.oninput=()=>{widthOut.textContent=size.value+' px'};
- window.CFArritmiXNotesPro={selectTool:select,setColor:v=>color.value=v,setWidth:v=>{size.value=v;widthOut.textContent=v+' px'}};
+ window.CFArritmiXNotesPro={selectTool:select,setColor:v=>color.value=v,setWidth:v=>{size.value=String(v)}};
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,0),{once:true});else setTimeout(init,0);
 })();
@@ -6602,12 +6616,12 @@ function remaining(t,n=now()){return Math.max(0,t.duration*1000-elapsed(t,n))}
 function display(ms){ms=Math.max(0,ms);let sec=Math.floor(ms/1000),m=Math.floor(sec/60),s=sec%60,h=Math.floor(m/60);m%=60;return h?`${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`:`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`}
 function beep(){if(muted)return;try{const A=window.AudioContext||window.webkitAudioContext,a=new A(),o=a.createOscillator(),g=a.createGain();o.connect(g);g.connect(a.destination);o.frequency.value=880;g.gain.setValueAtTime(.08,a.currentTime);g.gain.exponentialRampToValueAtTime(.001,a.currentTime+.32);o.start();o.stop(a.currentTime+.33)}catch{}}
 function add(name='Cronômetro',mode='up',duration=0){if(timers.length>=5)return;timers.push({id:Date.now()+Math.random(),name,mode,duration,acc:0,started:0,running:false,alarmed:false});render();save();dock.classList.add('on');}
-function render(){cards.innerHTML='';timers.forEach(t=>{const c=document.createElement('div');c.className='cfTimerCard';c.dataset.id=t.id;c.innerHTML=`<div class="cfTimerHead"><input class="cfTimerName" value="${String(t.name).replace(/&/g,'&amp;').replace(/"/g,'&quot;')}" aria-label="Nome do cronômetro"><button class="cfTimerClose">×</button></div><div class="cfTimerTime">00:00</div><div class="cfTimerRow"><button class="cfTimerStart">▶</button><button class="cfTimerReset">↺</button><select class="cfTimerMode"><option value="up">↑ Livre</option><option value="120">2 min</option><option value="180">3 min</option><option value="300">5 min</option></select></div><div class="cfTimerMini">${t.mode==='up'?'progressivo':'regressivo'}</div>`;c.querySelector('.cfTimerMode').value=t.mode==='up'?'up':String(t.duration);cards.appendChild(c)});if(!tickStarted){tickStarted=true;requestAnimationFrame(tick)}}
+function render(){cards.innerHTML='';timers.forEach(t=>{const c=document.createElement('div');c.className='cfTimerCard';c.dataset.id=t.id;c.innerHTML=`<button class="cfTimerClose" aria-label="Fechar cronômetro" title="Fechar">×</button><div class="cfTimerTime">00:00</div><div class="cfTimerRow"><button class="cfTimerStart" title="Iniciar/Pausar">▶</button><button class="cfTimerReset" title="Zerar">↺</button><select class="cfTimerMode" aria-label="Modo ou duração"><option value="up">↑ Livre</option><option value="120">2 min</option><option value="180">3 min</option><option value="300">5 min</option><option value="600">10 min</option><option value="1200">20 min</option></select></div>`;c.querySelector('.cfTimerMode').value=t.mode==='up'?'up':String(t.duration);cards.appendChild(c)});if(!tickStarted){tickStarted=true;requestAnimationFrame(tick)}}
 function get(id){return timers.find(t=>String(t.id)===String(id))}
 function tick(){const n=now();cards.querySelectorAll('.cfTimerCard').forEach(c=>{const t=get(c.dataset.id);if(!t)return;let ms=t.mode==='up'?elapsed(t,n):remaining(t,n);c.querySelector('.cfTimerTime').textContent=display(ms);c.querySelector('.cfTimerStart').textContent=t.running?'Ⅱ':'▶';if(t.mode==='down'&&t.running&&ms<=0&&!t.alarmed){t.running=false;t.acc=t.duration*1000;t.alarmed=true;c.classList.add('alarm');beep();save()}else c.classList.toggle('alarm',!!t.alarmed)});requestAnimationFrame(tick)}
 cards.addEventListener('click',e=>{const c=e.target.closest('.cfTimerCard');if(!c)return;const t=get(c.dataset.id);if(!t)return;if(e.target.closest('.cfTimerClose')){timers=timers.filter(x=>x!==t);render();save();return}if(e.target.closest('.cfTimerStart')){if(t.alarmed){t.acc=0;t.alarmed=false}if(t.running){t.acc=elapsed(t);t.running=false}else{t.started=now();t.running=true}save()}if(e.target.closest('.cfTimerReset')){t.acc=0;t.started=t.running?now():0;t.alarmed=false;save()}});
-cards.addEventListener('change',e=>{const c=e.target.closest('.cfTimerCard'),t=c&&get(c.dataset.id);if(!t)return;if(e.target.classList.contains('cfTimerMode')){if(e.target.value==='up'){t.mode='up';t.duration=0}else{t.mode='down';t.duration=+e.target.value}t.acc=0;t.started=t.running?now():0;t.alarmed=false;c.querySelector('.cfTimerMini').textContent=t.mode==='up'?'progressivo':'regressivo';save()}});
-cards.addEventListener('input',e=>{if(!e.target.classList.contains('cfTimerName'))return;const t=get(e.target.closest('.cfTimerCard').dataset.id);if(t){t.name=e.target.value;save()}});
+cards.addEventListener('change',e=>{const c=e.target.closest('.cfTimerCard'),t=c&&get(c.dataset.id);if(!t)return;if(e.target.classList.contains('cfTimerMode')){if(e.target.value==='up'){t.mode='up';t.duration=0}else{t.mode='down';t.duration=+e.target.value}t.acc=0;t.started=t.running?now():0;t.alarmed=false;const mini=c.querySelector('.cfTimerMini');if(mini)mini.textContent=t.mode==='up'?'progressivo':'regressivo';save()}});
+
 $('cfTimerAdd').onclick=()=>add();$('cfTimerHide').onclick=()=>dock.classList.remove('on');fab.onclick=()=>{dock.classList.toggle('on');applyPos()};$('cfTimerMute').onclick=()=>{muted=!muted;applyPos();save()};$('cfTimerPos').onclick=()=>{const p=['top','right','bottom','left'];pos=p[(p.indexOf(pos)+1)%4];applyPos();save()};
 load();if(!timers.length){presets.slice(0,1).forEach(x=>add(...x))}else render();window.CFArritmiXTimers={open:()=>{dock.classList.add('on');applyPos()},add,clear:()=>{timers=[];render();save()}};
 })();
@@ -7020,7 +7034,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 (()=>{
  const btn=document.getElementById('cfShiftShortcutBtn'),panel=document.getElementById('cfShiftShortcutPanel'),detail=document.getElementById('cfShiftShortcutDetail');
  if(!btn||!panel||!detail)return;
- const goModule=m=>{const b=document.querySelector(`[data-module="${m}"]`);if(b){b.click();setTimeout(()=>document.querySelector(`#module-${m}`)?.scrollIntoView({behavior:'smooth',block:'start'}),60)}};
+ const goModule=m=>{const b=document.querySelector(`.module-tab[data-module-target="${m}"]`);if(b){b.click();setTimeout(()=>document.querySelector(`#module-${m}`)?.scrollIntoView({behavior:'smooth',block:'start'}),60)}};
  const cases={
   svt:{title:'TSV regular de QRS estreito',text:'Abra diretamente o fluxo de taquicardia. No Coach: estabilidade → QRS estreito → regularidade → manobras vagais/adenosina conforme o algoritmo.',actions:[['Abrir fluxo','tachy'],['ECG/Ritmos','ecg']]},
   brady:{title:'Bradicardia com pulso',text:'Abra o fluxo de bradicardia para decidir comprometimento cardiopulmonar e seguir atropina/pacing/infusão conforme resposta.',actions:[['Abrir fluxo','brady'],['Fármacos','drugs']]},
@@ -8752,51 +8766,7 @@ Conteúdo farmacológico revisado; ECG, algoritmos e layout preservados.
 #noteDock:active,#cfTimerFab:active,#cfShiftShortcutBtn:active{cursor:grabbing!important}
 @media(max-width:700px){#noteDock,#cfTimerFab,#cfShiftShortcutBtn{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important}}
 </style>
-<script id="cf-floating-free-anywhere-js-v265">
-(()=>{
- const KEY='cf_float_anywhere_v265', PAD=2;
- const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
- let saved={};try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){}
- const specs=()=>[
-   {name:'pencil',handle:document.getElementById('noteDock'),target:document.getElementById('noteDock'),fallback:()=>({x:22,y:innerHeight*.34})},
-   {name:'timer',handle:document.getElementById('cfTimerFab'),target:document.getElementById('cfTimerFab'),fallback:()=>({x:innerWidth-40,y:innerHeight*.20})},
-   {name:'shift',handle:document.getElementById('cfShiftShortcutBtn'),target:document.getElementById('cfShiftShortcut'),fallback:()=>({x:innerWidth-40,y:innerHeight*.62})}
- ].filter(o=>o.handle&&o.target);
- function put(o,x,y,save=false){
-   const w=o.target.offsetWidth||34,h=o.target.offsetHeight||34;
-   x=clamp(x,PAD,Math.max(PAD,innerWidth-w-PAD));y=clamp(y,PAD,Math.max(PAD,innerHeight-h-PAD));
-   o.target.style.setProperty('position','fixed','important');
-   o.target.style.setProperty('left',x+'px','important');o.target.style.setProperty('top',y+'px','important');
-   o.target.style.setProperty('right','auto','important');o.target.style.setProperty('bottom','auto','important');
-   o.target.style.setProperty('transform','none','important');
-   if(save){saved[o.name]={x:Math.round(x),y:Math.round(y)};try{localStorage.setItem(KEY,JSON.stringify(saved))}catch(_){}}
- }
- function init(){specs().forEach(o=>{const q=saved[o.name]||o.fallback();put(o,q.x,q.y,false)})}
- let drag=null,blockClick=null;
- window.addEventListener('pointerdown',e=>{
-   if(e.pointerType==='mouse'&&e.button!==0)return;
-   const o=specs().find(o=>o.handle===e.target||o.handle.contains(e.target));if(!o)return;
-   const r=o.target.getBoundingClientRect();
-   drag={o,id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top,sx:e.clientX,sy:e.clientY,moved:false};
- },true);
- window.addEventListener('pointermove',e=>{
-   if(!drag||e.pointerId!==drag.id)return;
-   if(!drag.moved&&Math.hypot(e.clientX-drag.sx,e.clientY-drag.sy)<3)return;
-   drag.moved=true;put(drag.o,e.clientX-drag.dx,e.clientY-drag.dy,false);
-   e.preventDefault();
- },{capture:true,passive:false});
- function finish(e){
-   if(!drag||e.pointerId!==drag.id)return;
-   if(drag.moved){const r=drag.o.target.getBoundingClientRect();put(drag.o,r.left,r.top,true);blockClick=drag.o.handle;setTimeout(()=>blockClick=null,180)}
-   drag=null;
- }
- window.addEventListener('pointerup',finish,true);window.addEventListener('pointercancel',finish,true);
- window.addEventListener('click',e=>{if(blockClick&&(e.target===blockClick||blockClick.contains(e.target))){e.preventDefault();e.stopImmediatePropagation();blockClick=null}},true);
- addEventListener('resize',()=>{specs().forEach(o=>{const r=o.target.getBoundingClientRect();put(o,r.left,r.top,true)})},{passive:true});
- document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>setTimeout(init,300),{once:true}):setTimeout(init,300);
- setTimeout(init,900);
-})();
-</script>
+<script id="cf-floating-free-anywhere-js-v265" type="application/x-cf-superseded"></script>
 
 <style id="cf-floating-unified-v262">
 /* Três atalhos: compactos e livremente arrastáveis em X/Y */
@@ -8812,61 +8782,262 @@ Conteúdo farmacológico revisado; ECG, algoritmos e layout preservados.
 #cfShiftShortcutPanel{right:0!important;bottom:42px!important}
 @media(max-width:700px){#noteDock,#cfTimerFab,#cfShiftShortcutBtn{width:32px!important;height:32px!important;min-width:32px!important;min-height:32px!important;border-radius:10px!important;font-size:13px!important}}
 </style>
-<script id="cf-floating-unified-js-v262">
+<script id="cf-floating-unified-js-v262" type="application/x-cf-superseded"></script>
+
+
+
+<script id="cf-floating-persistent-v266">
 (()=>{
- const KEY='cf_float_positions_v262', PAD=5;
- const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
- let store={};try{store=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(_){}
- function save(name,x,y){store[name]={x:Math.round(x),y:Math.round(y)};try{localStorage.setItem(KEY,JSON.stringify(store))}catch(_){}}
- function place(target,name,fallback){
-   const pos=store[name]||fallback, w=target.offsetWidth||34,h=target.offsetHeight||34;
-   const x=clamp(pos.x,PAD,innerWidth-w-PAD),y=clamp(pos.y,PAD,innerHeight-h-PAD);
-   target.style.setProperty('left',x+'px','important');target.style.setProperty('top',y+'px','important');
-   target.style.setProperty('right','auto','important');target.style.setProperty('bottom','auto','important');
- }
- function setup(handle,target,name,fallback){
-   if(!handle||!target||handle.dataset.cfUnifiedDrag)return;handle.dataset.cfUnifiedDrag='1';
-   place(target,name,fallback());
-   let d=null,suppress=false;
-   handle.addEventListener('pointerdown',e=>{
-     if(e.pointerType==='mouse'&&e.button!==0)return;
-     const r=target.getBoundingClientRect();d={id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top,sx:e.clientX,sy:e.clientY,moved:false};
-     try{handle.setPointerCapture(e.pointerId)}catch(_){}
-     e.stopImmediatePropagation();
-   },true);
-   handle.addEventListener('pointermove',e=>{
-     if(!d||e.pointerId!==d.id)return;
-     if(Math.hypot(e.clientX-d.sx,e.clientY-d.sy)>4)d.moved=true;
-     if(!d.moved)return;
-     const x=clamp(e.clientX-d.dx,PAD,innerWidth-target.offsetWidth-PAD);
-     const y=clamp(e.clientY-d.dy,PAD,innerHeight-target.offsetHeight-PAD);
-     target.style.setProperty('left',x+'px','important');target.style.setProperty('top',y+'px','important');
-     target.style.setProperty('right','auto','important');target.style.setProperty('bottom','auto','important');
-     e.preventDefault();e.stopImmediatePropagation();
-   },true);
-   const end=e=>{
-     if(!d||e.pointerId!==d.id)return;
-     const moved=d.moved,r=target.getBoundingClientRect();d=null;
-     if(moved){save(name,r.left,r.top);suppress=true;e.preventDefault();e.stopImmediatePropagation();setTimeout(()=>suppress=false,120)}
-   };
-   handle.addEventListener('pointerup',end,true);handle.addEventListener('pointercancel',end,true);
-   handle.addEventListener('click',e=>{if(suppress){e.preventDefault();e.stopImmediatePropagation();suppress=false}},true);
- }
- function init(){
-   const pencil=document.getElementById('noteDock'),timer=document.getElementById('cfTimerFab');
-   const shiftBtn=document.getElementById('cfShiftShortcutBtn'),shift=document.getElementById('cfShiftShortcut');
-   setup(pencil,pencil,'pencil',()=>({x:innerWidth-39,y:innerHeight*.34}));
-   setup(timer,timer,'timer',()=>({x:innerWidth-39,y:innerHeight*.78}));
-   setup(shiftBtn,shift,'shift',()=>({x:innerWidth-39,y:innerHeight*.62}));
- }
- function reclamp(){
-   [['pencil',document.getElementById('noteDock')],['timer',document.getElementById('cfTimerFab')],['shift',document.getElementById('cfShiftShortcut')]].forEach(([n,t])=>{if(!t)return;const r=t.getBoundingClientRect();const x=clamp(r.left,PAD,innerWidth-t.offsetWidth-PAD),y=clamp(r.top,PAD,innerHeight-t.offsetHeight-PAD);t.style.setProperty('left',x+'px','important');t.style.setProperty('top',y+'px','important');t.style.setProperty('right','auto','important');t.style.setProperty('bottom','auto','important')});
- }
- document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>setTimeout(init,80),{once:true}):setTimeout(init,80);
- addEventListener('resize',reclamp,{passive:true});window.visualViewport?.addEventListener('resize',reclamp,{passive:true});
+  const KEY='cf_float_positions_v266', PAD=5;
+  const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+  const read=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(_){return {}}};
+  const write=o=>{try{localStorage.setItem(KEY,JSON.stringify(o))}catch(_){}};
+  let pos=read(), drag=null, suppress=null;
+  function specs(){
+    const pencil=document.getElementById('noteDock'),timer=document.getElementById('cfTimerFab');
+    const shift=document.getElementById('cfShiftShortcut'),shiftBtn=document.getElementById('cfShiftShortcutBtn');
+    return [
+      {name:'pencil',handle:pencil,target:pencil,def:()=>({x:innerWidth-(pencil?.offsetWidth||34)-16,y:66})},
+      {name:'timer',handle:timer,target:timer,def:()=>({x:innerWidth-(timer?.offsetWidth||34)-16,y:170})},
+      {name:'shift',handle:shiftBtn,target:shift,def:()=>({x:innerWidth-(shift?.offsetWidth||34)-16,y:innerHeight-(shift?.offsetHeight||34)-62})}
+    ].filter(x=>x.handle&&x.target);
+  }
+  function place(o,p,save=false){
+    const w=o.target.offsetWidth||34,h=o.target.offsetHeight||34;
+    const x=clamp(Number(p.x)||0,PAD,Math.max(PAD,innerWidth-w-PAD));
+    const y=clamp(Number(p.y)||0,PAD,Math.max(PAD,innerHeight-h-PAD));
+    const st=o.target.style;
+    st.setProperty('position','fixed','important');st.setProperty('left',x+'px','important');st.setProperty('top',y+'px','important');
+    st.setProperty('right','auto','important');st.setProperty('bottom','auto','important');st.setProperty('transform','none','important');
+    if(save){pos[o.name]={x:Math.round(x),y:Math.round(y)};write(pos)}
+  }
+  function init(){pos=read();specs().forEach(o=>place(o,pos[o.name]||o.def(),false))}
+  window.addEventListener('pointerdown',e=>{
+    if(e.pointerType==='mouse'&&e.button!==0)return;
+    const o=specs().find(o=>e.target===o.handle||o.handle.contains(e.target));if(!o)return;
+    const r=o.target.getBoundingClientRect();drag={o,id:e.pointerId,dx:e.clientX-r.left,dy:e.clientY-r.top,sx:e.clientX,sy:e.clientY,moved:false};
+    e.stopImmediatePropagation();
+  },true);
+  window.addEventListener('pointermove',e=>{
+    if(!drag||e.pointerId!==drag.id)return;
+    if(!drag.moved&&Math.hypot(e.clientX-drag.sx,e.clientY-drag.sy)<4)return;
+    drag.moved=true;place(drag.o,{x:e.clientX-drag.dx,y:e.clientY-drag.dy},false);e.preventDefault();e.stopImmediatePropagation();
+  },{capture:true,passive:false});
+  function end(e){
+    if(!drag||e.pointerId!==drag.id)return;
+    if(drag.moved){const r=drag.o.target.getBoundingClientRect();place(drag.o,{x:r.left,y:r.top},true);suppress=drag.o.handle;e.preventDefault();e.stopImmediatePropagation();setTimeout(()=>suppress=null,180)}
+    drag=null;
+  }
+  window.addEventListener('pointerup',end,true);window.addEventListener('pointercancel',end,true);
+  window.addEventListener('click',e=>{if(suppress&&(e.target===suppress||suppress.contains(e.target))){e.preventDefault();e.stopImmediatePropagation();suppress=null}},true);
+  function reclamp(){specs().forEach(o=>{const r=o.target.getBoundingClientRect();place(o,{x:r.left,y:r.top},true)})}
+  addEventListener('resize',reclamp,{passive:true});window.visualViewport?.addEventListener('resize',reclamp,{passive:true});
+  document.readyState==='loading'?document.addEventListener('DOMContentLoaded',()=>setTimeout(init,120),{once:true}):setTimeout(init,120);
+  setTimeout(init,700);
 })();
 </script>
 
+<style id="cfMultiTimerUltraCompactV255">
+/* Apenas multicronômetros: versão ultracompacta */
+#cfTimerDock{gap:3px!important;padding:4px!important}
+#cfTimerCards{gap:3px!important}
+.cfTimerCard{position:relative!important;width:94px!important;min-width:94px!important;padding:4px!important;padding-top:3px!important;border-radius:8px!important;gap:2px!important}
+.cfTimerHead,.cfTimerName,.cfTimerMini{display:none!important}
+.cfTimerClose{position:absolute!important;right:2px!important;top:2px!important;width:15px!important;min-width:15px!important;height:15px!important;min-height:15px!important;padding:0!important;border-radius:5px!important;font-size:10px!important;line-height:13px!important;z-index:2!important;opacity:.72!important}
+.cfTimerTime{font-size:17px!important;line-height:19px!important;letter-spacing:-1px!important;margin:0 14px 1px 0!important;text-align:center!important}
+.cfTimerRow{gap:2px!important;align-items:center!important}
+.cfTimerRow button{width:22px!important;min-width:22px!important;max-width:22px!important;height:21px!important;min-height:21px!important;padding:0!important;border-radius:6px!important;font-size:10px!important}
+.cfTimerRow select{height:21px!important;min-height:21px!important;padding:0 2px!important;border-radius:6px!important;font-size:8px!important;min-width:42px!important}
+.cfTimerStart,.cfTimerReset{max-width:22px!important}
+@media(max-width:650px){.cfTimerCard{width:90px!important;min-width:90px!important}.cfTimerTime{font-size:16px!important}}
+</style>
+
+<style id="cfMultiTimerNoScrollV256">
+/* Somente layout do multicronômetro: sem barra de rolagem; quebra responsiva em linhas. */
+#cfTimerDock{overflow:visible!important;overflow-x:visible!important;overflow-y:visible!important;width:max-content!important;max-width:calc(100vw - 12px)!important;flex-wrap:wrap!important;align-items:flex-start!important}
+#cfTimerCards{display:flex!important;flex-wrap:wrap!important;gap:3px!important;width:auto!important;max-width:calc(100vw - 126px)!important;overflow:visible!important}
+#cfTimerDock.cfTD-top,#cfTimerDock.cfTD-bottom{justify-content:center!important}
+#cfTimerDock.cfTD-left,#cfTimerDock.cfTD-right{flex-direction:column!important;flex-wrap:nowrap!important}
+#cfTimerDock.cfTD-left #cfTimerCards,#cfTimerDock.cfTD-right #cfTimerCards{max-width:min(490px,calc(100vw - 58px))!important}
+@media(max-width:700px){#cfTimerDock{width:calc(100vw - 8px)!important;max-width:calc(100vw - 8px)!important}#cfTimerDock.cfTD-top,#cfTimerDock.cfTD-bottom{left:4px!important;right:4px!important;transform:none!important}#cfTimerCards{max-width:calc(100vw - 116px)!important}}
+@media(max-width:430px){#cfTimerDock{align-items:flex-start!important}.cfTimerTools{flex-direction:column!important}#cfTimerCards{max-width:calc(100vw - 46px)!important}}
+</style>
+
+<style id="cf-note-toolbar-discreta-v2535">
+/* Ajuste exclusivamente visual: barra compacta na largura do conteúdo. */
+#noteBar.cfNotePro{
+  left:8px!important;
+  right:auto!important;
+  top:8px!important;
+  transform:none!important;
+  width:max-content!important;
+  max-width:calc(100vw - 16px)!important;
+  min-width:0!important;
+  box-sizing:border-box!important;
+  gap:2px!important;
+  padding:3px!important;
+  border-radius:10px!important;
+  overflow:visible!important;
+  flex:0 0 auto!important;
+}
+#noteBar.cfNotePro button,#noteBar.cfNotePro select,#noteBar.cfNotePro input{height:30px!important}
+#noteBar.cfNotePro button{
+  flex:0 0 30px!important;
+  width:30px!important;
+  min-width:30px!important;
+  min-height:30px!important;
+  padding:1px 3px!important;
+  border-radius:7px!important;
+  font-size:14px!important;
+}
+#noteBar.cfNotePro input[type="color"]{
+  flex:0 0 32px!important;
+  width:32px!important;
+  min-width:32px!important;
+  padding:2px!important;
+  border-radius:7px!important;
+}
+#noteBar.cfNotePro .cfNoteSizeSelect{
+  flex:0 0 52px!important;
+  width:52px!important;
+  min-width:52px!important;
+  padding:0 4px!important;
+  font-size:10px!important;
+  border-radius:7px!important;
+}
+#noteBar.cfNotePro .cfNoteSep{height:18px!important;margin:0!important}
+@media(max-width:520px){
+ #noteBar.cfNotePro{left:5px!important;top:5px!important;max-width:calc(100vw - 10px)!important;gap:1px!important;padding:2px!important}
+ #noteBar.cfNotePro button{flex-basis:28px!important;width:28px!important;min-width:28px!important;height:28px!important;min-height:28px!important;font-size:13px!important}
+ #noteBar.cfNotePro input[type="color"]{flex-basis:30px!important;width:30px!important;min-width:30px!important;height:28px!important}
+ #noteBar.cfNotePro .cfNoteSizeSelect{flex-basis:48px!important;width:48px!important;min-width:48px!important;height:28px!important;font-size:9px!important}
+}
+</style>
+
+
+<style id="cfPerformanceUltraV260">
+/* Performance/responsiveness layer only — no content or feature removal. */
+:root{--cf-vh:1vh}
+.module-panel{contain:layout style}
+.module-panel:not(.active),.module-panel[hidden],[hidden]{display:none!important}
+/* Skip rendering below-the-fold content until it approaches the viewport. */
+.module-panel.active > section,
+.module-panel.active > .card,
+.module-panel.active > .panel,
+.module-panel.active .ecg-card,
+.module-panel.active .alg-card,
+.module-panel.active .algo-card,
+.module-panel.active .drug-card,
+.module-panel.active .druglib-card,
+.module-panel.active .guide-content-card,
+.module-panel.active .support-card,
+.module-panel.active .mini-card,
+.module-panel.active details{
+  content-visibility:auto;
+  contain-intrinsic-size:auto 360px;
+}
+/* Isolate large/repeated grids so one card does not invalidate the whole page. */
+.ecg-grid,.alg-grid,.algo-grid,.druglib-grid,.am-grid,.clinical-sections,.event-list,
+#cfTimerCards,.cf-beginner-steps{contain:layout style}
+/* Floating UI gets compositor help only while visible; no permanent page-wide will-change. */
+#noteDock,#cfTimerFab,#cfShiftShortcut,#cfTimerDock,#noteBar{transform:translateZ(0);backface-visibility:hidden}
+img,svg,canvas{max-width:100%}
+@media(max-width:760px){
+  .module-panel.active > section,.module-panel.active > .card,.module-panel.active > .panel{contain-intrinsic-size:auto 300px}
+}
+</style>
+<script id="cfPerformanceUltraRuntimeV260">
+(()=>{
+  'use strict';
+  const idle=window.requestIdleCallback||((fn)=>setTimeout(fn,80));
+  const tuneImages=(root=document)=>{
+    const imgs=root.querySelectorAll('img');
+    imgs.forEach((img,i)=>{
+      img.decoding='async';
+      if(!img.closest('#cfSplash,.cf-splash') && !img.hasAttribute('loading')) img.loading='lazy';
+      if(i>1 && !img.hasAttribute('fetchpriority')) img.setAttribute('fetchpriority','low');
+    });
+  };
+  const tuneFrames=(root=document)=>root.querySelectorAll('iframe').forEach(f=>{if(!f.hasAttribute('loading'))f.loading='lazy'});
+  let raf=0;
+  const viewport=()=>{
+    if(raf)return;
+    raf=requestAnimationFrame(()=>{
+      raf=0;
+      document.documentElement.style.setProperty('--cf-vh',`${window.innerHeight*.01}px`);
+    });
+  };
+  addEventListener('resize',viewport,{passive:true});
+  if(window.visualViewport) visualViewport.addEventListener('resize',viewport,{passive:true});
+  viewport();
+  const boot=()=>idle(()=>{tuneImages();tuneFrames();});
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true,passive:true});else boot();
+  if('MutationObserver'in window){
+    const mo=new MutationObserver(records=>{
+      let needed=false;
+      for(const r of records){if(r.addedNodes&&r.addedNodes.length){needed=true;break}}
+      if(needed)idle(()=>{tuneImages();tuneFrames();});
+    });
+    const start=()=>mo.observe(document.body,{childList:true,subtree:true});
+    if(document.body)start();else document.addEventListener('DOMContentLoaded',start,{once:true});
+  }
+})();
+</script>
+
+<style id="cf-global-collapsible-v267">
+/* Recolhimento progressivo: não move, apaga ou recria o conteúdo original. */
+.cf-collapse-unit{position:relative}
+.cf-collapse-toggle{width:100%;min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 10px;margin:0;border:0;border-bottom:1px solid #17465b;background:linear-gradient(180deg,#092b3a,#082532);color:#eefcff;font:inherit;font-weight:850;text-align:left;cursor:pointer;border-radius:inherit}
+.cf-collapse-toggle .cf-collapse-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cf-collapse-toggle .cf-collapse-symbol{flex:0 0 auto;color:#63eaff;font-size:1.12rem;line-height:1;font-weight:900}
+.cf-collapse-unit.cf-collapsed>.cf-collapse-original{display:none!important}
+.cf-collapse-unit>.cf-collapse-original{display:contents}
+/* Nos cards, o wrapper usa display:contents apenas aberto; fechado mantém somente a barra. */
+.cf-collapse-unit.cf-collapsed{padding:0!important;min-height:0!important}
+.cf-collapse-unit.cf-collapsed>.cf-collapse-toggle{border-bottom:0}
+/* Módulos que já possuem acordeão nativo permanecem intocados. */
+@media(max-width:700px){.cf-collapse-toggle{min-height:32px;padding:6px 9px;font-size:.78rem}}
+</style>
+<script id="cf-global-collapsible-v267">
+(()=>{
+ 'use strict';
+ const EXCLUDE='.am-scenario,details,.trainer-question-card,.guide-index,.druglib-modal,[role="dialog"],.ecg-card';
+ const titleOf=(el)=>{
+   const h=el.querySelector(':scope > .card-head h2,:scope > .card-head h3,:scope > h2,:scope > h3,:scope header h2,:scope header h3');
+   return (h?.textContent||el.getAttribute('aria-label')||'Conteúdo').trim();
+ };
+ const eligible=(el)=>{
+   if(!el || el.matches(EXCLUDE) || el.closest('.am-scenario')) return false;
+   if(el.classList.contains('cf-collapse-unit')) return false;
+   const module=el.closest('.module-panel'); if(!module) return false;
+   /* Não interfere em cartões internos gerados em massa ou modais. */
+   if(el.closest('.druglib-grid,.druglib-class-list,.trainer-review-list,.ecg-grid,.modal')) return false;
+   return !!titleOf(el);
+ };
+ function enhance(el){
+   if(!eligible(el)) return;
+   const title=titleOf(el);
+   const kids=[...el.childNodes];
+   const body=document.createElement('div'); body.className='cf-collapse-original';
+   kids.forEach(n=>body.appendChild(n));
+   const btn=document.createElement('button');
+   btn.type='button'; btn.className='cf-collapse-toggle'; btn.setAttribute('aria-expanded','false');
+   btn.innerHTML='<span class="cf-collapse-title"></span><span class="cf-collapse-symbol" aria-hidden="true">+</span>';
+   btn.querySelector('.cf-collapse-title').textContent=title;
+   el.append(btn,body); el.classList.add('cf-collapse-unit','cf-collapsed');
+   btn.addEventListener('click',()=>{
+     const closed=el.classList.toggle('cf-collapsed');
+     btn.setAttribute('aria-expanded',String(!closed));
+     btn.querySelector('.cf-collapse-symbol').textContent=closed?'+':'−';
+   });
+ }
+ function init(){
+   /* Cards de conteúdo e cartões de Ferramentas. ACLS já usa <details> e é preservado. */
+   document.querySelectorAll('.module-panel .card,.module-panel .tool-card').forEach(enhance);
+ }
+ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',init,{once:true}); else init();
+})();
+</script>
 
 </body>
 </html>
