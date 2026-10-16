@@ -1,0 +1,20 @@
+Verificação da integração — CF ArritmiX
+
+12 módulos organizados em três categorias.
+Os 98 blocos originais foram mantidos; as chamadas de armazenamento receberam um prefixo exclusivo desta versão para impedir recuperação de uso antigo.
+Sintaxe dos scripts do app e da Prancheta verificada com Node.js.
+Imagens e demais recursos originais preservados byte a byte.
+Maior arquivo: 4758457 bytes; todos abaixo de 25 MB.
+A Prancheta utiliza documento próprio e permanece carregada ao alternar abas.
+
+Teste adicional em DOM simulado: as 12 abas e as três categorias alternaram os módulos esperados. Na Prancheta, iniciar PCR atualizou o estado para Em andamento, abriu-se o diálogo de nota e houve persistência em armazenamento local.
+
+Limite da verificação: o navegador de testes não está disponível neste ambiente; a verificação visual em dispositivos reais e o teste clínico completo continuam necessários. Não foi realizada revisão das recomendações clínicas.
+
+Correção de inicialização: esta versão usa um espaço de armazenamento novo, sem carregar sessões antigas. Na primeira abertura, os estados e cronômetros começam nos padrões originais zerados. Os novos registros persistem normalmente após o uso.
+
+Teste com episódio antigo iniciado uma hora antes: a Prancheta abriu em Aguardando início, sem retomar esse episódio. Iniciar PCR e abrir nota continuaram funcionando.
+
+Botões Zerar tempo e Encerrar simulação verificados em DOM simulado: encerramento após pausa, retorno ao estado Aguardando início, preservação do histórico e reinício.
+
+Cartão Modelo de DEBRIEFING adicionado à tela inicial com link relativo e atributo download. PDF preservado byte a byte e incluído no cache offline.

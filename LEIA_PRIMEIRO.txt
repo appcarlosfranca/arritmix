@@ -1,0 +1,16 @@
+CF ArritmiX — versão unificada
+
+Extraia o ZIP. Envie TODO o conteúdo da pasta ArritmiX para a raiz do repositório, mantendo a pasta prancheta. Não envie o próprio ZIP como página. Ative GitHub Pages na branch e pasta / (root).
+
+As três categorias organizam os 12 módulos. A Prancheta permanece carregada ao trocar de aba, preservando cronômetros e registros. As informações dos módulos originais foram mantidas. Dados locais permanecem vinculados ao navegador e domínio.
+
+Após atualizar uma instalação anterior, feche as abas e reabra para ativar o novo cache. Faça cópia dos registros importantes pelas opções de exportação do app.
+
+VERSÃO ZERADA: não recupera memória de uso das versões anteriores. Após iniciar o uso desta versão, os novos registros continuam sendo salvos.
+
+PRANCHETA — NOVOS CONTROLES
+Zerar tempo: encerra o episódio ativo, preserva o histórico e volta a 00:00, aguardando novo início.
+Encerrar simulação: finaliza o episódio, congela o tempo e preserva os registros.
+
+MODELO DE DEBRIEFING
+Na tela inicial, o cartão Modelo de DEBRIEFING baixa o PDF anexado. Mantenha Modelo_DEBRIEFING.pdf junto ao index.html na raiz.
